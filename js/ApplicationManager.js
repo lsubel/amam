@@ -6,7 +6,9 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
 
   this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));
   this.inputManager.on("translateUI", this.translateUI.bind(this));
-  this.inputManager.on("newQuestion", this.newQuestion.bind(this));
+  this.inputManager.on("newQuestion", this.generateNewQuestion.bind(this));
+  this.inputManager.on("showMenu", this.showMenu.bind(this));
+  this.inputManager.on("showQuestion", this.showQuestion.bind(this));
 
   this.currentTranslation        = undefined;
   this.total_number_of_questions = 36;
@@ -15,6 +17,9 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.translationManager.setupLanguages();
 
   this.translateUI("en");
+
+  this.generateNewQuestion();
+  this.showMenu();
 }
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln){
@@ -27,7 +32,7 @@ ApplicationManager.prototype.translateUI = function(ln){
   this.translationManager.translate(ln);
 }
 
-ApplicationManager.prototype.newQuestion = function(){
+ApplicationManager.prototype.generateNewQuestion = function(){
   var new_id = this.current_question_id;
   while(new_id == this.current_question_id){
     new_id = Math.floor(Math.random() * this.total_number_of_questions);
@@ -35,4 +40,14 @@ ApplicationManager.prototype.newQuestion = function(){
   var new_id_class = "pad.question-" + new_id;
   this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
+}
+
+ApplicationManager.prototype.showMenu = function(){
+  this.actuator.showMenu();
+  this.actuator.hideQuestion();
+}
+
+ApplicationManager.prototype.showQuestion = function(){
+  this.actuator.showQuestion();
+  this.actuator.hideMenu();
 }

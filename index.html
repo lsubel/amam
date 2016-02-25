@@ -4,26 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>Proust questions</title>
+  <link type="text/css" rel="stylesheet" href="css/main.css"></link>
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
+
 <body>
   <div class="container">
 
-      <div class="menu-container">
-        <h1 ln-id="menu.title" class="title"></h1>
-        <p  ln-id="menu.description" class="description"></p>
-        <select class="ln-selection">
+    <div class="menu-container">
+      <h1 ln-id="menu.title" class="title"></h1>
+      <p ln-id="menu.description" class="description"></p>
+      <select class="ln-selection">
+      </select>
+      <a ln-id="menu.startbutton" class="button-start"></a>
+    </div>
 
-        </select>
-        <a  ln-id="menu.startbutton" class="button-start"></a>
-      </div>
+    <div class="question-container">
+      <p ln-id="pad.question" class="question"></p>
 
-      <div class="question-container">
-        <p ln-id="pad.question" class="question"></p>
-      </div>
       <div class="button-container">
         <a ln-id="pad.random-question" class="button-random"></a>
         <a ln-id="pad.back-to-menu" class="button-menu"></a>
       </div>
+    </div>
   </div>
   <script src="js/LocalStorageManager.js"></script>
   <script src="js/KeyInputManager.js"></script>
@@ -32,4 +35,5 @@
   <script src="js/HTMLActuator.js"></script>
   <script src="js/startup.js"></script>
 </body>
+
 </html>

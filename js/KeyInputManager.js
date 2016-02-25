@@ -35,10 +35,21 @@ KeyboardInputManager.prototype.listen = function(){
   });
 
   this.bindButtonPress(".button-random", this.newQuestion);
-
+  this.bindButtonPress(".button-menu", this.showMenu);
+  this.bindButtonPress(".button-start", this.showQuestion)
 };
 
 KeyboardInputManager.prototype.newQuestion = function(event){
   event.preventDefault();
   this.emit("newQuestion");
+};
+
+KeyboardInputManager.prototype.showMenu = function(event){
+  event.preventDefault();
+  this.emit("showMenu");
+};
+
+KeyboardInputManager.prototype.showQuestion = function(event){
+  event.preventDefault();
+  this.emit("showQuestion");
 };
