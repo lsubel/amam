@@ -1,0 +1,52 @@
+{
+  "ln": "en",
+  "translations": {
+    "language"              : "Englisch",
+    "pad.question"          : "Here you find the currently selected question",
+    "pad.random-question"   : "Get new question",
+    "pad.back-to-menu"      : "Go back to menu",
+    "menu.title"            : "Proust questions",
+    "menu.description"      : "Here you find a description of the proust questions",
+    "menu.startbutton"      : "Start",
+
+    "pad.question-0": "Their motto?",
+    "pad.question-1": "Where do you want to live?",
+    "pad.question-2": "What is your idea of ​​perfect happiness?",
+    "pad.question-3": "Which faults are you most?",
+    "pad.question-4": "What is the greatest misfortune for you?",
+    "pad.question-5": "Your favorite fictional hero?",
+    "pad.question-6": "Your favorite figure in history?",
+    "pad.question-7": "Your favorite hero in reality?",
+    "pad.question-8": "Your favorite painter?",
+    "pad.question-9": "Your favorite author?",
+
+    "pad.question-10": "Your favorite composer?",
+    "pad.question-11": "What qualities do you appreciate in a woman the most?",
+    "pad.question-12": "What qualities do you appreciate in a man the most?",
+    "pad.question-13": "Your favorite virtue?",
+    "pad.question-14": "Your favorite activity?",
+    "pad.question-15": "Who or what would you like to be?",
+    "pad.question-16": "Your main character trait?",
+    "pad.question-17": "What do your friends at the most?",
+    "pad.question-18": "Your biggest mistake?",
+    "pad.question-19": "Your dream of happiness?",
+
+    "pad.question-20": "What would be the greatest misfortune for you?",
+    "pad.question-21": "What do you want to be?",
+    "pad.question-22": "Your favorite color?",
+    "pad.question-23": "Your favorite flower?",
+    "pad.question-24": "Your favorite bird?",
+    "pad.question-25": "Your favorite author?",
+    "pad.question-26": "My favorite poet?",
+    "pad.question-27": "your heroes in real?",
+    "pad.question-28": "Your heroines in history?",
+    "pad.question-29": "your favorite name?",
+
+    "pad.question-30": "What do you most dislike?",
+    "pad.question-31": "What historical figures do you despise the most?",
+    "pad.question-32": "What reform do you most admire?",
+    "pad.question-33": "What natural gift would you like to have?",
+    "pad.question-34": "How would you like to die?",
+    "pad.question-35": "Your current state of mind?"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "ln": "de",
+  "translations": {
+    "language"              : "Deutsch",
+    "pad.question"          : "Hier befindet sich die aktuell ausgewählte Frage",
+    "pad.random-question"   : "Zufällige Frage",
+    "pad.back-to-menu"      : "Zurück zum Menü",
+    "menu.title"            : "Proust Fragen",
+    "menu.description"      : "Hier befindet sich eine Beschreibung der Proust Fragen",
+    "menu.startbutton"      : "Start",
+
+    "pad.question-0"        : "Ihr Motto?",
+    "pad.question-1"        : "Wo möchten Sie leben?",
+    "pad.question-2"        : "Was ist für Sie das vollkommene irdische Glück?",
+    "pad.question-3"        : "Welche Fehler entschuldigen Sie am ehesten?",
+    "pad.question-4"        : "Was ist für Sie das größte Unglück?",
+    "pad.question-5"        : "Ihre liebsten Romanhelden?",
+    "pad.question-6"        : "Ihre Lieblingsgestalt in der Geschichte?",
+    "pad.question-7"        : "Ihre Lieblingsheldinnen/-helden in der Wirklichkeit?",
+    "pad.question-8"        : "Ihr Lieblingsmaler?",
+    "pad.question-9"        : "Ihr Lieblingsautor?",
+
+    "pad.question-10"        : "Ihr Lieblingskomponist?",
+    "pad.question-11"        : "Welche Eigenschaften schätzen sie bei einer Frau am meisten?",
+    "pad.question-12"        : "Welche Eigenschaften schätzen sie bei einem Mann am meisten?",
+    "pad.question-13"        : "Ihre Lieblingstugend?",
+    "pad.question-14"        : "Ihre Lieblingsbeschäftigung?",
+    "pad.question-15"        : "Wer oder was hätten Sie gern sein mögen?",
+    "pad.question-16"        : "Ihr Hauptcharakterzug?",
+    "pad.question-17"        : "Was schätzen bei Ihren Freunden am meisten?",
+    "pad.question-18"        : "Ihr größter Fehler?",
+    "pad.question-19"        : "Ihr Traum vom Glück?",
+
+    "pad.question-20"        : "Was wäre für Sie das größte Unglück?",
+    "pad.question-21"        : "Was möchten Sie sein?",
+    "pad.question-22"        : "Ihre Lieblingsfarbe?",
+    "pad.question-23"        : "Ihre Lieblingsblume?",
+    "pad.question-24"        : "Ihr Lieblingsvogel?",
+    "pad.question-25"        : "Ihr Lieblingsschriftsteller?",
+    "pad.question-26"        : "Ihr Lieblingslyriker?",
+    "pad.question-27"        : "Ihre Helden der Wirklichkeit?",
+    "pad.question-28"        : "Ihre Heldinnen in der Geschichte?",
+    "pad.question-29"        : "Ihre Lieblingsnamen?",
+
+    "pad.question-30"        : "Was verabscheuen sie am meisten?",
+    "pad.question-31"        : "Welche geschichtlichen Gestalten verabscheuen Sie am meisten?",
+    "pad.question-32"        : "Welche Reform bewundern Sie am meisten?",
+    "pad.question-33"        : "Welche natürliche Gabe möchten Sie besitzen?",
+    "pad.question-34"        : "Wie möchten Sie gern sterben?",
+    "pad.question-35"        : "Ihre gegenwärtige Geistesverfassung?"
+  }
+}
