@@ -10,9 +10,10 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
 
   this.currentTranslation        = undefined;
   this.total_number_of_questions = 36;
+  this.current_question_id = 0;
 
   this.translationManager.setupLanguages();
-  
+
   this.translateUI("en");
 }
 
@@ -27,7 +28,11 @@ ApplicationManager.prototype.translateUI = function(ln){
 }
 
 ApplicationManager.prototype.newQuestion = function(){
-  var new_id = "pad.question-" + Math.round(Math.random() * this.total_number_of_questions);
-  this.actuator.setNewQuestion(new_id);
+  var new_id = this.current_question_id;
+  while(new_id == this.current_question_id){
+    new_id = Math.floor(Math.random() * this.total_number_of_questions);
+  }
+  var new_id_class = "pad.question-" + new_id;
+  this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
 }
