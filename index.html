@@ -4,30 +4,49 @@
 <head>
   <meta charset="utf-8">
   <title>Proust questions</title>
+  <link type="text/css" rel="stylesheet" href="css/normalize.css"></link>
+  <link type="text/css" rel="stylesheet" href="css/skeleton.css"></link>
   <link type="text/css" rel="stylesheet" href="css/main.css"></link>
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="">
 
-    <div class="menu-container">
-      <h1 ln-id="menu.title" class="title"></h1>
-      <p ln-id="menu.description" class="description"></p>
-      <select class="ln-selection">
-      </select>
-      <a ln-id="menu.startbutton" class="button-start"></a>
+    <div class="container menu-container">
+      <div class="row">
+        <h1 ln-id="menu.title" class="title"></h1>
+      </div>
+      <div class="row">
+        <p ln-id="menu.description" class="description"></p>
+      </div>
+      <div class="row">
+        <select class="ln-selection u-full-width "></select>
+      </div>
     </div>
-
-    <div class="question-container">
-      <p ln-id="pad.question" class="question"></p>
-
-      <div class="button-container">
-        <a ln-id="pad.random-question" class="button-random"></a>
-        <a ln-id="pad.back-to-menu" class="button-menu"></a>
+    <div class="container question-container">
+      <div class="row">
+        <h1 ln-id="menu.title" class="title"></h1>
+      </div>
+      <div class="row">
+        <h4 ln-id="pad.question" class="question"></h4>
       </div>
     </div>
   </div>
+  <footer class="">
+    <div class="container question-container-footer">
+      <div class="row button-container">
+        <a ln-id="pad.random-question" class="button u-full-width button-random"></a>
+        <a ln-id="pad.back-to-menu" class="button u-full-width button-menu"></a>
+      </div>
+    </div>
+    <div class="container menu-container-footer">
+      <div class="row">
+        <a ln-id="menu.startbutton" class="button u-full-width button-start"></a>
+      </div>
+    </div>
+  </footer>
   <script src="js/LocalStorageManager.js"></script>
   <script src="js/KeyInputManager.js"></script>
   <script src="js/ApplicationManager.js"></script>

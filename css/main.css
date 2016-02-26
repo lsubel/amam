@@ -1,11 +1,44 @@
+.question-container {
+  display: none; }
+  .question-container.show-container {
+    display: block; }
+
 .menu-container {
   display: none; }
   .menu-container.show-container {
     display: block; }
 
-.question-container {
+.question-container-footer {
   display: none; }
-  .question-container.show-container {
+  .question-container-footer.show-container {
     display: block; }
+
+.menu-container-footer {
+  display: none; }
+  .menu-container-footer.show-container {
+    display: block; }
+
+.title {
+  margin-top: 20px; }
+
+footer {
+  clear: both;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+  footer.question-container-footer {
+    height: 100px; }
+  footer.menu-container-footer {
+    height: 52px; }
+
+.main-container {
+  height: calc(100% - 100px); }
+
+.question {
+  margin: 50px 0; }
+
+body {
+  min-width: 320px; }
 
 /*# sourceMappingURL=main.css.map */
