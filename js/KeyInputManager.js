@@ -27,17 +27,18 @@ KeyboardInputManager.prototype.bindButtonPress = function (selector, fn) {
 };
 
 KeyboardInputManager.prototype.listen = function(){
-  var self = this;
   var languageSelection = document.getElementsByClassName("ln-selection")[0];
-  languageSelection.addEventListener("change", function(event){
-    var ln = event.target.value;
-    self.emit("translateUI", ln)
-  });
+  languageSelection.addEventListener("change", this.selectTranslation.bind(this));
 
   this.bindButtonPress(".button-random", this.newQuestion);
   this.bindButtonPress(".button-menu", this.showMenu);
   this.bindButtonPress(".button-start", this.showQuestion)
 };
+
+KeyboardInputManager.prototype.selectTranslation = function(event){
+  var ln = event.target.value;
+  this.emit("translateUI", ln)
+}
 
 KeyboardInputManager.prototype.newQuestion = function(event){
   event.preventDefault();
