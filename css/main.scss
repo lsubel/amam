@@ -61,9 +61,16 @@ a {
   color: #555555;
 }
 
-
 .button-description {
   margin-top: 48px;
+}
+
+.description {
+    margin-bottom: 3.5rem;
+}
+
+.modal--fade, .modal--show {
+  transition: opacity .4s;
 }
 
 @media (min-height: 260px){
@@ -116,3 +123,7 @@ a {
         hyphens: auto;
     }
   }
+
+.modal-close {
+  color: #f0f0f0;
+}
