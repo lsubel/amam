@@ -61,3 +61,37 @@ select {
   margin-bottom: 1rem;
   color: #555;
 }
+
+@media (min-width: 440px) {
+  .question-button-container {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .button-menu {
+    margin-right: 0.5rem;
+  }
+
+  .button-random {
+    margin-left: 0.5rem;
+  }
+
+  .menu-button-container {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .ln-selection-label {
+    display: none;
+  }
+
+  .ln-selection {
+    margin-right: 0.5rem;
+  }
+
+  .button-start {
+    margin-left: 0.5rem;
+  }
+}
