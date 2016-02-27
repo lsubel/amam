@@ -10,10 +10,11 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("showMenu", this.showMenu.bind(this));
   this.inputManager.on("showQuestion", this.showQuestion.bind(this));
 
-  this.currentTranslation        = undefined;
-  this.total_number_of_questions = 36;
-  this.current_question_id = 0;
-  this.available_colors = [
+  this.currentTranslation         = undefined;
+  this.total_number_of_questions  = 36;
+  this.current_question_id        = 0;
+  this.initialized                = false;
+  this.available_colors           = [
     "#6C7A89", "#95a5a6", "#ABB7B7", "#BDC3C7",
     "#913D88", "#BF55EC", "#9b59b6", "#BE90D4",
     "#22A7F0", "#3498db", "#2980b9", "#3A539B",
@@ -23,18 +24,18 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   ];
 
   this.translationManager.setupLanguages();
-
-  this.translateUI("en");
-
-  this.generateNewQuestion();
-  this.showMenu();
-
-  this.newBackgroundColor();
 }
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln){
   var label = this.translationManager.getTranslation(ln, "language");
   this.actuator.addLanguageToMenu(ln, label);
+  if(!this.initialized){
+    this.translateUI(ln);
+    this.generateNewQuestion();
+    this.showMenu();
+    this.newBackgroundColor();
+    this.initialized = true;
+  }
 }
 
 ApplicationManager.prototype.translateUI = function(ln){
