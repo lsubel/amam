@@ -1,7 +1,7 @@
 {
   "ln": "en",
   "translations": {
-    "language"              : "Englisch",
+    "language"              : "English",
     "pad.question"          : "Here you find the currently selected question",
     "pad.random-question"   : "Get new question",
     "pad.back-to-menu"      : "Go back to menu",
