@@ -109,4 +109,8 @@ a {
     .modal--fade .modal-close:before, .modal--show .modal-close:before {
       background: #555555;
     }
+    .modal--fade .modal-content, .modal--show .modal-content {
+        word-break: normal;
+        hyphens: auto;
+    }
   }
