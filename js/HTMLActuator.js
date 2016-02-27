@@ -49,6 +49,7 @@ HTMLActuator.prototype.hideQuestion = function(){
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
+  var darker_color = LightenDarkenColor(color, 30);
   var self = this;
   window.requestAnimationFrame(function(){
     self.body.style.backgroundColor   = color;
@@ -58,9 +59,9 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.buttonRandom.style.backgroundColor       = lighten_color;
     self.buttonMenu.style.backgroundColor         = lighten_color;
     self.buttonDescription.style.backgroundColor  = lighten_color;
-    self.modalHeader.style.borderBottomColor   = lighten_color;
-    self.modalContent.style.borderBottomColor  = lighten_color;
-    self.modalFooter.style.borderTopColor   = lighten_color;
+    self.modalHeader.style.borderBottomColor   = darker_color;
+    self.modalContent.style.borderBottomColor  = darker_color;
+    self.modalFooter.style.borderTopColor      = darker_color;
   })
 }
 

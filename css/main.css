@@ -48,6 +48,9 @@ a {
 .button-description {
   margin-top: 48px; }
 
+.description {
+  margin-bottom: 3.5rem; }
+
 .modal--fade, .modal--show {
   transition: opacity .4s; }
 
