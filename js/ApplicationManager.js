@@ -13,6 +13,14 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.currentTranslation        = undefined;
   this.total_number_of_questions = 36;
   this.current_question_id = 0;
+  this.available_colors = [
+    "#6C7A89", "#95a5a6", "#ABB7B7", "#BDC3C7",
+    "#913D88", "#BF55EC", "#9b59b6", "#BE90D4",
+    "#22A7F0", "#3498db", "#2980b9", "#3A539B",
+    "#00B16A", "#27ae60", "#1abc9c", "#16a085",
+    "#f1c40f", "#f9bf3b", "#F5AB35", "#e9d460",
+    "#E74C3C", "#F64747", "#e67e22", "#F2784B"
+  ];
 
   this.translationManager.setupLanguages();
 
@@ -20,6 +28,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
 
   this.generateNewQuestion();
   this.showMenu();
+
+  this.newBackgroundColor();
 }
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln){
@@ -50,4 +60,9 @@ ApplicationManager.prototype.showMenu = function(){
 ApplicationManager.prototype.showQuestion = function(){
   this.actuator.showQuestion();
   this.actuator.hideMenu();
+}
+
+ApplicationManager.prototype.newBackgroundColor = function(){
+  var next_color = this.available_colors[Math.floor(Math.random() * this.available_colors.length)];
+  this.actuator.changeBackgroundColor(next_color);
 }

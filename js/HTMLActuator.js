@@ -1,10 +1,14 @@
 function HTMLActuator() {
-  this.languageSelection  = document.querySelector(".ln-selection");
-  this.question           = document.querySelector(".question");
+  this.body                     = document.querySelector("body");
+  this.languageSelection        = document.querySelector(".ln-selection");
+  this.question                 = document.querySelector(".question");
   this.menuContainer            = document.querySelector(".menu-container");
   this.menuContainerFooter      = document.querySelector(".menu-container-footer");
   this.questionContainer        = document.querySelector(".question-container");
   this.questionContainerFooter  = document.querySelector(".question-container-footer");
+  this.buttonStart    = document.querySelector(".button-start");
+  this.buttonRandom   = document.querySelector(".button-random");
+  this.buttonMenu     = document.querySelector(".button-menu");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
@@ -36,4 +40,46 @@ HTMLActuator.prototype.showQuestion = function(){
 HTMLActuator.prototype.hideQuestion = function(){
   this.questionContainer.classList.remove("show-container");
   this.questionContainerFooter.classList.remove("show-container");
+}
+
+HTMLActuator.prototype.changeBackgroundColor = function(color){
+  var lighten_color = LightenDarkenColor(color, 10);
+  var self = this;
+  window.requestAnimationFrame(function(){
+    self.body.style.backgroundColor = color;
+    self.languageSelection.style.backgroundColor = lighten_color;
+    self.buttonStart.style.backgroundColor = lighten_color;
+    self.buttonRandom.style.backgroundColor = lighten_color;
+    self.buttonMenu.style.backgroundColor = lighten_color;
+  })
+}
+
+function LightenDarkenColor(col, amt) {
+
+    var usePound = false;
+
+    if (col[0] == "#") {
+        col = col.slice(1);
+        usePound = true;
+    }
+
+    var num = parseInt(col,16);
+
+    var r = (num >> 16) + amt;
+
+    if (r > 255) r = 255;
+    else if  (r < 0) r = 0;
+
+    var b = ((num >> 8) & 0x00FF) + amt;
+
+    if (b > 255) b = 255;
+    else if  (b < 0) b = 0;
+
+    var g = (num & 0x0000FF) + amt;
+
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+
+    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+
 }
