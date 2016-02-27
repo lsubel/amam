@@ -66,6 +66,10 @@ a {
   margin-top: 48px;
 }
 
+.modal--fade, .modal--show {
+  transition: opacity .4s;
+}
+
 @media (min-height: 260px){
   .question {
     margin: 50px 0;
