@@ -1,14 +1,16 @@
 function HTMLActuator() {
   this.body                     = document.querySelector("body");
   this.languageSelection        = document.querySelector(".ln-selection");
+  this.modal                    = document.querySelector(".modal-inner");
   this.question                 = document.querySelector(".question");
   this.menuContainer            = document.querySelector(".menu-container");
   this.menuContainerFooter      = document.querySelector(".menu-container-footer");
   this.questionContainer        = document.querySelector(".question-container");
   this.questionContainerFooter  = document.querySelector(".question-container-footer");
-  this.buttonStart    = document.querySelector(".button-start");
-  this.buttonRandom   = document.querySelector(".button-random");
-  this.buttonMenu     = document.querySelector(".button-menu");
+  this.buttonStart        = document.querySelector(".button-start");
+  this.buttonRandom       = document.querySelector(".button-random");
+  this.buttonMenu         = document.querySelector(".button-menu");
+  this.buttonDescription  = document.querySelector(".button-description");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
@@ -46,11 +48,13 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
   var self = this;
   window.requestAnimationFrame(function(){
-    self.body.style.backgroundColor = color;
-    self.languageSelection.style.backgroundColor = lighten_color;
-    self.buttonStart.style.backgroundColor = lighten_color;
-    self.buttonRandom.style.backgroundColor = lighten_color;
-    self.buttonMenu.style.backgroundColor = lighten_color;
+    self.body.style.backgroundColor   = color;
+    self.modal.style.backgroundColor  = lighten_color;
+    self.languageSelection.style.backgroundColor  = lighten_color;
+    self.buttonStart.style.backgroundColor        = lighten_color;
+    self.buttonRandom.style.backgroundColor       = lighten_color;
+    self.buttonMenu.style.backgroundColor         = lighten_color;
+    self.buttonDescription.style.backgroundColor  = lighten_color;
   })
 }
 

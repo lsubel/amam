@@ -8,6 +8,8 @@
     "menu.title"            : "Proust questions",
     "menu.description"      : "These questions were in the 19th century part of a questionnaire and popular as society plays for the educated society. They should help learn about the interviewee and their character. Marcel Proust was one of the most famous people who answered it.",
     "menu.startbutton"      : "Start",
+    "menu.description.label": "Explanation",
+    "menu.descriptionbutton": "Show explanation",
 
     "pad.question-0": "Their motto?",
     "pad.question-1": "Where do you want to live?",
