@@ -18,7 +18,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
     "#6C7A89", "#95a5a6", "#ABB7B7", "#BDC3C7",
     "#913D88", "#BF55EC", "#9b59b6", "#BE90D4",
     "#22A7F0", "#3498db", "#2980b9", "#3A539B",
-    "#00B16A", "#27ae60", "#1abc9c", "#16a085",
+    "#2ecc71", "#27ae60", "#1abc9c", "#16a085",
     "#f1c40f", "#f9bf3b", "#F5AB35", "#e9d460",
     "#E74C3C", "#F64747", "#e67e22", "#F2784B"
   ];

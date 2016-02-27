@@ -45,6 +45,9 @@ select {
   margin-bottom: 1rem;
   color: #555; }
 
+a {
+  color: #555555; }
+
 .button-description {
   margin-top: 48px;
   transition: all 0.3s ease-out; }
@@ -74,5 +77,8 @@ select {
 
   .button-start {
     margin-left: 0.5rem; } }
+@media screen and (max-width: 30em) {
+  .modal--fade .modal-close:before, .modal--show .modal-close:before {
+    background: #555555; } }
 
 /*# sourceMappingURL=main.css.map */
