@@ -86,5 +86,7 @@ a {
   .modal--fade .modal-content, .modal--show .modal-content {
     word-break: normal;
     hyphens: auto; } }
+.modal-close {
+  color: #f0f0f0; }
 
 /*# sourceMappingURL=main.css.map */

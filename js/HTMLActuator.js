@@ -11,6 +11,9 @@ function HTMLActuator() {
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
   this.buttonDescription  = document.querySelector(".button-description");
+  this.modalHeader  = document.querySelector(".modal-header");
+  this.modalContent = document.querySelector(".modal-content");
+  this.modalFooter  = document.querySelector(".modal-footer");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
@@ -55,6 +58,9 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.buttonRandom.style.backgroundColor       = lighten_color;
     self.buttonMenu.style.backgroundColor         = lighten_color;
     self.buttonDescription.style.backgroundColor  = lighten_color;
+    self.modalHeader.style.borderBottomColor   = lighten_color;
+    self.modalContent.style.borderBottomColor  = lighten_color;
+    self.modalFooter.style.borderTopColor   = lighten_color;
   })
 }
 

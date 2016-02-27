@@ -93,7 +93,6 @@ html {
   .modal--fade footer, .modal--show footer {
     border-top: 1px solid white;
     padding: 0 1.2em 18px;
-    background: #f0f0f0;
     border-radius: 2px; }
   .modal--fade .modal-close, .modal--show .modal-close {
     display: block;
@@ -261,7 +260,6 @@ html {
   .modal--fade footer, .modal--show footer {
     border-top: 1px solid white;
     padding: 0 1.2em 18px;
-    background: #f0f0f0;
     border-radius: 2px; }
   .modal--fade .modal-close, .modal--show .modal-close {
     text-indent: -100px; }
@@ -269,7 +267,6 @@ html {
       background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAEUlEQVQoz2NgeEYAjioYSQoAzOTmAXhPhyoAAAAASUVORK5CYII="); }
     .modal--fade .modal-close:after, .modal--show .modal-close:after {
       content: '\00d7';
-      background: #fff;
       border-radius: 2px;
       padding: 2px 8px;
       font-size: 1.2em;
