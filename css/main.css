@@ -35,9 +35,6 @@ footer {
 .main-container {
   height: calc(100% - 100px); }
 
-.question {
-  margin: 50px 0; }
-
 body {
   min-width: 320px; }
 
@@ -49,9 +46,11 @@ a {
   color: #555555; }
 
 .button-description {
-  margin-top: 48px;
-  transition: all 0.3s ease-out; }
+  margin-top: 48px; }
 
+@media (min-height: 260px) {
+  .question {
+    margin: 50px 0; } }
 @media (min-width: 440px) {
   .question-button-container {
     display: flex;

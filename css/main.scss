@@ -48,10 +48,6 @@ footer {
   height: calc(100% - 100px);
 }
 
-.question {
-  margin: 50px 0;
-}
-
 body {
   min-width: 320px;
 }
@@ -68,10 +64,16 @@ a {
 
 .button-description {
   margin-top: 48px;
-  transition: all 0.3s ease-out;
+}
+
+@media (min-height: 260px){
+  .question {
+    margin: 50px 0;
+  }
 }
 
 @media (min-width: 440px) {
+
   .question-button-container {
     display: flex;
     align-content: space-between;
