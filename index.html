@@ -6,6 +6,7 @@
   <title>Proust questions</title>
   <link type="text/css" rel="stylesheet" href="css/normalize.css"></link>
   <link type="text/css" rel="stylesheet" href="css/skeleton.css"></link>
+  <link type="text/css" rel="stylesheet" href="css/modal.css"></link>
   <link type="text/css" rel="stylesheet" href="css/main.css"></link>
   <link type="text/css" rel="stylesheet" href="css/color.css" title="backgroundsheet"></link>
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -13,14 +14,28 @@
 </head>
 
 <body>
-  <div class="">
+
+
+  <section class="modal--show" id="popup-description" tabindex="-1"
+          role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+      <div class="modal-inner">
+          <header id="modal-label"><h2 ln-id="menu.description.label"></h2></header>
+          <div class="modal-content"><p ln-id="menu.description" class="description"></p></div>
+      </div>
+
+      <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
+          data-dismiss="modal">?</a>
+  </section>
+
+  <div class="main-container">
 
     <div class="container menu-container">
       <div class="row">
         <h1 ln-id="menu.title" class="title"></h1>
       </div>
       <div class="row">
-        <p ln-id="menu.description" class="description"></p>
+        <a ln-id="menu.descriptionbutton" class="button u-full-width button-description" href="#popup-description"></a>
       </div>
     </div>
     <div class="container question-container">
@@ -47,6 +62,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/modal.js"></script>
   <script src="js/LocalStorageManager.js"></script>
   <script src="js/KeyInputManager.js"></script>
   <script src="js/ApplicationManager.js"></script>
