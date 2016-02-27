@@ -61,6 +61,10 @@ select {
   color: #555;
 }
 
+a {
+  color: #555555;
+}
+
 
 .button-description {
   margin-top: 48px;
@@ -100,3 +104,9 @@ select {
     margin-left: 0.5rem;
   }
 }
+
+  @media screen and (max-width: 30em) {
+    .modal--fade .modal-close:before, .modal--show .modal-close:before {
+      background: #555555;
+    }
+  }
