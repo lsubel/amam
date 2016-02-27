@@ -75,6 +75,7 @@ TranslationManager.prototype.translate = function(ln, element){
     this.translateNode(ln, children[i])
   }
   this.translateNode(ln, element)
+  document.querySelector("html").lang = ln;
   this.inputManager.emit("translated", ln);
 }
 
