@@ -29,10 +29,13 @@ KeyboardInputManager.prototype.bindButtonPress = function (selector, fn) {
 KeyboardInputManager.prototype.listen = function(){
   var languageSelection = document.getElementsByClassName("ln-selection")[0];
   languageSelection.addEventListener("change", this.selectTranslation.bind(this));
+  var colorSaveOption = document.getElementById("cbsavecolor");
+  colorSaveOption.addEventListener("change", this.setOption.bind(this));
 
   this.bindButtonPress(".button-random", this.newQuestion);
   this.bindButtonPress(".button-menu", this.showMenu);
-  this.bindButtonPress(".button-start", this.showQuestion)
+  this.bindButtonPress(".button-start", this.showQuestion);
+  this.bindButtonPress(".button-newcolor", this.newColor);
 };
 
 KeyboardInputManager.prototype.selectTranslation = function(event){
@@ -54,3 +57,16 @@ KeyboardInputManager.prototype.showQuestion = function(event){
   event.preventDefault();
   this.emit("showQuestion");
 };
+
+KeyboardInputManager.prototype.newColor = function(event){
+  event.preventDefault();
+  this.emit("newColor");
+}
+
+KeyboardInputManager.prototype.setOption = function(event){
+  var data = {};
+  data.type   = "saveColor";
+  data.value  = event.target.checked;
+  event.preventDefault();
+  this.emit("setOption", data);
+}
