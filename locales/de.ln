@@ -10,6 +10,8 @@
     "menu.startbutton"      : "Start",
     "menu.description.label": "Beschreibung",
     "menu.descriptionbutton": "Beschreibung anzeigen",
+    "menu.options.newcolor" : "Neue Hintergrundfarbe",
+    "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
 
     "pad.question-0"        : "Ihr Motto?",
     "pad.question-1"        : "Wo möchten Sie leben?",

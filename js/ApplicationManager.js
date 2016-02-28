@@ -9,6 +9,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("newQuestion", this.generateNewQuestion.bind(this));
   this.inputManager.on("showMenu", this.showMenu.bind(this));
   this.inputManager.on("showQuestion", this.showQuestion.bind(this));
+  this.inputManager.on("newColor", this.newBackgroundColor.bind(this));
+  this.inputManager.on("setOption", this.setOption.bind(this));
 
   this.currentTranslation         = undefined;
   this.total_number_of_questions  = 36;
@@ -33,7 +35,12 @@ ApplicationManager.prototype.addLanguageToMenu = function(ln){
     this.translateUI(ln);
     this.generateNewQuestion();
     this.showMenu();
-    this.newBackgroundColor();
+    if(this.storageManager.isSaveColor()){
+      this.newBackgroundColor(this.storageManager.getLastUsedColor());
+    }
+    else{
+      this.newBackgroundColor();
+    }
     this.initialized = true;
   }
 }
@@ -63,7 +70,14 @@ ApplicationManager.prototype.showQuestion = function(){
   this.actuator.hideMenu();
 }
 
-ApplicationManager.prototype.newBackgroundColor = function(){
-  var next_color = this.available_colors[Math.floor(Math.random() * this.available_colors.length)];
+ApplicationManager.prototype.newBackgroundColor = function(color){
+  var next_color = color || this.available_colors[Math.floor(Math.random() * this.available_colors.length)];
+  this.storageManager.setLastUsedColor(next_color);
   this.actuator.changeBackgroundColor(next_color);
+}
+
+ApplicationManager.prototype.setOption = function(data){
+  if(data.type == "saveColor"){
+    this.storageManager.setSaveColor(data.value);
+  }
 }

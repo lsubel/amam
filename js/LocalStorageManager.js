@@ -48,3 +48,19 @@ LocalStorageManager.prototype.getItem = function (key) {
 LocalStorageManager.prototype.setItem = function (key, value) {
   this.storage.setItem(key, value);
 };
+
+LocalStorageManager.prototype.setSaveColor = function(value) {
+  this.setItem("saveColor", value);
+}
+
+LocalStorageManager.prototype.isSaveColor = function() {
+  return this.storage.getItem("saveColor") == "true";
+}
+
+LocalStorageManager.prototype.setLastUsedColor = function(value) {
+  this.setItem("lastUsedColor", value);
+}
+
+LocalStorageManager.prototype.getLastUsedColor = function() {
+  return this.storage.getItem("lastUsedColor");
+}
