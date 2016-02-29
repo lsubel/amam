@@ -5,7 +5,7 @@
     "pad.question"          : "Hier befindet sich die aktuell ausgewählte Frage",
     "pad.random-question"   : "Zufällige Frage",
     "pad.back-to-menu"      : "Zurück zum Menü",
-    "menu.title"            : "Proust Fragen",
+    "menu.title"            : "Frag mich etwas bedeutsames",
     "menu.description"      : "Diese Fragen waren im 19. Jahrhundert Teil eines Fragebogens und beliebt als Gesellschaftspielt bei der gebildeten Gesellschaft. Sie sollten helfen den Interviewpartner besser kennen zu lernen und was über deren Charakter zu lernen. Marcel Proust war einer der bekanntesten Personen, die ihn beantwortet haben.",
     "menu.startbutton"      : "Start",
     "menu.description.label": "Beschreibung",
