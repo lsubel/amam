@@ -8,9 +8,7 @@
     <name>AMAM</name>
 
     <description>
-      AMAM is an open source application and written entirely using HTML, CSS, and JavaScript.
-
-      At the end of the 19th century it was a popular game on social events to answer a questionnaire. They should help to learn about the interviewee and their character. The french author Marcel Proust (1871-1922) was one of the most famous people who answered it. This applications presents a randomized question from these questionnaire so you can discuss it with another person.
+      At the end of the 19th century it was a popular game on social events to answer a questionnaire. They should help to learn about the interviewee and their character. The french author Marcel Proust (1871-1922) was one of the most famous people who answered it. This applications, Ask Me Anything Meaningful (AMAM),  presents a randomized question from these questionnaire so you can discuss it with another person.
     </description>
 
     <author href="https://github.com/Sheak90/amam">
