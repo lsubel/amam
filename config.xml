@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "de.sheak90.amam"
         versionCode = "10"
-        version     = "1.0.0" <name />
+        version     = "1.0.0">
 
     <name>AMAM</name>
 
