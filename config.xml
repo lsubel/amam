@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "de.sheak90.amam"
+        versionCode = "10"
+        version     = "1.0.0" <name />
+
+    <name>AMAM</name>
+
+    <description>
+      AMAM is an open source application and written entirely using HTML, CSS, and JavaScript.
+
+      At the end of the 19th century it was a popular game on social events to answer a questionnaire. They should help to learn about the interviewee and their character. The french author Marcel Proust (1871-1922) was one of the most famous people who answered it. This applications presents a randomized question from these questionnaire so you can discuss it with another person.
+    </description>
+
+    <author href="https://github.com/Sheak90/amam">
+        Lukas Subel
+    </author>
+    <platform name="ios" />
+    <platform name="android" />
+    <platform name="winphone" />
+
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+
+    <icon src="icon.png" width="180" height="180" />
+</widget>
