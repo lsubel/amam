@@ -4,15 +4,20 @@ function TranslationManager(inputManager, storageManager) {
   this.storage.clear(); // TODO deactivate later
 }
 
-TranslationManager.prototype.setupLanguages = function(){
+TranslationManager.prototype.setupLanguages = function(firstlen){
   var self = this;
   var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
 			var available_languages   = JSON.parse(request.responseText);
+      if(firstlen){
+        self.initializeLanguage(firstlen);
+      }
       for(var i=0; i<available_languages.languages.length;i++){
-        self.initializeLanguage(available_languages.languages[i]);
+        if(!firstlen || firstlen != available_languages.languages[i]){
+          self.initializeLanguage(available_languages.languages[i]);
+        }
       }
 		}
 	};
@@ -44,6 +49,7 @@ TranslationManager.prototype.initializeLanguage = function(language){
       for(var i in language_keys){
         self.setTranslation(language, language_keys[i], language_translations[language_keys[i]]);
       }
+      self.setLanguageSupported(language);
       self.inputManager.emit("languageInitialized", language);
 		}
 	};

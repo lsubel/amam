@@ -64,3 +64,11 @@ LocalStorageManager.prototype.setLastUsedColor = function(value) {
 LocalStorageManager.prototype.getLastUsedColor = function() {
   return this.storage.getItem("lastUsedColor");
 }
+
+LocalStorageManager.prototype.setLastUsedLanguage = function(value) {
+  this.setItem("lastUsedLanguage", value);
+}
+
+LocalStorageManager.prototype.getLastUsedLanguage = function() {
+  return this.storage.getItem("lastUsedLanguage");
+}
