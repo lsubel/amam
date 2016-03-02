@@ -12,6 +12,7 @@
     "menu.descriptionbutton": "Beschreibung anzeigen",
     "menu.options.newcolor" : "Neue Hintergrundfarbe",
     "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
+    "menu.lnselectionlabel" : "Aktuell ausgewählte Sprache",
 
     "pad.question-0"        : "Ihr Motto?",
     "pad.question-1"        : "Wo möchten Sie leben?",
