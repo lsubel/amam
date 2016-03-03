@@ -27,7 +27,14 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
     "#E74C3C", "#F64747", "#e67e22", "#F2784B"
   ];
 
-  this.translationManager.loadAvailableLanguages("default");
+  this.first_available_questionnaire = "default";
+  this.allQuestionnairesInitialized();
+}
+
+ApplicationManager.prototype.allQuestionnairesInitialized = function(){
+  var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
+  this.translationManager.loadAvailableUILanguages();
+  this.translationManager.loadAvailableLanguages(questionnaire);
 }
 
 ApplicationManager.prototype.allLanguageInitialized = function(){

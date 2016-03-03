@@ -21,7 +21,7 @@ window.fakeStorage = {
 function LocalStorageManager(version) {
   var supported     = this.localStorageSupported();
   this.storage      = supported ? window.localStorage : window.fakeStorage;
-  if(this.getVersion() < version){
+  if(development || this.getVersion() < version){
     this.clear();
     this.setVersion(version);
   }
@@ -42,7 +42,7 @@ LocalStorageManager.prototype.localStorageSupported = function () {
 
 LocalStorageManager.prototype.clear = function(){
   this.storage.clear();
-  console.log("Reset local storage")
+  devlog("Reset local storage");
 }
 
 // Best score getters/setters
@@ -84,4 +84,12 @@ LocalStorageManager.prototype.setVersion = function(value) {
 
 LocalStorageManager.prototype.getVersion = function() {
   return this.storage.getItem("version") || "";
+}
+
+LocalStorageManager.prototype.setLastUsedQuestionnaire = function(value) {
+  this.setItem("lastUsedQuestionnaire", value);
+}
+
+LocalStorageManager.prototype.getLastUsedQuestionnaire = function() {
+  return this.storage.getItem("lastUsedQuestionnaire");
 }

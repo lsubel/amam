@@ -1,6 +1,52 @@
 function TranslationManager(inputManager, storageManager) {
   this.storage      = storageManager;
   this.inputManager = inputManager;
+
+  this.number_of_languages = 0;
+}
+
+TranslationManager.prototype.loadAvailableQuestionnaires = function(){
+  var self = this;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  request.onreadystatechange = function() {
+		if (request.readyState == 4) {
+			request.onreadystatechange = undefined;
+      var json_parsed               = JSON.parse(request.responseText);
+			var available_questionnaires  = json_parsed.languages;
+      var number_of_questionnaires  = available_questionnaires.length;
+      // initialize the available languages
+      for(var i=0; i < number_of_languages; i++){
+        self.initializeLanguage(catalogue, available_languages[i]);
+      }
+		}
+	};
+  request.overrideMimeType('text/json');
+  request.open("GET", "questionnaire.txt", true);
+  request.send();
+}
+
+TranslationManager.prototype.loadAvailableUILanguages = function(){
+  var self = this;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  request.onreadystatechange = function() {
+		if (request.readyState == 4) {
+			request.onreadystatechange = undefined;
+      var json_parsed           = JSON.parse(request.responseText);
+			var available_languages   = json_parsed.languages;
+      var numberofquestions     = json_parsed.numberofquestions;
+      var number_of_languages   = available_languages.length;
+      self.addAvailableLanguageCounter(number_of_languages);
+      // hand over question package related information to the ApplicationManager
+      self.inputManager.emit("setQuestionpackInfos", numberofquestions);
+      // initialize the available languages
+      for(var i=0; i < number_of_languages; i++){
+        self.initializeLanguage("ui", available_languages[i]);
+      }
+		}
+	};
+  request.overrideMimeType('text/json');
+  request.open("GET", "locales" + "/" + "ui" + "/" + "languages.txt", true);
+  request.send();
 }
 
 TranslationManager.prototype.loadAvailableLanguages = function(catalogue){
@@ -13,7 +59,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(catalogue){
 			var available_languages   = json_parsed.languages;
       var numberofquestions     = json_parsed.numberofquestions;
       var number_of_languages   = available_languages.length;
-      self.setAvailableLanguageCounter(number_of_languages);
+      self.addAvailableLanguageCounter(number_of_languages);
       // hand over question package related information to the ApplicationManager
       self.inputManager.emit("setQuestionpackInfos", numberofquestions);
       // initialize the available languages
@@ -27,8 +73,8 @@ TranslationManager.prototype.loadAvailableLanguages = function(catalogue){
   request.send();
 }
 
-TranslationManager.prototype.setAvailableLanguageCounter = function(value){
-  this.number_of_languages = value;
+TranslationManager.prototype.addAvailableLanguageCounter = function(value){
+  this.number_of_languages = this.number_of_languages + value;
 }
 
 TranslationManager.prototype.decreaseAvailableLanguageCounter = function(){
