@@ -23,6 +23,11 @@ HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
   this.languageSelection.appendChild(option);
 }
 
+HTMLActuator.prototype.selectLanguage = function(ln){
+  var entry_to_mark = document.querySelector("option[value=" + ln + "]");
+  this.languageSelection.selectedIndex = entry_to_mark.index
+}
+
 HTMLActuator.prototype.setNewQuestion = function(id){
   this.question.setAttribute("ln-id", id);
 }

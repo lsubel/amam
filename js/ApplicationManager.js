@@ -5,6 +5,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
   this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));
+  this.inputManager.on("allLanguageInitialized", this.allLanguageInitialized.bind(this));
+  this.inputManager.on("setQuestionpackInfos", this.setQuestionpackInfos.bind(this));
   this.inputManager.on("translateUI", this.translateUI.bind(this));
   this.inputManager.on("newQuestion", this.generateNewQuestion.bind(this));
   this.inputManager.on("showMenu", this.showMenu.bind(this));
@@ -13,9 +15,9 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("setOption", this.setOption.bind(this));
 
   this.currentTranslation = undefined;
-  this.total_number_of_questions = 36;
+  this.total_number_of_questions = 0;
   this.current_question_id = 0;
-  this.initialized = false;
+  this.first_available_language = undefined;
   this.available_colors = [
     "#6C7A89", "#95a5a6", "#ABB7B7", "#BDC3C7",
     "#913D88", "#BF55EC", "#9b59b6", "#BE90D4",
@@ -25,26 +27,38 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
     "#E74C3C", "#F64747", "#e67e22", "#F2784B"
   ];
 
-  this.translationManager.setupLanguages(this.storageManager.getLastUsedLanguage());
+  this.translationManager.loadAvailableLanguages();
+}
+
+ApplicationManager.prototype.allLanguageInitialized = function(){
+  var ln = this.storageManager.getLastUsedLanguage() || this.first_available_language;
+  this.initialization(ln);
+}
+
+ApplicationManager.prototype.initialization = function(ln){
+  this.translateUI(ln);
+  this.generateNewQuestion();
+  this.showMenu();
+  this.actuator.selectLanguage(ln);
+  var storedColor;
+  if (this.storageManager.isSaveColor())
+    storedColor = this.storageManager.getLastUsedColor()
+  this.newBackgroundColor(storedColor);
 }
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln) {
-
+    // register ln in language selection element
     var label = this.translationManager.getTranslation(ln, "language");
     this.actuator.addLanguageToMenu(ln, label);
-
-    if (!this.initialized) {
-      this.translateUI(ln);
-      this.generateNewQuestion();
-      this.showMenu();
-      if (this.storageManager.isSaveColor()) {
-        this.newBackgroundColor(this.storageManager.getLastUsedColor());
-      } else {
-        this.newBackgroundColor();
-      }
-      this.initialized = true;
+    // if it is the first entry, store it as default
+    // (used if no saved ln is stored)
+    if(!this.first_available_language){
+      this.first_available_language = ln;
     }
-  
+}
+
+ApplicationManager.prototype.setQuestionpackInfos = function(num) {
+  this.total_number_of_questions = num;
 }
 
 ApplicationManager.prototype.translateUI = function(ln) {
@@ -54,11 +68,13 @@ ApplicationManager.prototype.translateUI = function(ln) {
 }
 
 ApplicationManager.prototype.generateNewQuestion = function() {
+  // select new question
   var new_id = this.current_question_id;
   while (new_id == this.current_question_id) {
     new_id = Math.floor(Math.random() * this.total_number_of_questions);
   }
   var new_id_class = "pad.question-" + new_id;
+  // show new language in the UI
   this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
 }

@@ -4,20 +4,22 @@ function TranslationManager(inputManager, storageManager) {
   this.storage.clear(); // TODO deactivate later
 }
 
-TranslationManager.prototype.setupLanguages = function(firstlen){
+TranslationManager.prototype.loadAvailableLanguages = function(){
   var self = this;
   var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
-			var available_languages   = JSON.parse(request.responseText);
-      if(firstlen){
-        self.initializeLanguage(firstlen);
-      }
-      for(var i=0; i<available_languages.languages.length;i++){
-        if(!firstlen || firstlen != available_languages.languages[i]){
-          self.initializeLanguage(available_languages.languages[i]);
-        }
+      var json_parsed           = JSON.parse(request.responseText);
+			var available_languages   = json_parsed.languages;
+      var numberofquestions     = json_parsed.numberofquestions;
+      var number_of_languages   = available_languages.length;
+      self.setAvailableLanguageCounter(number_of_languages);
+      // hand over question package related information to the ApplicationManager
+      self.inputManager.emit("setQuestionpackInfos", numberofquestions);
+      // initialize the available languages
+      for(var i=0; i < number_of_languages; i++){
+        self.initializeLanguage(available_languages[i]);
       }
 		}
 	};
@@ -26,24 +28,40 @@ TranslationManager.prototype.setupLanguages = function(firstlen){
   request.send();
 }
 
+TranslationManager.prototype.setAvailableLanguageCounter = function(value){
+  this.number_of_languages = value;
+}
+
+TranslationManager.prototype.decreaseAvailableLanguageCounter = function(){
+  this.number_of_languages = this.number_of_languages - 1;
+  if(this.number_of_languages == 0){
+    this.inputManager.emit("allLanguageInitialized");
+  }
+}
+
 TranslationManager.prototype.initializeLanguage = function(language){
+  // if the language is already initialized, abort
   if(this.isLanguageSupported(language)){
     this.inputManager.emit("languageInitialized", language);
+    this.decreaseAvailableLanguageCounter();
     return;
   }
-
+  // load the language
   var self = this;
   var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
+      // check whether data were loaded
       if(!request.responseText || request.responseText == ""){
         throw "Exception: could not read the content of '" + language + ".json'.";
       }
+      // check whether the language matches the requested one
 			var language_obj   = JSON.parse(request.responseText);
       if(language !== language_obj.ln){
         throw "IllegalStateException: when reading '" + language + ".json', the content is marked as '" + language_obj.ln + "'.";
       }
+      // write the translations to the local storage
       var language_translations = language_obj.translations;
       var language_keys  = Object.keys(language_translations);
       for(var i in language_keys){
@@ -51,6 +69,7 @@ TranslationManager.prototype.initializeLanguage = function(language){
       }
       self.setLanguageSupported(language);
       self.inputManager.emit("languageInitialized", language);
+      self.decreaseAvailableLanguageCounter();
 		}
 	};
   request.overrideMimeType('text/json');
