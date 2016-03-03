@@ -3,6 +3,6 @@
   "questionnaire-cs" : "Computer Science",
   "translations": {
     "pad.question-0": "What is your favorite programming language?",
-    "pad.question-1": "Describe yourself as mathematical definition"
+    "pad.question-1": "Describe yourself as mathematical definition."
   }
 }
