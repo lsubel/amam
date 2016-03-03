@@ -4,6 +4,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.storageManager = new StorageManager(version);
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
+  this.inputManager.on("selectQuestionnaire", this.selectQuestionnaire.bind(this));
   this.inputManager.on("questionnaireInitialized", this.addQuestionnaireToMenu.bind(this));
   this.inputManager.on("allQuestionnairesInitialized", this.allQuestionnairesInitialized.bind(this));
   this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));
@@ -19,7 +20,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.addedLanguages             = [];
   this.addedQuestionnaire         = [];
   this.currentTranslation         = undefined;
-  this.total_number_of_questions  = 0;
+  this.total_number_of_questions  = {};
   this.current_question_id        = 0;
   this.first_available_language   = undefined;
   this.available_colors           = [
@@ -36,15 +37,23 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.translationManager.loadAvailableQuestionnaires();
 }
 
+ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
+  this.currentQuestionnaire = questionnaire;
+  this.generateNewQuestion();
+}
+
 ApplicationManager.prototype.addQuestionnaireToMenu = function(questionnaire) {
     if(this.addedQuestionnaire.indexOf(questionnaire) == -1){
       this.actuator.addQuestionnaireToMenu(questionnaire, "questionnaire-" + questionnaire);
       this.addedQuestionnaire.push(questionnaire);
     }
+    if(!this.first_available_questionnaire){
+      this.first_available_questionnaire = questionnaire;
+    }
 }
 
 ApplicationManager.prototype.allQuestionnairesInitialized = function(){
-  // var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
+  this.currentQuestionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
   this.translationManager.loadAvailableUILanguages();
 }
 
@@ -79,23 +88,27 @@ ApplicationManager.prototype.addLanguageToMenu = function(ln) {
 
 ApplicationManager.prototype.setQuestionpackInfos = function(data) {
   if(data){
+    var questionnaire   = data.questionnaire;
+    var num_of_question = data.number_of_questions;
     if(data.number_of_questions){
-      this.total_number_of_questions = data.number_of_questions;
+      this.total_number_of_questions[questionnaire] = num_of_question;
     }
   }
 }
 
 ApplicationManager.prototype.translateUI = function(ln) {
+  var questionnaire = this.currentQuestionnaire;
   this.currentTranslation = ln;
   this.storageManager.setLastUsedLanguage(ln)
-  this.translationManager.translate(ln);
+  this.translationManager.translate(questionnaire, ln);
 }
 
 ApplicationManager.prototype.generateNewQuestion = function() {
+  var questionnaire = this.currentQuestionnaire;
   // select new question
   var new_id = this.current_question_id;
   while (new_id == this.current_question_id) {
-    new_id = Math.floor(Math.random() * this.total_number_of_questions);
+    new_id = Math.floor(Math.random() * this.total_number_of_questions[questionnaire]);
   }
   var new_id_class = "pad.question-" + new_id;
   // show new language in the UI

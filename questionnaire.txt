@@ -1,5 +1,5 @@
 {
   "questionnaires": [
-    "default"
+    "default", "cs"
   ]
 }
