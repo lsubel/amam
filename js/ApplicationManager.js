@@ -110,6 +110,7 @@ ApplicationManager.prototype.generateNewQuestion = function() {
   while (new_id == this.current_question_id) {
     new_id = Math.floor(Math.random() * this.total_number_of_questions[questionnaire]);
   }
+  this.current_question_id = new_id;
   var new_id_class = "pad.question-" + new_id;
   // show new language in the UI
   this.actuator.setNewQuestion(new_id_class);
