@@ -77,19 +77,19 @@ TranslationManager.prototype.initializeLanguage = function(language){
 }
 
 TranslationManager.prototype.setLanguageSupported = function(language){
-  return this.storage.setItem("languageinitialized_" + language, "supported");
+  this.storage.setItem("languageinitialized_" + language, "supported");
 }
 
 TranslationManager.prototype.isLanguageSupported = function(language){
   return this.storage.getItem("languageinitialized_" + language) == "supported";
 }
 
-TranslationManager.prototype.getTranslation = function(language, id){
-  return this.storage.getItem(language + "_" + id) || ("MISSING TRANSLATION: " + id);
-}
-
 TranslationManager.prototype.setTranslation = function(language, id, translation){
   this.storage.setItem(language + "_" + id, translation);
+}
+
+TranslationManager.prototype.getTranslation = function(language, id){
+  return this.storage.getItem(language + "_" + id) || ("MISSING TRANSLATION: " + id);
 }
 
 TranslationManager.prototype.translate = function(ln, element){
