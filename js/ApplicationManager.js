@@ -16,6 +16,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("newColor", this.newBackgroundColor.bind(this));
   this.inputManager.on("setOption", this.setOption.bind(this));
 
+  this.addedLanguages             = [];
+  this.addedQuestionnaire         = [];
   this.currentTranslation         = undefined;
   this.total_number_of_questions  = 0;
   this.current_question_id        = 0;
@@ -35,8 +37,10 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
 }
 
 ApplicationManager.prototype.addQuestionnaireToMenu = function(questionnaire) {
-    // register ln in language selection element
-    this.actuator.addQuestionnaireToMenu(questionnaire, "questionnaire-" + questionnaire);
+    if(this.addedQuestionnaire.indexOf(questionnaire) == -1){
+      this.actuator.addQuestionnaireToMenu(questionnaire, "questionnaire-" + questionnaire);
+      this.addedQuestionnaire.push(questionnaire);
+    }
 }
 
 ApplicationManager.prototype.allQuestionnairesInitialized = function(){
@@ -62,9 +66,12 @@ ApplicationManager.prototype.initialization = function(ln){
 }
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln) {
-    // register ln in language selection element
-    var label = this.translationManager.getTranslation(ln, "language");
-    this.actuator.addLanguageToMenu(ln, label);
+    if(true || this.addedLanguages.indexOf(ln) == -1){
+      // register ln in language selection element
+      var label = this.translationManager.getTranslation(ln, "language");
+      this.actuator.addLanguageToMenu(ln, label);
+      this.addedLanguages.push(ln);
+    }
     // if it is the first entry, store it as default
     // (used if no saved ln is stored)
     if(!this.first_available_language){
