@@ -18,9 +18,13 @@ window.fakeStorage = {
   }
 };
 
-function LocalStorageManager(inputManager) {
-  var supported = this.localStorageSupported();
+function LocalStorageManager(version) {
+  var supported     = this.localStorageSupported();
   this.storage      = supported ? window.localStorage : window.fakeStorage;
+  if(this.getVersion() < version){
+    this.clear();
+    this.setVersion(version);
+  }
 }
 
 LocalStorageManager.prototype.localStorageSupported = function () {
@@ -37,7 +41,8 @@ LocalStorageManager.prototype.localStorageSupported = function () {
 };
 
 LocalStorageManager.prototype.clear = function(){
-  this.storage.clear;
+  this.storage.clear();
+  console.log("Reset local storage")
 }
 
 // Best score getters/setters
@@ -71,4 +76,12 @@ LocalStorageManager.prototype.setLastUsedLanguage = function(value) {
 
 LocalStorageManager.prototype.getLastUsedLanguage = function() {
   return this.storage.getItem("lastUsedLanguage");
+}
+
+LocalStorageManager.prototype.setVersion = function(value) {
+  this.setItem("version", value);
+}
+
+LocalStorageManager.prototype.getVersion = function() {
+  return this.storage.getItem("version") || "";
 }

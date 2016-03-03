@@ -1,7 +1,6 @@
 function TranslationManager(inputManager, storageManager) {
   this.storage      = storageManager;
   this.inputManager = inputManager;
-  this.storage.clear(); // TODO deactivate later
 }
 
 TranslationManager.prototype.loadAvailableLanguages = function(){

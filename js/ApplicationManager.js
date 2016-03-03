@@ -1,7 +1,7 @@
-function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager) {
+function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager, version) {
   this.inputManager = new InputManager;
   this.actuator = new Actuator;
-  this.storageManager = new StorageManager;
+  this.storageManager = new StorageManager(version);
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
   this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));

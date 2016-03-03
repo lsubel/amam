@@ -1,3 +1,4 @@
 window.requestAnimationFrame(function () {
-  new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager);
+  var version = "1.0.2";
+  new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 });
