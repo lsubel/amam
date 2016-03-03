@@ -27,7 +27,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
     "#E74C3C", "#F64747", "#e67e22", "#F2784B"
   ];
 
-  this.translationManager.loadAvailableLanguages();
+  this.translationManager.loadAvailableLanguages("default");
 }
 
 ApplicationManager.prototype.allLanguageInitialized = function(){
