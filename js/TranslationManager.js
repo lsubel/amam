@@ -43,7 +43,7 @@ TranslationManager.prototype.loadAvailableUILanguages = function(){
       var number_of_languages   = available_languages.length;
       self.addAvailableLanguageCounter(number_of_languages);
       // hand over question package related information to the ApplicationManager
-      self.inputManager.emit("setQuestionpackInfos", numberofquestions);
+      self.inputManager.emit("setQuestionpackInfos");
       // initialize the available languages
       for(var i=0; i < number_of_languages; i++){
         self.initializeLanguage("ui", available_languages[i]);
@@ -67,7 +67,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(catalogue){
       var number_of_languages   = available_languages.length;
       self.addAvailableLanguageCounter(number_of_languages);
       // hand over question package related information to the ApplicationManager
-      self.inputManager.emit("setQuestionpackInfos", numberofquestions);
+      self.inputManager.emit("setQuestionpackInfos", {"number_of_questions": numberofquestions});
       // initialize the available languages
       for(var i=0; i < number_of_languages; i++){
         self.initializeLanguage(catalogue, available_languages[i]);
@@ -102,6 +102,7 @@ TranslationManager.prototype.initializeLanguage = function(catalogue, language){
   var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
+      devlog("Ready new language file: " + request.responseURL);
 			request.onreadystatechange = undefined;
       // check whether data were loaded
       if(!request.responseText || request.responseText == ""){

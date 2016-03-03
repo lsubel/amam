@@ -17,10 +17,10 @@ function HTMLActuator() {
   this.modalFooter  = document.querySelector(".modal-footer");
 }
 
-HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
+HTMLActuator.prototype.addLanguageToMenu = function (ln){
   var option = document.createElement("option");
   option.setAttribute("value", ln);
-  option.textContent = label;
+  option.setAttribute("ln-id", "language." + ln);
   this.languageSelection.appendChild(option);
 }
 

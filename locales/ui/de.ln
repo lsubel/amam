@@ -1,7 +1,6 @@
 {
   "ln": "de",
   "translations": {
-    "language"              : "Deutsch",
     "pad.question"          : "Hier befindet sich die aktuell ausgewählte Frage",
     "pad.random-question"   : "Zufällige Frage",
     "pad.back-to-menu"      : "Zurück zum Menü",
@@ -13,6 +12,9 @@
     "menu.options.newcolor" : "Neue Hintergrundfarbe",
     "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
     "menu.lnselectionlabel" : "Aktuell ausgewählte Sprache",
-    "menu.questionnaires"   : "Verfügbare Fragebögen"
+    "menu.questionnaires"   : "Verfügbare Fragebögen",
+
+    "language.de"           : "Deutsch",
+    "language.en"           : "Englisch"
   }
 }

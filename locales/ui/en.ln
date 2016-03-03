@@ -1,7 +1,6 @@
 {
   "ln": "en",
   "translations": {
-    "language"              : "English",
     "pad.question"          : "Here you find the currently selected question",
     "pad.random-question"   : "Get new question",
     "pad.back-to-menu"      : "Go back to menu",
@@ -13,6 +12,9 @@
     "menu.options.newcolor" : "Get new background color",
     "menu.options.savecolor": "Load last used background color on startup",
     "menu.lnselectionlabel" : "Currently selected language",
-    "menu.questionnaires"   : "Questionnaire"
+    "menu.questionnaires"   : "Questionnaire",
+
+    "language.de"           : "German",
+    "language.en"           : "English"
   }
 }
