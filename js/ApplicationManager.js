@@ -4,6 +4,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.storageManager = new StorageManager(version);
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
+  this.inputManager.on("questionnaireInitialized", this.addQuestionnaireToMenu.bind(this));
+  this.inputManager.on("allQuestionnairesInitialized", this.allQuestionnairesInitialized.bind(this));
   this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));
   this.inputManager.on("allLanguageInitialized", this.allLanguageInitialized.bind(this));
   this.inputManager.on("setQuestionpackInfos", this.setQuestionpackInfos.bind(this));
@@ -28,7 +30,13 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   ];
 
   this.first_available_questionnaire = "default";
-  this.allQuestionnairesInitialized();
+  // this.allQuestionnairesInitialized();
+  this.translationManager.loadAvailableQuestionnaires();
+}
+
+ApplicationManager.prototype.addQuestionnaireToMenu = function(questionnaire) {
+    // register ln in language selection element
+    this.actuator.addQuestionnaireToMenu(questionnaire, "questionnaire-" + questionnaire);
 }
 
 ApplicationManager.prototype.allQuestionnairesInitialized = function(){

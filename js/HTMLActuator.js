@@ -1,6 +1,7 @@
 function HTMLActuator() {
   this.body                     = document.querySelector("body");
   this.languageSelection        = document.querySelector(".ln-selection");
+  this.questionnairesSelection  = document.querySelector(".questionnaires-selection");
   this.modal                    = document.querySelector(".modal-inner");
   this.question                 = document.querySelector(".question");
   this.menuContainer            = document.querySelector(".menu-container");
@@ -21,6 +22,13 @@ HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
   option.setAttribute("value", ln);
   option.textContent = label;
   this.languageSelection.appendChild(option);
+}
+
+HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
+  var option = document.createElement("option");
+  option.setAttribute("value", questionnaire);
+  option.setAttribute("ln-id", label);
+  this.questionnairesSelection.appendChild(option);
 }
 
 HTMLActuator.prototype.selectLanguage = function(ln){
@@ -59,11 +67,12 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
   window.requestAnimationFrame(function(){
     self.body.style.backgroundColor   = color;
     self.modal.style.backgroundColor  = lighten_color;
-    self.languageSelection.style.backgroundColor  = lighten_color;
-    self.buttonStart.style.backgroundColor        = lighten_color;
-    self.buttonRandom.style.backgroundColor       = lighten_color;
-    self.buttonMenu.style.backgroundColor         = lighten_color;
-    self.buttonDescription.style.backgroundColor  = lighten_color;
+    self.languageSelection.style.backgroundColor        = lighten_color;
+    self.questionnairesSelection.style.backgroundColor  = lighten_color;
+    self.buttonStart.style.backgroundColor              = lighten_color;
+    self.buttonRandom.style.backgroundColor             = lighten_color;
+    self.buttonMenu.style.backgroundColor               = lighten_color;
+    self.buttonDescription.style.backgroundColor        = lighten_color;
     self.modalHeader.style.borderBottomColor   = darker_color;
     self.modalContent.style.borderBottomColor  = darker_color;
     self.modalFooter.style.borderTopColor      = darker_color;

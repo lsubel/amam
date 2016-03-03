@@ -12,6 +12,7 @@
     "menu.descriptionbutton": "Show explanation",
     "menu.options.newcolor" : "Get new background color",
     "menu.options.savecolor": "Load last used background color on startup",
-    "menu.lnselectionlabel" : "Currently selected language"
+    "menu.lnselectionlabel" : "Currently selected language",
+    "menu.questionnaires"   : "Questionnaire"
   }
 }

@@ -12,17 +12,23 @@ TranslationManager.prototype.loadAvailableQuestionnaires = function(){
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
       var json_parsed               = JSON.parse(request.responseText);
-			var available_questionnaires  = json_parsed.languages;
+			var available_questionnaires  = json_parsed.questionnaires;
       var number_of_questionnaires  = available_questionnaires.length;
       // initialize the available languages
-      for(var i=0; i < number_of_languages; i++){
-        self.initializeLanguage(catalogue, available_languages[i]);
+      for(var i=0; i < number_of_questionnaires; i++){
+        self.initializeQuestionnaires(available_questionnaires[i]);
       }
+      self.inputManager.emit("allQuestionnairesInitialized");
 		}
 	};
   request.overrideMimeType('text/json');
   request.open("GET", "questionnaire.txt", true);
   request.send();
+}
+
+TranslationManager.prototype.initializeQuestionnaires = function(questionnaire){
+  this.loadAvailableLanguages(questionnaire);
+  this.inputManager.emit("questionnaireInitialized", questionnaire);
 }
 
 TranslationManager.prototype.loadAvailableUILanguages = function(){
@@ -106,6 +112,8 @@ TranslationManager.prototype.initializeLanguage = function(catalogue, language){
       if(language !== language_obj.ln){
         throw "IllegalStateException: when reading '" + language + ".json', the content is marked as '" + language_obj.ln + "'.";
       }
+      var questionnaire_key = "questionnaire-" + catalogue;
+      self.setTranslation(language, questionnaire_key, language_obj[questionnaire_key]);
       // write the translations to the local storage
       var language_translations = language_obj.translations;
       var language_keys  = Object.keys(language_translations);
