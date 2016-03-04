@@ -1,19 +1,7 @@
 {
   "ln": "en",
+  "questionnaire-default" : "Default",
   "translations": {
-    "language"              : "English",
-    "pad.question"          : "Here you find the currently selected question",
-    "pad.random-question"   : "Get new question",
-    "pad.back-to-menu"      : "Go back to menu",
-    "menu.title"            : "Ask me anything meaningful",
-    "menu.description"      : "These questions were in the 19th century part of a questionnaire and popular as society plays for the educated society. They should help learn about the interviewee and their character. Marcel Proust was one of the most famous people who answered it.",
-    "menu.startbutton"      : "Start",
-    "menu.description.label": "Explanation",
-    "menu.descriptionbutton": "Show explanation",
-    "menu.options.newcolor" : "Get new background color",
-    "menu.options.savecolor": "Load last used background color on startup",
-    "menu.lnselectionlabel" : "Currently selected language",
-
     "pad.question-0": "Their motto?",
     "pad.question-1": "Where do you want to live?",
     "pad.question-2": "What is your idea of ​​perfect happiness?",

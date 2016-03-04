@@ -1,0 +1,8 @@
+{
+  "ln": "de",
+  "questionnaire-cs" : "Informatik",
+  "translations": {
+    "pad.question-0": "Was ist Ihre liebste Programmiersprache?",
+    "pad.question-1": "Beschreiben Sie sich als mathematische Definition."
+  }
+}
