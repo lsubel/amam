@@ -1,6 +1,6 @@
 {
   "ln": "en",
-  "questionnaire-default" : "Default",
+  "questionnaire-default" : "Proust Questionnaire",
   "translations": {
     "pad.question-0": "Their motto?",
     "pad.question-1": "Where do you want to live?",
