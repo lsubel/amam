@@ -1,6 +1,6 @@
 {
   "ln"                    : "de",
-  "questionnaire-default" : "Normal",
+  "questionnaire-default" : "Proust Fragenbogen",
   "translations": {
     "pad.question-0"        : "Ihr Motto?",
     "pad.question-1"        : "Wo möchten Sie leben?",
