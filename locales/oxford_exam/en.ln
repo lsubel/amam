@@ -1,6 +1,6 @@
 {
   "ln": "en",
-  "questionnaire-oxford_exam_2008" : "All Souls College Entrance Exam Questions (after 2008)",
+  "questionnaire-oxford_exam" : "All Souls College Entrance Exam Questions (after 2008)",
   "translations": {
     "pad.question-0": "Did the left or right win the twentieth century?",
     "pad.question-1": "Should intellectuals tweet?",
@@ -181,6 +181,6 @@
     "pad.question-171": "Is technology the enemy of history?",
     "pad.question-172": "How would your subject be different if women had always been equal in power to men?",
     "pad.question-173": "Is higher education a public service or a business?",
-    "pad.question-174": "Should governments aspire to make their citizens happy?",
+    "pad.question-174": "Should governments aspire to make their citizens happy?"
   }
 }
