@@ -12,6 +12,7 @@ KeyboardInputManager.prototype.on = function (event, callback) {
 };
 
 KeyboardInputManager.prototype.emit = function (event, data) {
+  devlog("Emit event '" + event + "': " + data);
   var callbacks = this.events[event];
   if (callbacks) {
     callbacks.forEach(function (callback) {
@@ -31,6 +32,8 @@ KeyboardInputManager.prototype.listen = function(){
   languageSelection.addEventListener("change", this.selectTranslation.bind(this));
   var colorSaveOption = document.getElementById("cbsavecolor");
   colorSaveOption.addEventListener("change", this.setOption.bind(this));
+  var questionnaireSelection = document.getElementsByClassName("questionnaires-selection")[0];
+  questionnaireSelection.addEventListener("change", this.selectQuestionnaire.bind(this));
 
   this.bindButtonPress(".button-random", this.newQuestion);
   this.bindButtonPress(".button-menu", this.showMenu);
@@ -41,6 +44,11 @@ KeyboardInputManager.prototype.listen = function(){
 KeyboardInputManager.prototype.selectTranslation = function(event){
   var ln = event.target.value;
   this.emit("translateUI", ln)
+}
+
+KeyboardInputManager.prototype.selectQuestionnaire = function(event) {
+  var questionnaire = event.target.value;
+  this.emit("selectQuestionnaire", questionnaire)
 }
 
 KeyboardInputManager.prototype.newQuestion = function(event){

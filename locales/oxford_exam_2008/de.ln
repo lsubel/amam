@@ -1,0 +1,37 @@
+{
+  "ln"                    : "de",
+  "questionnaire-oxford_exam_2008" : "Aufnahmefragen des All Souls College (vor 2008)",
+  "translations": {
+      "pad.question-0": "Ist es unmoralisch, ein 13.000€ Handtasche zu kaufen?",
+      "pad.question-1": "'Mir ist egal, ob jemand meine Bücher liest, ich schreibe für mich', sagte der Autor eines halben Dutzend veröffentlichter Romane. Gibt es etwas falsch mit dieser Aussage im Bezug auf die Theorie der Kunst? ",
+      "pad.question-2": "'Jedes Handeln, dass Sie seit dem Tag ihrer Geburt durchgeführt haben, wurden durchgeführt, weil Sie etwas wollten' [Andrew Carnegie]. Stimmen Sie zu?",
+      "pad.question-3": "Ist Abneigung gegen Politiker eine vernünftige Grundhaltung?",
+      "pad.question-4": "Warum ist eine Lederjacke akzeptabler als ein Pelzmantel?",
+      "pad.question-5": "Kann allen öffentlichen und politischen Institutionen vertraut werden, sich selbst zu reformieren?",
+      "pad.question-6": "Ist es ein extrem unnatürliche Zustand für eine männlichen und weiblichen Person kontinuierlich zusammen zu leben?",
+      "pad.question-7": "Ist die Mobilität der Studierenden in Europa nur eine Form von subventionierten Tourismus?",
+      "pad.question-8": "Offenbaren Spiele für Kinder, die verbundenen Augen beinhalten, eine wesentliche Grausamkeit in der menschlichen Natur?",
+      "pad.question-9": "Warum tolerieren die UN so viele schlechte Regime?",
+
+      "pad.question-10": "Gibt es eine Krise der Werte der Familie im Westen, und wenn ja, sollte der Staat versuchen, diese zu beheben?",
+      "pad.question-11": "Sollte Regierungen wissenschaftliche Forschung unterstützen, wenn diese keinen technologischen Nutzen haben kann?",
+      "pad.question-12": "Ändert sich der moralische Charakter einer Orgie, wenn die Teilnehmer Nazi-Uniformen tragen?",
+      "pad.question-13": "Was sollte der Westen von China lernen?",
+      "pad.question-14": "Hat Berühmtheit einen Verlust von Würde mit sich bringen?",
+      "pad.question-15": "Ist der Wunsch nach Ruhm nach dem Tod irrational?",
+      "pad.question-16": "Warum hat Afrika so schlecht wirtschaftlich entwickelt?",
+      "pad.question-17": "Kann es sich die Welt leisten, nicht gentechnisch veränderten Pflanzen wachsen zu lassen?",
+      "pad.question-18": "Können Architekten und Stadtplaner Kriminalität und sozialen Zusammenbruch lösen?",
+      "pad.question-19": "Verändern sehr hohe Gehälter für Sport-Profis den Charakter der gespielten Sportart?",
+
+      "pad.question-20": "Es ist gesagt worden, dass Architektur 'gefrorene Musik' ist. Macht das irgendeinen Sinn?",
+      "pad.question-21": "Ist die String-Theorie Wissenschaft?",
+      "pad.question-22": "Kann ein Gemälde die Welt verändern?",
+      "pad.question-23": "Kann (und sollte) Europa seine relativ hohen Lebensstandard halten im Vergleich mit den Schwellenländern?",
+      "pad.question-24": "Können Sie jemanden lieben, wenn Sie diese nicht respektieren?",
+      "pad.question-25": "Sollten wir zwischen Personen, Menschen und ihre Körper unterscheiden?",
+      "pad.question-26": "Können Computer denken?",
+      "pad.question-27": "Hat ein beliebiger antike Philosoph etwas den Moralphilosophen heute zu lehren?",
+      "pad.question-28": "Liegt Schönheit im Auge des Betrachters?"
+  }
+}

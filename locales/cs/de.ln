@@ -1,0 +1,11 @@
+{
+  "ln": "de",
+  "questionnaire-cs" : "Informatik",
+  "translations": {
+    "pad.question-0": "Was ist Ihre liebste Programmiersprache?",
+    "pad.question-1": "Beschreiben Sie sich als mathematische Definition.",
+    "pad.question-2": "Was ist für Sie das wichtigste Thema in der Informatik?",
+    "pad.question-3": "Welche Forschungsergebnisse der Informatik hatten für Sie den größten Einfluss?",
+    "pad.question-4": "Welche Arbeit hat Sie am meisten beeinflusst?"
+  }
+}

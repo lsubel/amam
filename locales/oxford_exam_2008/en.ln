@@ -1,0 +1,37 @@
+{
+  "ln": "en",
+  "questionnaire-oxford_exam_2008" : "All Souls College Entrance Exam Questions (before 2008)",
+  "translations": {
+    "pad.question-0": "Is it immoral to buy a £10,000 handbag?",
+    "pad.question-1": "'I don't care if anyone reads my books; I write for myself,' said the author of a half-dozen published novels. Is there anything wrong with this statement as a theory of art?",
+    "pad.question-2": "'Every act you have ever performed since the day you were born was performed because you wanted something' [Andrew Carnegie]. Do you agree?",
+    "pad.question-3": "Is dislike of politicians a sensible default position?",
+    "pad.question-4": "Why is a leather jacket more acceptable than a fur coat?",
+    "pad.question-5": "Can any public and political institutions be trusted to reform themselves?",
+    "pad.question-6": "Is it an extremely unnatural condition for a male and female to live continuously together?",
+    "pad.question-7": "Is student mobility in Europe merely a form of subsidised tourism?",
+    "pad.question-8": "Do children's games involving blindfolds reveal an essential cruelty in human nature?",
+    "pad.question-9": "Why does the UN tolerate so many bad regimes?",
+
+    "pad.question-10": "Is there a breakdown of family values in the west, and if so should the state attempt to redress it?",
+    "pad.question-11": "Should governments support scientific research when there may be no technological benefit?",
+    "pad.question-12": "Does the moral character of an orgy change when the participants wear Nazi uniforms?",
+    "pad.question-13": "What should the west learn from China?",
+    "pad.question-14": "Does celebrity entail a loss of dignity?",
+    "pad.question-15": "Is the desire for posthumous fame irrational?",
+    "pad.question-16": "Why has Africa done so badly economically?",
+    "pad.question-17": "Can the world afford not to grow genetically modified crops?",
+    "pad.question-18": "Can architects and urban planners design out crime and social breakdown?",
+    "pad.question-19": "Do very large salaries for sports professionals alter the character of the games played?",
+
+    "pad.question-20": "It has been said that architecture is 'frozen music'. Does this make any sense?",
+    "pad.question-21": "Is string theory science?",
+    "pad.question-22": "Can a painting change the world?",
+    "pad.question-23": "Can (and should) Europe maintain its relatively high standard of living as compared with emerging economies?",
+    "pad.question-24": "Can you love someone if you don't respect them?",
+    "pad.question-25": "Should we distinguish between persons, human beings, and their bodies?",
+    "pad.question-26": "Can computers think?",
+    "pad.question-27": "Does any ancient philosopher have something to teach moral philosophers today?",
+    "pad.question-28": "Does beauty lie in the eye of the beholder?"
+  }
+}
