@@ -12,7 +12,8 @@
     "menu.options.newcolor" : "Get new background color",
     "menu.options.savecolor": "Load last used background color on startup",
     "menu.lnselectionlabel" : "Currently selected language",
-    "menu.questionnaires"   : "Questionnaire",
+    "menu.questionnaires"   : "Available questionnaires",
+    "menu.label.color"      : "Background color",
 
     "language.de"           : "German",
     "language.en"           : "English"

@@ -13,6 +13,7 @@
     "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
     "menu.lnselectionlabel" : "Aktuell ausgewählte Sprache",
     "menu.questionnaires"   : "Verfügbare Fragebögen",
+    "menu.label.color"      : "Hintergrundfarbe",
 
     "language.de"           : "Deutsch",
     "language.en"           : "Englisch"

@@ -22,20 +22,21 @@
       <header class="modal-header" id="modal-label">
         <h2 ln-id="menu.description.label"></h2></header>
       <div class="modal-content">
-        <p ln-id="menu.description" class="description">
-          <div>
-            <label ln-id="menu.questionnaires" class="questionnaires-selection-label" for="questionnairesSelection"></label>
-            <select class="questionnaires-selection u-full-width" id="questionnairesSelection"></select>
-          </div>
-          <div>
-            <a class="button u-full-width button-newcolor" ln-id="menu.options.newcolor"></a>
-          </div>
-          <div>
-            <input type="checkbox" id="cbsavecolor"><label for="cbsavecolor" ln-id="menu.options.savecolor"></label>
-          </div>
-        </p>
+        <div>
+          <p ln-id="menu.description" class="description"></p>
+        </div>
+        <div>
+          <label ln-id="menu.questionnaires" class="questionnaires-selection-label" for="questionnairesSelection"></label>
+          <select class="questionnaires-selection u-full-width" id="questionnairesSelection"></select>
+        </div>
+        <div>
+          <label ln-id="menu.label.color" for="btn-newColor"></label>
+          <a class="button u-full-width button-newcolor" ln-id="menu.options.newcolor" id="btn-newColor"></a>
+          <input type="checkbox" id="cbsavecolor">
+          <label for="cbsavecolor" ln-id="menu.options.savecolor"></label>
+        </div>
+        <div class="modal-footer">(c) 2016 Lukas Subel, <a href="https://github.com/Sheak90/proust-questions">Source code</a> </div>
       </div>
-      <footer class="modal-footer">(c) 2016 Lukas Subel, <a href="https://github.com/Sheak90/proust-questions">Source code</a> </footer>
     </div>
 
     <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
