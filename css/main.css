@@ -60,7 +60,8 @@ a {
 
 .modal-content-row {
   /* margin-bottom: 2em; */
-  padding: 15px 1.2em; }
+  padding: 15px 1.2em;
+  border-bottom: 1px solid; }
 
 @media (min-height: 260px) {
   .question {
