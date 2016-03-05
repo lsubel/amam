@@ -66,12 +66,18 @@ a {
 }
 
 .description {
-    // margin-bottom: 3.5rem;
+    margin-bottom: 0;
 }
 
 .modal--fade, .modal--show {
   transition: opacity .4s;
 }
+
+.modal-content-row {
+  /* margin-bottom: 2em; */
+  padding: 15px 1.2em;
+}
+
 
 @media (min-height: 260px){
   .question {

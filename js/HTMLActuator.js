@@ -15,6 +15,7 @@ function HTMLActuator() {
   this.modalHeader  = document.querySelector(".modal-header");
   this.modalContent = document.querySelector(".modal-content");
   this.modalFooter  = document.querySelector(".modal-footer");
+  this.modalRows    = document.querySelectorAll(".modal-content-row");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln){
@@ -76,6 +77,9 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.modalHeader.style.borderBottomColor   = darker_color;
     self.modalContent.style.borderBottomColor  = darker_color;
     self.modalFooter.style.borderTopColor      = darker_color;
+    for(var i=0; i<self.modalRows.length; i++){
+      self.modalRows[i].style.borderBottomColor  = darker_color;
+    }
   })
 }
 
