@@ -1,3 +1,5 @@
+$footer_height: 100px;
+
 .question-container {
   display: none;
   &.show-container {
@@ -32,10 +34,12 @@
 
 footer {
     clear: both;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: -$footer_height;
+    height: $footer_height;
     &.question-container-footer {
           height: 100px;
     }
@@ -46,6 +50,8 @@ footer {
 
 .main-container {
   height: calc(100% - 100px);
+  overflow: auto;
+  padding-bottom: $footer_height;
 }
 
 body {
