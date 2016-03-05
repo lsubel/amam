@@ -12,9 +12,8 @@ function HTMLActuator() {
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
   this.buttonDescription  = document.querySelector(".button-description");
-  this.modalHeader  = document.querySelector(".modal-header");
   this.modalContent = document.querySelector(".modal-content");
-  this.modalFooter  = document.querySelector(".modal-footer");
+  this.modalRows    = document.querySelectorAll(".modal-content-row");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln){
@@ -62,7 +61,7 @@ HTMLActuator.prototype.hideQuestion = function(){
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
-  var darker_color = LightenDarkenColor(color, 30);
+  var more_ligthen_color = LightenDarkenColor(color, 30);
   var self = this;
   window.requestAnimationFrame(function(){
     self.body.style.backgroundColor   = color;
@@ -73,9 +72,10 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.buttonRandom.style.backgroundColor             = lighten_color;
     self.buttonMenu.style.backgroundColor               = lighten_color;
     self.buttonDescription.style.backgroundColor        = lighten_color;
-    self.modalHeader.style.borderBottomColor   = darker_color;
-    self.modalContent.style.borderBottomColor  = darker_color;
-    self.modalFooter.style.borderTopColor      = darker_color;
+    self.modalContent.style.borderBottomColor  = more_ligthen_color;
+    for(var i=0; i<self.modalRows.length; i++){
+      self.modalRows[i].style.borderBottomColor  = more_ligthen_color;
+    }
   })
 }
 

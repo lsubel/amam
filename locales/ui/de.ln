@@ -8,11 +8,13 @@
     "menu.description"      : "Diese Fragen waren im 19. Jahrhundert Teil eines Fragebogens und beliebt als Gesellschaftspielt bei der gebildeten Gesellschaft. Sie sollten helfen den Interviewpartner besser kennen zu lernen und was über deren Charakter zu lernen. Marcel Proust war einer der bekanntesten Personen, die ihn beantwortet haben.",
     "menu.startbutton"      : "Start",
     "menu.description.label": "Beschreibung",
-    "menu.descriptionbutton": "Beschreibung anzeigen",
+    "menu.option.label"     : "Optionen",
+    "menu.descriptionbutton": "Beschreibung & Optionen",
     "menu.options.newcolor" : "Neue Hintergrundfarbe",
     "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
     "menu.lnselectionlabel" : "Aktuell ausgewählte Sprache",
     "menu.questionnaires"   : "Verfügbare Fragebögen",
+    "menu.label.color"      : "Hintergrundfarbe",
 
     "language.de"           : "Deutsch",
     "language.en"           : "Englisch"

@@ -1,6 +1,6 @@
 window.requestAnimationFrame(function () {
-  var version = "1.0.3";
-  development = true;
+  var version = "1.0.4";
+  development = false;
   devlog = function(str){
     if(development)
       console.log(str);
