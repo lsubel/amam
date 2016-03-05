@@ -28,8 +28,8 @@ $footer_height: 100px;
   }
 }
 
-.title {
-  margin-top: 20px;
+.container {
+  padding: 0;
 }
 
 footer {
@@ -67,10 +67,6 @@ a {
   color: #555555;
 }
 
-.button-description {
-  margin-top: 48px;
-}
-
 .description {
     margin-bottom: 0;
 }
@@ -85,13 +81,6 @@ a {
   border-bottom: 1px solid;
   & > h2 {
     margin-bottom: 0;
-  }
-}
-
-
-@media (min-height: 260px){
-  .question {
-    margin: 50px 0;
   }
 }
 

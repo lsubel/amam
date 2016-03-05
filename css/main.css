@@ -18,8 +18,8 @@
   .menu-container-footer.show-container {
     display: block; }
 
-.title {
-  margin-top: 20px; }
+.container {
+  padding: 0; }
 
 footer {
   clear: both;
@@ -49,9 +49,6 @@ select {
 a {
   color: #555555; }
 
-.button-description {
-  margin-top: 48px; }
-
 .description {
   margin-bottom: 0; }
 
@@ -65,9 +62,6 @@ a {
   .modal-content-row > h2 {
     margin-bottom: 0; }
 
-@media (min-height: 260px) {
-  .question {
-    margin: 50px 0; } }
 @media (min-width: 440px) {
   .question-button-container {
     display: flex;
