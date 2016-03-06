@@ -31,9 +31,14 @@ HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
   this.questionnairesSelection.appendChild(option);
 }
 
+HTMLActuator.prototype.selectQuestionnaire = function(questionnaire){
+  var entry_to_mark = document.querySelector("option[value=" + questionnaire + "]");
+  this.questionnairesSelection.selectedIndex = entry_to_mark.index;
+}
+
 HTMLActuator.prototype.selectLanguage = function(ln){
   var entry_to_mark = document.querySelector("option[value=" + ln + "]");
-  this.languageSelection.selectedIndex = entry_to_mark.index
+  this.languageSelection.selectedIndex = entry_to_mark.index;
 }
 
 HTMLActuator.prototype.setNewQuestion = function(id){
