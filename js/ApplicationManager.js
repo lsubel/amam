@@ -35,10 +35,12 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.first_available_questionnaire = "default";
   // this.allQuestionnairesInitialized();
   this.translationManager.loadAvailableQuestionnaires();
+  this.actuator.showVersion(version);
 }
 
 ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   this.currentQuestionnaire = questionnaire;
+  this.storageManager.setLastUsedQuestionnaire(questionnaire);
   this.generateNewQuestion();
 }
 
@@ -59,13 +61,15 @@ ApplicationManager.prototype.allQuestionnairesInitialized = function(){
 
 ApplicationManager.prototype.allLanguageInitialized = function(){
   var ln = this.storageManager.getLastUsedLanguage() || this.first_available_language;
-  this.initialization(ln);
+  var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
+  this.initialization(questionnaire, ln);
 }
 
-ApplicationManager.prototype.initialization = function(ln){
+ApplicationManager.prototype.initialization = function(questionnaire, ln){
   this.translateUI(ln);
   this.generateNewQuestion();
   this.showMenu();
+  this.actuator.selectQuestionnaire(questionnaire);
   this.actuator.selectLanguage(ln);
   var storedColor;
   if (this.storageManager.isSaveColor())
@@ -106,7 +110,7 @@ ApplicationManager.prototype.translateUI = function(ln) {
 ApplicationManager.prototype.generateNewQuestion = function() {
   var questionnaire = this.currentQuestionnaire;
   // select new question
-  var new_id = this.current_question_id;
+  var new_id = this.current_question_id || 0;
   while (new_id == this.current_question_id) {
     new_id = Math.floor(Math.random() * this.total_number_of_questions[questionnaire]);
   }

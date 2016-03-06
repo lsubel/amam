@@ -14,6 +14,7 @@ function HTMLActuator() {
   this.buttonDescription  = document.querySelector(".button-description");
   this.modalContent = document.querySelector(".modal-content");
   this.modalRows    = document.querySelectorAll(".modal-content-row");
+  this.versionLabel = document.querySelector(".label-version");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln){
@@ -30,9 +31,14 @@ HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
   this.questionnairesSelection.appendChild(option);
 }
 
+HTMLActuator.prototype.selectQuestionnaire = function(questionnaire){
+  var entry_to_mark = document.querySelector("option[value=" + questionnaire + "]");
+  this.questionnairesSelection.selectedIndex = entry_to_mark.index;
+}
+
 HTMLActuator.prototype.selectLanguage = function(ln){
   var entry_to_mark = document.querySelector("option[value=" + ln + "]");
-  this.languageSelection.selectedIndex = entry_to_mark.index
+  this.languageSelection.selectedIndex = entry_to_mark.index;
 }
 
 HTMLActuator.prototype.setNewQuestion = function(id){
@@ -57,6 +63,10 @@ HTMLActuator.prototype.showQuestion = function(){
 HTMLActuator.prototype.hideQuestion = function(){
   this.questionContainer.classList.remove("show-container");
   this.questionContainerFooter.classList.remove("show-container");
+}
+
+HTMLActuator.prototype.showVersion = function(version){
+  this.versionLabel.textContent = "Version " + version;
 }
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
