@@ -35,6 +35,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.first_available_questionnaire = "default";
   // this.allQuestionnairesInitialized();
   this.translationManager.loadAvailableQuestionnaires();
+  this.actuator.showVersion(version);
 }
 
 ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
