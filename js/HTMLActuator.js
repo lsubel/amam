@@ -14,6 +14,7 @@ function HTMLActuator() {
   this.buttonDescription  = document.querySelector(".button-description");
   this.modalContent = document.querySelector(".modal-content");
   this.modalRows    = document.querySelectorAll(".modal-content-row");
+  this.versionLabel = document.querySelector(".label-version");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln){
@@ -57,6 +58,10 @@ HTMLActuator.prototype.showQuestion = function(){
 HTMLActuator.prototype.hideQuestion = function(){
   this.questionContainer.classList.remove("show-container");
   this.questionContainerFooter.classList.remove("show-container");
+}
+
+HTMLActuator.prototype.showVersion = function(version){
+  this.versionLabel.textContent = "Version " + version;
 }
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
