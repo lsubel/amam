@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "de.sheak90.amam"
+        versionCode = "10"
+        version     = "1.0.0">
+
+    <name>Ask me anything meaningful</name>
+
+    <description>
+      In the 19th century answering these type of questions as part of a questionnaire were popular as society plays for the educated society. They should encourage conversation, help to learn about the interviewee and hear about their character.
+    </description>
+
+    <author href="https://github.com/Sheak90/amam">
+        Lukas Subel
+    </author>
+    <platform name="ios" />
+    <platform name="android" />
+    <platform name="winphone" />
+
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="permissions" value="none"/>
+    <preference name="splash-screen-duration" value="0"/>
+
+    <icon src="icon.png" width="180" height="180" />
+</widget>
