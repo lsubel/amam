@@ -256,7 +256,7 @@ html {
       margin: 0.5em 0; }
   .modal--fade .modal-content, .modal--show .modal-content {
     border-bottom: 1px solid #ddd;
-    padding: 15px 1.2em; }
+  /* padding: 15px 1.2em; */ }
   .modal--fade footer, .modal--show footer {
     border-top: 1px solid white;
     padding: 9px 1.2em 9px;

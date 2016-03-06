@@ -18,22 +18,26 @@
   .menu-container-footer.show-container {
     display: block; }
 
-.title {
-  margin-top: 20px; }
+.container {
+  padding: 0; }
 
 footer {
   clear: both;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: -100px;
+  height: 100px; }
   footer.question-container-footer {
     height: 100px; }
   footer.menu-container-footer {
     height: 52px; }
 
 .main-container {
-  height: calc(100% - 100px); }
+  height: calc(100% - 100px);
+  overflow: auto;
+  padding-bottom: 100px; }
 
 body {
   min-width: 320px; }
@@ -45,15 +49,19 @@ select {
 a {
   color: #555555; }
 
-.button-description {
-  margin-top: 48px; }
+.description {
+  margin-bottom: 0; }
 
 .modal--fade, .modal--show {
   transition: opacity .4s; }
 
-@media (min-height: 260px) {
-  .question {
-    margin: 50px 0; } }
+.modal-content-row {
+  /* margin-bottom: 2em; */
+  padding: 1.2em 1.2em;
+  border-bottom: 1px solid; }
+  .modal-content-row > h2 {
+    margin-bottom: 0; }
+
 @media (min-width: 440px) {
   .question-button-container {
     display: flex;
@@ -92,5 +100,3 @@ a {
 input[type=checkbox] {
   float: left;
   margin-right: 0.4em; }
-
-/*# sourceMappingURL=main.css.map */

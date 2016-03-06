@@ -19,20 +19,28 @@
   <section class="modal--show" id="popup-description" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 
     <div class="modal-inner">
-      <header class="modal-header" id="modal-label">
-        <h2 ln-id="menu.description.label"></h2></header>
       <div class="modal-content">
-        <p ln-id="menu.description" class="description">
-          <div>
-            <a class="button u-full-width button-newcolor" ln-id="menu.options.newcolor"></a>
-          </div>
-          <div>
-            <input type="checkbox" id="cbsavecolor"><label for="cbsavecolor" ln-id="menu.options.savecolor"></label>
-
-          </div>
-        </p>
+        <div class="modal-content-row" id="modal-label">
+          <h2 ln-id="menu.description.label"></h2>
+        </div>
+        <div class="modal-content-row">
+          <p ln-id="menu.description" class="description"></p>
+        </div>
+        <div class="modal-content-row">
+          <h2 ln-id="menu.option.label"></h2></header>
+        </div>
+        <div class="modal-content-row" class="modal-content-row">
+          <label ln-id="menu.questionnaires" class="questionnaires-selection-label" for="questionnairesSelection"></label>
+          <select class="questionnaires-selection u-full-width" id="questionnairesSelection"></select>
+        </div>
+        <div class="modal-content-row">
+          <label ln-id="menu.label.color" for="btn-newColor"></label>
+          <a class="button u-full-width button-newcolor" ln-id="menu.options.newcolor" id="btn-newColor"></a>
+          <input type="checkbox" id="cbsavecolor">
+          <label for="cbsavecolor" ln-id="menu.options.savecolor"></label>
+        </div>
+        <div class="modal-content-row modal-footer">(c) 2016 Lukas Subel, <a href="https://github.com/Sheak90/proust-questions">Source code</a> </div>
       </div>
-      <footer class="modal-footer">(c) 2016 Lukas Subel, <a href="https://github.com/Sheak90/proust-questions">Source code</a> </footer>
     </div>
 
     <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
@@ -41,31 +49,31 @@
   <div class="main-container">
 
     <div class="container menu-container">
-      <div class="row">
+      <div class="modal-content-row">
         <h1 ln-id="menu.title" class="title"></h1>
       </div>
-      <div class="row">
+      <div class="modal-content-row">
         <a ln-id="menu.descriptionbutton" class="button u-full-width button-description" href="#popup-description"></a>
       </div>
     </div>
     <div class="container question-container">
-      <div class="row">
+      <div class="modal-content-row">
         <h1 ln-id="menu.title" class="title"></h1>
       </div>
-      <div class="row">
+      <div class="modal-content-row">
         <h4 ln-id="pad.question" class="question"></h4>
       </div>
     </div>
   </div>
-  <footer class="">
+  <footer>
     <div class="container question-container-footer">
-      <div class="row question-button-container">
+      <div class="modal-content-row question-button-container">
         <a ln-id="pad.back-to-menu" class="button u-full-width button-menu"></a>
         <a ln-id="pad.random-question" class="button u-full-width button-random"></a>
       </div>
     </div>
     <div class="container menu-container-footer">
-      <div class="row menu-button-container">
+      <div class="modal-content-row menu-button-container">
         <label ln-id="menu.lnselectionlabel" class="ln-selection-label" for="languageSelection"></label>
         <select class="ln-selection u-full-width" id="languageSelection"></select>
         <a ln-id="menu.startbutton" class="button u-full-width button-start"></a>

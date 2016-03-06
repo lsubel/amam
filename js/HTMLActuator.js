@@ -1,6 +1,7 @@
 function HTMLActuator() {
   this.body                     = document.querySelector("body");
   this.languageSelection        = document.querySelector(".ln-selection");
+  this.questionnairesSelection  = document.querySelector(".questionnaires-selection");
   this.modal                    = document.querySelector(".modal-inner");
   this.question                 = document.querySelector(".question");
   this.menuContainer            = document.querySelector(".menu-container");
@@ -11,16 +12,27 @@ function HTMLActuator() {
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
   this.buttonDescription  = document.querySelector(".button-description");
-  this.modalHeader  = document.querySelector(".modal-header");
   this.modalContent = document.querySelector(".modal-content");
-  this.modalFooter  = document.querySelector(".modal-footer");
+  this.modalRows    = document.querySelectorAll(".modal-content-row");
 }
 
-HTMLActuator.prototype.addLanguageToMenu = function (ln, label){
+HTMLActuator.prototype.addLanguageToMenu = function (ln){
   var option = document.createElement("option");
   option.setAttribute("value", ln);
-  option.textContent = label;
+  option.setAttribute("ln-id", "language." + ln);
   this.languageSelection.appendChild(option);
+}
+
+HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
+  var option = document.createElement("option");
+  option.setAttribute("value", questionnaire);
+  option.setAttribute("ln-id", label);
+  this.questionnairesSelection.appendChild(option);
+}
+
+HTMLActuator.prototype.selectLanguage = function(ln){
+  var entry_to_mark = document.querySelector("option[value=" + ln + "]");
+  this.languageSelection.selectedIndex = entry_to_mark.index
 }
 
 HTMLActuator.prototype.setNewQuestion = function(id){
@@ -49,19 +61,21 @@ HTMLActuator.prototype.hideQuestion = function(){
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
-  var darker_color = LightenDarkenColor(color, 30);
+  var more_ligthen_color = LightenDarkenColor(color, 30);
   var self = this;
   window.requestAnimationFrame(function(){
     self.body.style.backgroundColor   = color;
     self.modal.style.backgroundColor  = lighten_color;
-    self.languageSelection.style.backgroundColor  = lighten_color;
-    self.buttonStart.style.backgroundColor        = lighten_color;
-    self.buttonRandom.style.backgroundColor       = lighten_color;
-    self.buttonMenu.style.backgroundColor         = lighten_color;
-    self.buttonDescription.style.backgroundColor  = lighten_color;
-    self.modalHeader.style.borderBottomColor   = darker_color;
-    self.modalContent.style.borderBottomColor  = darker_color;
-    self.modalFooter.style.borderTopColor      = darker_color;
+    self.languageSelection.style.backgroundColor        = lighten_color;
+    self.questionnairesSelection.style.backgroundColor  = lighten_color;
+    self.buttonStart.style.backgroundColor              = lighten_color;
+    self.buttonRandom.style.backgroundColor             = lighten_color;
+    self.buttonMenu.style.backgroundColor               = lighten_color;
+    self.buttonDescription.style.backgroundColor        = lighten_color;
+    self.modalContent.style.borderBottomColor  = more_ligthen_color;
+    for(var i=0; i<self.modalRows.length; i++){
+      self.modalRows[i].style.borderBottomColor  = more_ligthen_color;
+    }
   })
 }
 

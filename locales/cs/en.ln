@@ -1,0 +1,11 @@
+{
+  "ln": "en",
+  "questionnaire-cs" : "Computer Science",
+  "translations": {
+    "pad.question-0": "What is your favorite programming language?",
+    "pad.question-1": "Describe yourself as mathematical definition.",
+    "pad.question-2": "What is the most important topic in computer science for you?",
+    "pad.question-3": "What research results had the biggest impact on you?",
+    "pad.question-4": "Which research has influenced you the most?"
+  }
+}

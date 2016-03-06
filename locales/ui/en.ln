@@ -1,0 +1,22 @@
+{
+  "ln": "en",
+  "translations": {
+    "pad.question"          : "Here you find the currently selected question",
+    "pad.random-question"   : "Get new question",
+    "pad.back-to-menu"      : "Go back to menu",
+    "menu.title"            : "Ask me anything meaningful",
+    "menu.description"      : "In the 19th century answering these type of questions as part of a questionnaire were popular as society plays for the educated society. They should encourage conversation, help to learn about the interviewee and hear about their character.",
+    "menu.startbutton"      : "Start",
+    "menu.description.label": "Explanation",
+    "menu.option.label"     : "Options",
+    "menu.descriptionbutton": "Explanation & options",
+    "menu.options.newcolor" : "Get new background color",
+    "menu.options.savecolor": "Load last used background color on startup",
+    "menu.lnselectionlabel" : "Currently selected language",
+    "menu.questionnaires"   : "Available questionnaires",
+    "menu.label.color"      : "Background color",
+
+    "language.de"           : "German",
+    "language.en"           : "English"
+  }
+}
