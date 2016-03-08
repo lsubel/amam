@@ -5,7 +5,7 @@ At the end of the 19th century it was a popular game on social events to answer 
 
 Try it on http://sheak90.github.io/amam.
 
-The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields.
+The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields. The `gh-pages` branch is used for the static hosting of the application (link above).
 
 ## Credit
 * [CSS Modal](https://drublic.github.io/css-modal/) by Hans Christian Reinl
