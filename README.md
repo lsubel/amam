@@ -5,7 +5,11 @@ At the end of the 19th century it was a popular game on social events to answer 
 
 Try it on http://sheak90.github.io/amam.
 
-The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields. 
+The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields.
+
+## Credit
+* [CSS Modal](https://drublic.github.io/css-modal/) by Hans Christian Reinl
+* [Skeleton](https://github.com/dhg/Skeleton) by Dave Gamache
 
 ## Contributing
 Changes, improvements, new translations and new questionnaires are always welcomed! Feel free to fork and open a pull request, but please make your changes in a specific branch and request to pull into the `master` branch.
