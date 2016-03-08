@@ -1,27 +1,41 @@
-function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager, version) {
+function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager) {
+  // initialize components
   this.inputManager = new InputManager;
   this.actuator = new Actuator;
   this.storageManager = new StorageManager(version);
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
-  this.inputManager.on("selectQuestionnaire", this.selectQuestionnaire.bind(this));
-  this.inputManager.on("questionnaireInitialized", this.addQuestionnaireToMenu.bind(this));
-  this.inputManager.on("allQuestionnairesInitialized", this.allQuestionnairesInitialized.bind(this));
-  this.inputManager.on("languageInitialized", this.addLanguageToMenu.bind(this));
-  this.inputManager.on("allLanguageInitialized", this.allLanguageInitialized.bind(this));
-  this.inputManager.on("setQuestionpackInfos", this.setQuestionpackInfos.bind(this));
-  this.inputManager.on("translateUI", this.translateUI.bind(this));
-  this.inputManager.on("newQuestion", this.generateNewQuestion.bind(this));
-  this.inputManager.on("showMenu", this.showMenu.bind(this));
-  this.inputManager.on("showQuestion", this.showQuestion.bind(this));
-  this.inputManager.on("newColor", this.newBackgroundColor.bind(this));
-  this.inputManager.on("setOption", this.setOption.bind(this));
+  // register event handlers
+  this.inputManager.on("selectQuestionnaire",           this.selectQuestionnaire.bind(this));
+  this.inputManager.on("questionnaireInitialized",      this.addQuestionnaireToMenu.bind(this));
+  this.inputManager.on("allQuestionnairesInitialized",  this.allQuestionnairesInitialized.bind(this));
+  this.inputManager.on("languageInitialized",           this.addLanguageToMenu.bind(this));
+  this.inputManager.on("allLanguageInitialized",        this.allLanguageInitialized.bind(this));
+  this.inputManager.on("setQuestionpackInfos",          this.setQuestionpackInfos.bind(this));
+  this.inputManager.on("translateUI",                   this.translateUI.bind(this));
+  this.inputManager.on("newQuestion",                   this.generateNewQuestion.bind(this));
+  this.inputManager.on("showMenu",                      this.showMenu.bind(this));
+  this.inputManager.on("showQuestion",                  this.showQuestion.bind(this));
+  this.inputManager.on("newColor",                      this.newBackgroundColor.bind(this));
+  this.inputManager.on("setOption",                     this.setOption.bind(this));
+  if(development){
+    this.inputManager.on("resetApplicationManager",       this.resetApplicationManager.bind(this));
+  }
 
+  this.initializeApplicationManager();
+}
+
+/*
+ * Initialization
+ */
+
+ApplicationManager.prototype.initializeApplicationManager = function(){
+  // initialize variables
   this.addedLanguages             = [];
   this.addedQuestionnaire         = [];
-  this.currentTranslation         = undefined;
   this.total_number_of_questions  = {};
   this.current_question_id        = 0;
+  this.currentTranslation         = undefined;
   this.first_available_language   = undefined;
   this.available_colors           = [
     "#6C7A89", "#95a5a6", "#ABB7B7", "#BDC3C7",
@@ -32,11 +46,20 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
     "#E74C3C", "#F64747", "#e67e22", "#F2784B"
   ];
 
+  // bootstrap
   this.first_available_questionnaire = "default";
-  // this.allQuestionnairesInitialized();
   this.translationManager.loadAvailableQuestionnaires();
   this.actuator.showVersion(version);
 }
+
+ApplicationManager.prototype.resetApplicationManager = function(){
+  this.storageManager.clear();
+  this.initializeApplicationManager();
+}
+
+/*
+ * Questionnaire related event handlers
+ */
 
 ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   this.currentQuestionnaire = questionnaire;
@@ -59,13 +82,17 @@ ApplicationManager.prototype.allQuestionnairesInitialized = function(){
   this.translationManager.loadAvailableUILanguages();
 }
 
+/*
+ * Language related event handlers
+ */
+
 ApplicationManager.prototype.allLanguageInitialized = function(){
   var ln = this.storageManager.getLastUsedLanguage() || this.first_available_language;
   var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
-  this.initialization(questionnaire, ln);
+  this.bootstrapUI(questionnaire, ln);
 }
 
-ApplicationManager.prototype.initialization = function(questionnaire, ln){
+ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
   this.translateUI(ln);
   this.generateNewQuestion();
   this.showMenu();
@@ -100,13 +127,6 @@ ApplicationManager.prototype.setQuestionpackInfos = function(data) {
   }
 }
 
-ApplicationManager.prototype.translateUI = function(ln) {
-  var questionnaire = this.currentQuestionnaire;
-  this.currentTranslation = ln;
-  this.storageManager.setLastUsedLanguage(ln)
-  this.translationManager.translate(questionnaire, ln);
-}
-
 ApplicationManager.prototype.generateNewQuestion = function() {
   var questionnaire = this.currentQuestionnaire;
   // select new question
@@ -120,6 +140,17 @@ ApplicationManager.prototype.generateNewQuestion = function() {
   this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
 }
+
+/*
+ * UI related event handlers
+ */
+
+ ApplicationManager.prototype.translateUI = function(ln) {
+   var questionnaire = this.currentQuestionnaire;
+   this.currentTranslation = ln;
+   this.storageManager.setLastUsedLanguage(ln)
+   this.translationManager.translate(questionnaire, ln);
+ }
 
 ApplicationManager.prototype.showMenu = function() {
   this.actuator.showMenu();
