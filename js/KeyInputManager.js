@@ -1,6 +1,5 @@
 function KeyboardInputManager() {
   this.events = {};
-
   this.listen();
 }
 
@@ -28,17 +27,19 @@ KeyboardInputManager.prototype.bindButtonPress = function (selector, fn) {
 };
 
 KeyboardInputManager.prototype.listen = function(){
-  var languageSelection = document.getElementsByClassName("ln-selection")[0];
-  languageSelection.addEventListener("change", this.selectTranslation.bind(this));
-  var colorSaveOption = document.getElementById("cbsavecolor");
-  colorSaveOption.addEventListener("change", this.setOption.bind(this));
-  var questionnaireSelection = document.getElementsByClassName("questionnaires-selection")[0];
+  var colorSaveOption        = document.getElementById("cbsavecolor");
+  var languageSelection      = document.querySelector(".ln-selection");
+  var questionnaireSelection = document.querySelector(".questionnaires-selection");
+  
+  languageSelection.addEventListener("change",      this.selectTranslation.bind(this));
+  colorSaveOption.addEventListener("change",        this.setOption.bind(this));
   questionnaireSelection.addEventListener("change", this.selectQuestionnaire.bind(this));
 
-  this.bindButtonPress(".button-random", this.newQuestion);
-  this.bindButtonPress(".button-menu", this.showMenu);
-  this.bindButtonPress(".button-start", this.showQuestion);
-  this.bindButtonPress(".button-newcolor", this.newColor);
+  this.bindButtonPress(".button-random",    this.newQuestion);
+  this.bindButtonPress(".button-menu",      this.showMenu);
+  this.bindButtonPress(".button-start",     this.showQuestion);
+  this.bindButtonPress(".button-newcolor",  this.newColor);
+  this.bindButtonPress(".button-reset",     this.resetApplicationManager);
 };
 
 KeyboardInputManager.prototype.selectTranslation = function(event){
@@ -77,4 +78,9 @@ KeyboardInputManager.prototype.setOption = function(event){
   data.value  = event.target.checked;
   event.preventDefault();
   this.emit("setOption", data);
+}
+
+KeyboardInputManager.prototype.resetApplicationManager = function(event){
+  event.preventDefault();
+  this.emit("resetApplicationManager");
 }

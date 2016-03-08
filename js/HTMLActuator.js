@@ -12,6 +12,7 @@ function HTMLActuator() {
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
   this.buttonDescription  = document.querySelector(".button-description");
+  this.buttonReset        = document.querySelector(".button-reset");
   this.modalContent = document.querySelector(".modal-content");
   this.modalRows    = document.querySelectorAll(".modal-content-row");
   this.versionLabel = document.querySelector(".label-version");
@@ -82,6 +83,7 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.buttonRandom.style.backgroundColor             = lighten_color;
     self.buttonMenu.style.backgroundColor               = lighten_color;
     self.buttonDescription.style.backgroundColor        = lighten_color;
+    self.buttonReset.style.color                        = lighten_color;
     self.modalContent.style.borderBottomColor  = more_ligthen_color;
     for(var i=0; i<self.modalRows.length; i++){
       self.modalRows[i].style.borderBottomColor  = more_ligthen_color;
