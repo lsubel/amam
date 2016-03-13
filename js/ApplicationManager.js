@@ -55,6 +55,7 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
 
 ApplicationManager.prototype.resetApplicationManager = function(){
   this.storageManager.clear();
+  this.actuator.resetSelects();
   this.initializeApplicationManager();
 }
 

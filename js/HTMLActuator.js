@@ -37,6 +37,17 @@ HTMLActuator.prototype.selectQuestionnaire = function(questionnaire){
   this.questionnairesSelection.selectedIndex = entry_to_mark.index;
 }
 
+HTMLActuator.prototype.resetSelects = function(ln){
+  while (this.languageSelection.firstChild) {
+    this.languageSelection.removeChild(this.languageSelection.firstChild);
+  }
+  while (this.questionnairesSelection.firstChild) {
+    this.questionnairesSelection.removeChild(this.questionnairesSelection.firstChild);
+  }
+}
+
+
+
 HTMLActuator.prototype.selectLanguage = function(ln){
   var entry_to_mark = document.querySelector("option[value=" + ln + "]");
   this.languageSelection.selectedIndex = entry_to_mark.index;
