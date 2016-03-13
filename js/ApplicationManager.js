@@ -50,6 +50,7 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
   this.first_available_questionnaire = "default";
   this.translationManager.loadAvailableQuestionnaires();
   this.actuator.showVersion(version);
+  this.extractBrowserLanguage();
 }
 
 ApplicationManager.prototype.resetApplicationManager = function(){
@@ -83,11 +84,38 @@ ApplicationManager.prototype.allQuestionnairesInitialized = function(){
 }
 
 /*
- * Language related event handlers
+ * Language related methods and event handlers
  */
 
+ApplicationManager.prototype.extractBrowserLanguage = function(){
+  var languages = navigator.languages;
+  var res = [];
+  for(var i=0;i<languages.length;i++){
+    var ln = languages[i];
+    if(ln.indexOf("-") >= 0){
+      ln = ln.substr(0, ln.indexOf("-"));
+    }
+    if(!res.includes(ln)){
+      res.push(ln);
+    }
+  }
+  this.browser_languages = res;
+}
+
 ApplicationManager.prototype.allLanguageInitialized = function(){
-  var ln = this.storageManager.getLastUsedLanguage() || this.first_available_language;
+  var ln = this.storageManager.getLastUsedLanguage();
+  if(!ln){
+    for(var i=0;i < this.browser_languages.length; i++){
+      var tmp_ln = this.browser_languages[i];
+      if(this.translationManager.isLanguageSupported(tmp_ln)){
+        ln = tmp_ln;
+        break;
+      }
+    }
+  }
+  if(!ln){
+    ln = this.first_available_language;
+  }
   var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
   this.bootstrapUI(questionnaire, ln);
 }
