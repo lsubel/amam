@@ -2,7 +2,8 @@ window.fakeStorage = {
   _data: {},
 
   setItem: function (id, val) {
-    return this._data[id] = String(val);
+    this._data[id] = String(val);
+    return this._data[id];
   },
 
   getItem: function (id) {
@@ -14,7 +15,8 @@ window.fakeStorage = {
   },
 
   clear: function () {
-    return this._data = {};
+    this._data = {};
+    return this._data;
   }
 };
 
@@ -43,7 +45,7 @@ LocalStorageManager.prototype.localStorageSupported = function () {
 LocalStorageManager.prototype.clear = function(){
   this.storage.clear();
   devlog("Reset local storage");
-}
+};
 
 // Best score getters/setters
 LocalStorageManager.prototype.getItem = function (key) {
@@ -56,40 +58,40 @@ LocalStorageManager.prototype.setItem = function (key, value) {
 
 LocalStorageManager.prototype.setSaveColor = function(value) {
   this.setItem("saveColor", value);
-}
+};
 
 LocalStorageManager.prototype.isSaveColor = function() {
   return this.storage.getItem("saveColor") == "true";
-}
+};
 
 LocalStorageManager.prototype.setLastUsedColor = function(value) {
   this.setItem("lastUsedColor", value);
-}
+};
 
 LocalStorageManager.prototype.getLastUsedColor = function() {
   return this.storage.getItem("lastUsedColor");
-}
+};
 
 LocalStorageManager.prototype.setLastUsedLanguage = function(value) {
   this.setItem("lastUsedLanguage", value);
-}
+};
 
 LocalStorageManager.prototype.getLastUsedLanguage = function() {
   return this.storage.getItem("lastUsedLanguage");
-}
+};
 
 LocalStorageManager.prototype.setVersion = function(value) {
   this.setItem("version", value);
-}
+};
 
 LocalStorageManager.prototype.getVersion = function() {
   return this.storage.getItem("version") || "";
-}
+};
 
 LocalStorageManager.prototype.setLastUsedQuestionnaire = function(value) {
   this.setItem("lastUsedQuestionnaire", value);
-}
+};
 
 LocalStorageManager.prototype.getLastUsedQuestionnaire = function() {
   return this.storage.getItem("lastUsedQuestionnaire");
-}
+};

@@ -1,7 +1,7 @@
 function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager) {
   // initialize components
-  this.inputManager = new InputManager;
-  this.actuator = new Actuator;
+  this.inputManager = new InputManager();
+  this.actuator = new Actuator();
   this.storageManager = new StorageManager(version);
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
@@ -51,13 +51,13 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
   this.translationManager.loadAvailableQuestionnaires();
   this.actuator.showVersion(version);
   this.extractBrowserLanguage();
-}
+};
 
 ApplicationManager.prototype.resetApplicationManager = function(){
   this.storageManager.clear();
   this.actuator.resetSelects();
   this.initializeApplicationManager();
-}
+};
 
 /*
  * Questionnaire related event handlers
@@ -67,7 +67,7 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   this.currentQuestionnaire = questionnaire;
   this.storageManager.setLastUsedQuestionnaire(questionnaire);
   this.generateNewQuestion();
-}
+};
 
 ApplicationManager.prototype.addQuestionnaireToMenu = function(questionnaire) {
     if(this.addedQuestionnaire.indexOf(questionnaire) == -1){
@@ -77,12 +77,12 @@ ApplicationManager.prototype.addQuestionnaireToMenu = function(questionnaire) {
     if(!this.first_available_questionnaire){
       this.first_available_questionnaire = questionnaire;
     }
-}
+};
 
 ApplicationManager.prototype.allQuestionnairesInitialized = function(){
   this.currentQuestionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
   this.translationManager.loadAvailableUILanguages();
-}
+};
 
 /*
  * Language related methods and event handlers
@@ -96,12 +96,12 @@ ApplicationManager.prototype.extractBrowserLanguage = function(){
     if(ln.indexOf("-") >= 0){
       ln = ln.substr(0, ln.indexOf("-"));
     }
-    if(!res.includes(ln)){
+    if(res.indexOf(ln) == -1){
       res.push(ln);
     }
   }
   this.browser_languages = res;
-}
+};
 
 ApplicationManager.prototype.allLanguageInitialized = function(){
   var ln = this.storageManager.getLastUsedLanguage();
@@ -119,7 +119,7 @@ ApplicationManager.prototype.allLanguageInitialized = function(){
   }
   var questionnaire = this.storageManager.getLastUsedQuestionnaire() || this.first_available_questionnaire;
   this.bootstrapUI(questionnaire, ln);
-}
+};
 
 ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
   this.translateUI(ln);
@@ -128,10 +128,11 @@ ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
   this.actuator.selectQuestionnaire(questionnaire);
   this.actuator.selectLanguage(ln);
   var storedColor;
-  if (this.storageManager.isSaveColor())
-    storedColor = this.storageManager.getLastUsedColor()
+  if (this.storageManager.isSaveColor()){
+    storedColor = this.storageManager.getLastUsedColor();
+  }
   this.newBackgroundColor(storedColor);
-}
+};
 
 ApplicationManager.prototype.addLanguageToMenu = function(ln) {
     if(this.addedLanguages.indexOf(ln) == -1){
@@ -144,7 +145,7 @@ ApplicationManager.prototype.addLanguageToMenu = function(ln) {
     if(!this.first_available_language){
       this.first_available_language = ln;
     }
-}
+};
 
 ApplicationManager.prototype.setQuestionpackInfos = function(data) {
   if(data){
@@ -154,7 +155,7 @@ ApplicationManager.prototype.setQuestionpackInfos = function(data) {
       this.total_number_of_questions[questionnaire] = num_of_question;
     }
   }
-}
+};
 
 ApplicationManager.prototype.generateNewQuestion = function() {
   var questionnaire = this.currentQuestionnaire;
@@ -168,7 +169,7 @@ ApplicationManager.prototype.generateNewQuestion = function() {
   // show new language in the UI
   this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
-}
+};
 
 /*
  * UI related event handlers
@@ -177,28 +178,28 @@ ApplicationManager.prototype.generateNewQuestion = function() {
  ApplicationManager.prototype.translateUI = function(ln) {
    var questionnaire = this.currentQuestionnaire;
    this.currentTranslation = ln;
-   this.storageManager.setLastUsedLanguage(ln)
+   this.storageManager.setLastUsedLanguage(ln);
    this.translationManager.translate(questionnaire, ln);
- }
+ };
 
 ApplicationManager.prototype.showMenu = function() {
   this.actuator.showMenu();
   this.actuator.hideQuestion();
-}
+};
 
 ApplicationManager.prototype.showQuestion = function() {
   this.actuator.showQuestion();
   this.actuator.hideMenu();
-}
+};
 
 ApplicationManager.prototype.newBackgroundColor = function(color) {
   var next_color = color || this.available_colors[Math.floor(Math.random() * this.available_colors.length)];
   this.storageManager.setLastUsedColor(next_color);
   this.actuator.changeBackgroundColor(next_color);
-}
+};
 
 ApplicationManager.prototype.setOption = function(data) {
   if (data.type == "saveColor") {
     this.storageManager.setSaveColor(data.value);
   }
-}
+};

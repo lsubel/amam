@@ -4,6 +4,6 @@ window.requestAnimationFrame(function () {
   devlog = function(str){
     if(development)
       console.log(str);
-  }
+  };
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 });
