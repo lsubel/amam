@@ -7,7 +7,7 @@ function TranslationManager(inputManager, storageManager) {
 
 TranslationManager.prototype.loadAvailableQuestionnaires = function(){
   var self = this;
-  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
@@ -24,16 +24,16 @@ TranslationManager.prototype.loadAvailableQuestionnaires = function(){
   request.overrideMimeType('text/json');
   request.open("GET", "questionnaire.txt", true);
   request.send();
-}
+};
 
 TranslationManager.prototype.initializeQuestionnaires = function(questionnaire){
   this.loadAvailableLanguages(questionnaire);
   this.inputManager.emit("questionnaireInitialized", questionnaire);
-}
+};
 
 TranslationManager.prototype.loadAvailableUILanguages = function(){
   var self = this;
-  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
@@ -53,11 +53,11 @@ TranslationManager.prototype.loadAvailableUILanguages = function(){
   request.overrideMimeType('text/json');
   request.open("GET", "locales" + "/" + "ui" + "/" + "languages.txt", true);
   request.send();
-}
+};
 
 TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
   var self = this;
-  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
 			request.onreadystatechange = undefined;
@@ -80,18 +80,18 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
   request.overrideMimeType('text/json');
   request.open("GET", "locales" + "/" + questionnaire + "/" + "languages.txt", true);
   request.send();
-}
+};
 
 TranslationManager.prototype.addAvailableLanguageCounter = function(value){
   this.number_of_languages = this.number_of_languages + value;
-}
+};
 
 TranslationManager.prototype.decreaseAvailableLanguageCounter = function(){
   this.number_of_languages = this.number_of_languages - 1;
-  if(this.number_of_languages == 0){
+  if(this.number_of_languages === 0){
     this.inputManager.emit("allLanguageInitialized");
   }
-}
+};
 
 TranslationManager.prototype.initializeLanguage = function(questionnaire, language){
   // if the language is already initialized, abort
@@ -102,13 +102,13 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
   }
   // load the language
   var self = this;
-  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+  var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
   request.onreadystatechange = function() {
 		if (request.readyState == 4) {
       devlog("Ready new language file: " + request.responseURL);
 			request.onreadystatechange = undefined;
       // check whether data were loaded
-      if(!request.responseText || request.responseText == ""){
+      if(!request.responseText || request.responseText === ""){
         throw "Exception: could not read the content of '" + language + ".json'.";
       }
       // check whether the language matches the requested one
@@ -132,15 +132,15 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
   request.overrideMimeType('text/json');
   request.open("GET", "locales" + "/" + questionnaire + "/" + language + ".ln", true);
   request.send();
-}
+};
 
 TranslationManager.prototype.setLanguageSupported = function(language){
   this.storage.setItem("languageinitialized_" + language, "supported");
-}
+};
 
 TranslationManager.prototype.isLanguageSupported = function(language){
   return this.storage.getItem("languageinitialized_" + language) == "supported";
-}
+};
 
 TranslationManager.prototype.setTranslation = function(questionnaire, language, id, translation){
   var key = "";
@@ -152,25 +152,24 @@ TranslationManager.prototype.setTranslation = function(questionnaire, language, 
   }
   key += id;
   this.storage.setItem(key , translation);
-}
+};
 
 TranslationManager.prototype.getTranslation = function(questionnaire, language, id){
-  return this.storage.getItem(questionnaire + "_" + language + "_" + id)
-    || this.storage.getItem("ui" + "_" + language + "_" + id)
-    || this.storage.getItem(language + "_" + id)
-    || ("MISSING TRANSLATION: " + id);
-}
+  return this.storage.getItem(questionnaire + "_" + language + "_" + id) ||
+    this.storage.getItem("ui" + "_" + language + "_" + id) ||
+    this.storage.getItem(language + "_" + id) || ("MISSING TRANSLATION: " + id);
+};
 
 TranslationManager.prototype.translate = function(questionnaire, ln, element){
   element = element || document.documentElement;
   var children = this.getTranslatableChildren(element);
-  for(var i=0, n=children.length; i < n; i++) {
-    this.translateNode(questionnaire, ln, children[i])
+  for(var i=0, n=children.length; i < n; i++){
+    this.translateNode(questionnaire, ln, children[i]);
   }
-  this.translateNode(questionnaire, ln, element)
+  this.translateNode(questionnaire, ln, element);
   document.querySelector("html").lang = ln;
   this.inputManager.emit("translated", ln);
-}
+};
 
 TranslationManager.prototype.getTranslatableChildren = function(element) {
   if(!document.querySelectorAll) {
@@ -184,7 +183,7 @@ TranslationManager.prototype.getTranslatableChildren = function(element) {
     }
     return l10nElements;
   }
-  return element.querySelectorAll('*[ln-id]')
+  return element.querySelectorAll('*[ln-id]');
 };
 
 TranslationManager.prototype.translateNode = function(questionnaire, ln, element){
@@ -193,4 +192,4 @@ TranslationManager.prototype.translateNode = function(questionnaire, ln, element
     return;
   var translated_str = this.getTranslation(questionnaire, ln, translation_id);
   element.textContent = translated_str;
-}
+};
