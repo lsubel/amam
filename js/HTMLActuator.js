@@ -23,19 +23,19 @@ HTMLActuator.prototype.addLanguageToMenu = function (ln){
   option.setAttribute("value", ln);
   option.setAttribute("ln-id", "language." + ln);
   this.languageSelection.appendChild(option);
-}
+};
 
 HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
   var option = document.createElement("option");
   option.setAttribute("value", questionnaire);
   option.setAttribute("ln-id", label);
   this.questionnairesSelection.appendChild(option);
-}
+};
 
 HTMLActuator.prototype.selectQuestionnaire = function(questionnaire){
   var entry_to_mark = document.querySelector("option[value=" + questionnaire + "]");
   this.questionnairesSelection.selectedIndex = entry_to_mark.index;
-}
+};
 
 HTMLActuator.prototype.resetSelects = function(ln){
   while (this.languageSelection.firstChild) {
@@ -44,42 +44,40 @@ HTMLActuator.prototype.resetSelects = function(ln){
   while (this.questionnairesSelection.firstChild) {
     this.questionnairesSelection.removeChild(this.questionnairesSelection.firstChild);
   }
-}
-
-
+};
 
 HTMLActuator.prototype.selectLanguage = function(ln){
   var entry_to_mark = document.querySelector("option[value=" + ln + "]");
   this.languageSelection.selectedIndex = entry_to_mark.index;
-}
+};
 
 HTMLActuator.prototype.setNewQuestion = function(id){
   this.question.setAttribute("ln-id", id);
-}
+};
 
 HTMLActuator.prototype.showMenu = function(){
   this.menuContainer.classList.add("show-container");
   this.menuContainerFooter.classList.add("show-container");
-}
+};
 
 HTMLActuator.prototype.hideMenu = function(){
   this.menuContainer.classList.remove("show-container");
   this.menuContainerFooter.classList.remove("show-container");
-}
+};
 
 HTMLActuator.prototype.showQuestion = function(){
   this.questionContainer.classList.add("show-container");
   this.questionContainerFooter.classList.add("show-container");
-}
+};
 
 HTMLActuator.prototype.hideQuestion = function(){
   this.questionContainer.classList.remove("show-container");
   this.questionContainerFooter.classList.remove("show-container");
-}
+};
 
 HTMLActuator.prototype.showVersion = function(version){
   this.versionLabel.textContent = "Version " + version;
-}
+};
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
@@ -99,8 +97,8 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     for(var i=0; i<self.modalRows.length; i++){
       self.modalRows[i].style.borderBottomColor  = more_ligthen_color;
     }
-  })
-}
+  });
+};
 
 function LightenDarkenColor(col, amt) {
 
