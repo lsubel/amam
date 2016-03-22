@@ -96,7 +96,7 @@ ApplicationManager.prototype.extractBrowserLanguage = function(){
     if(ln.indexOf("-") >= 0){
       ln = ln.substr(0, ln.indexOf("-"));
     }
-    if(!res.includes(ln)){
+    if(res.indexOf(ln) == -1){
       res.push(ln);
     }
   }
