@@ -68,6 +68,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
       self.addAvailableLanguageCounter(number_of_languages);
       // hand over question package related information to the ApplicationManager
       self.inputManager.emit("setQuestionpackInfos", {
+        "available_languages": available_languages,
         "number_of_questions": numberofquestions,
         "questionnaire": questionnaire
       });

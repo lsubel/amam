@@ -34,6 +34,7 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
   this.addedLanguages             = [];
   this.addedQuestionnaire         = [];
   this.total_number_of_questions  = {};
+  this.available_languages        = {};
   this.current_question_id        = 0;
   this.currentTranslation         = undefined;
   this.first_available_language   = undefined;
@@ -66,6 +67,13 @@ ApplicationManager.prototype.resetApplicationManager = function(){
 ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   this.currentQuestionnaire = questionnaire;
   this.storageManager.setLastUsedQuestionnaire(questionnaire);
+  this.actuator.resetLanguages();
+  var lns = this.available_languages[questionnaire];
+  this.addedLanguages = [];
+  for(var i=0;i<lns.length;i++){
+    var ln = lns[i];
+    this.addLanguageToMenu(ln);
+  }
   this.generateNewQuestion();
 };
 
@@ -149,10 +157,12 @@ ApplicationManager.prototype.addLanguageToMenu = function(ln) {
 
 ApplicationManager.prototype.setQuestionpackInfos = function(data) {
   if(data){
-    var questionnaire   = data.questionnaire;
-    var num_of_question = data.number_of_questions;
+    var available_languages = data.available_languages;
+    var questionnaire       = data.questionnaire;
+    var num_of_question     = data.number_of_questions;
     if(data.number_of_questions){
       this.total_number_of_questions[questionnaire] = num_of_question;
+      this.available_languages[questionnaire]       = available_languages;
     }
   }
 };
