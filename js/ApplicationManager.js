@@ -66,6 +66,7 @@ ApplicationManager.prototype.resetApplicationManager = function(){
 
 ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   this.currentQuestionnaire = questionnaire;
+  var last_used_questionnaire = this.storageManager.getLastUsedQuestionnaire();
   this.storageManager.setLastUsedQuestionnaire(questionnaire);
   this.actuator.resetLanguages();
   var lns = this.available_languages[questionnaire];
@@ -73,6 +74,9 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   for(var i=0;i<lns.length;i++){
     var ln = lns[i];
     this.addLanguageToMenu(ln);
+  }
+  if(questionnaire != last_used_questionnaire){
+    this.translateUI(lns[0]);
   }
   this.generateNewQuestion();
 };
