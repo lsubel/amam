@@ -82,7 +82,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
         self.initializeLanguage(questionnaire, available_languages[i]);
       }
       // save the default title
-      self.setTranslation(undefined, "default", self.getQuestionnaireKey(questionnaire), "(Untranslated questionnaire) " + default_title);
+      self.setTranslation(undefined, "default", self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
 		}
 	};
   request.overrideMimeType('text/json');
