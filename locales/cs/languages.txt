@@ -2,5 +2,6 @@
   "languages": [
     "en", "de"
   ],
-  "numberofquestions": 2
+  "numberofquestions": 2,
+  "defaulttitle": "Computer Science"
 }

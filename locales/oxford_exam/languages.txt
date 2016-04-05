@@ -2,5 +2,6 @@
   "languages": [
     "en", "de"
   ],
-  "numberofquestions": 175
+  "numberofquestions": 175,
+  "defaulttitle" : "All Souls College Entrance Exam Questions (after 2008)"
 }
