@@ -3,7 +3,7 @@ AMAM is an open source application and written entirely using HTML, CSS, and Jav
 
 At the end of the 19th century it was a popular game on social events to answer a questionnaire. They should help to learn about the interviewee and their character. The french author Marcel Proust (1871-1922) was one of the most famous people who answered it. This applications allows to get a randomized question from questionnaire, e.g. the Proust questionnaire, so you can discuss it with another person.
 
-Try it on http://sheak90.github.io/amam.
+Try it on http://lsubel.github.io/amam.
 
 The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields. The `gh-pages` branch is used for the static hosting of the application (link above).
 
