@@ -31,6 +31,10 @@ TranslationManager.prototype.initializeQuestionnaires = function(questionnaire){
   this.inputManager.emit("questionnaireInitialized", questionnaire);
 };
 
+TranslationManager.prototype.getQuestionnaireKey = function(questionnaire){
+    return "questionnaire-" + questionnaire;
+}
+
 TranslationManager.prototype.loadAvailableUILanguages = function(){
   var self = this;
   var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
@@ -65,16 +69,20 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
 			var available_languages   = json_parsed.languages;
       var numberofquestions     = json_parsed.numberofquestions;
       var number_of_languages   = available_languages.length;
+      var default_title         = json_parsed.defaulttitle;
       self.addAvailableLanguageCounter(number_of_languages);
       // hand over question package related information to the ApplicationManager
       self.inputManager.emit("setQuestionpackInfos", {
+        "available_languages": available_languages,
         "number_of_questions": numberofquestions,
-        "questionnaire": questionnaire
+        "questionnaire": questionnaire,
       });
       // initialize the available languages
       for(var i=0; i < number_of_languages; i++){
         self.initializeLanguage(questionnaire, available_languages[i]);
       }
+      // save the default title
+      self.setTranslation(undefined, "default", self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
 		}
 	};
   request.overrideMimeType('text/json');
@@ -116,7 +124,7 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
       if(language !== language_obj.ln){
         throw "IllegalStateException: when reading '" + language + ".json', the content is marked as '" + language_obj.ln + "'.";
       }
-      var questionnaire_key = "questionnaire-" + questionnaire;
+      var questionnaire_key = self.getQuestionnaireKey(questionnaire);
       self.setTranslation(undefined, language, questionnaire_key, language_obj[questionnaire_key]);
       // write the translations to the local storage
       var language_translations = language_obj.translations;
@@ -157,7 +165,9 @@ TranslationManager.prototype.setTranslation = function(questionnaire, language, 
 TranslationManager.prototype.getTranslation = function(questionnaire, language, id){
   return this.storage.getItem(questionnaire + "_" + language + "_" + id) ||
     this.storage.getItem("ui" + "_" + language + "_" + id) ||
-    this.storage.getItem(language + "_" + id) || ("MISSING TRANSLATION: " + id);
+    this.storage.getItem(language + "_" + id) ||
+    this.storage.getItem("default" + "_" + id) ||
+    ("MISSING TRANSLATION: " + id);
 };
 
 TranslationManager.prototype.translate = function(questionnaire, ln, element){
