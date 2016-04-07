@@ -1,0 +1,25 @@
+{
+  "ln": "en",
+  "questionnaire-nerd" : "Nerd",
+  "translations": {
+    "pad.question-0": "Welcher ist der beste 'Star Trek' Käptain?",
+    "pad.question-1": "Welche Filmreihe hätte nie einen Sequel bekommen sollen?",
+    "pad.question-2": "Welches ist die beste Graphical Novel (auch Comics und Mangas)?",
+    "pad.question-3": "Wer hat den aktuellen Konsolenkrieg gewonnen?",
+    "pad.question-4": "Welcher ist dein meist geliebter Videospielcharakter?",
+    "pad.question-5": "Angenommen, du könntest einen Charakter aus einem beliebigen Film für einen ganzen Tag treffen. Welcher wäre das?",
+    "pad.question-6": "Welche Webseite, die niemand anderes erwarten würde, besuchst du am meisten?",
+    "pad.question-7": "Welche TV Serie hat dich in deiner Jugend am meisten beeinflusst?",
+    "pad.question-8": "Hatte George Lucas die Berechtigung, inhaltliche Änderungen der 'Star Wars' Filme nach der Veröffentlichung vorzunehmen?",
+    "pad.question-9": "Marvel Comics oder DC Comics?",
+    "pad.question-10": "Nenne das Meme, das dir am besten gefällt.",
+    "pad.question-11": "Nenne deine Lieblingsvideospielfirma.",
+    "pad.question-12": "Bist du stolz, ein Nerd zu sein, und würdest dich dafür auch verteidigen?",
+    "pad.question-13": "Welche Aktivität oder welches Hobby könntest du niemals für 6 Monate ruhen lassen?",
+    "pad.question-14": "Wer ist dein Lieblingscharakter aus 'Sailor Moon' ?",
+    "pad.question-15": "Welches Pen'n'Paper System ist das Beste?",
+    "pad.question-16": "Welches Computerspiel aus den letzten 10 Jahren hatte den größten Einfluss?",
+    "pad.question-17": "Angenommen, du würdest die Zeitmaschine von Dr. Brown besitzen. Wohin würdest du dann reisen?",
+    "pad.question-18": "Welcher Charakter aus dem DragonBall Universum hat am meisten geopfert?"
+  }
+}
