@@ -1,0 +1,7 @@
+{
+  "languages": [
+    "en", "de"
+  ],
+  "numberofquestions": 18,
+  "defaulttitle": "Nerd"
+}
