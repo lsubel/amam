@@ -1,5 +1,5 @@
 window.requestAnimationFrame(function () {
-  version = "1.3.0";
+  version = "1.3.1";
   development = false;
   devlog = function(str){
     if(development)
