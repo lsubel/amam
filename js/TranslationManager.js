@@ -122,7 +122,7 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
       // check whether the language matches the requested one
 			var language_obj   = JSON.parse(request.responseText);
       if(language !== language_obj.ln){
-        throw "IllegalStateException: when reading '" + language + ".json', the content is marked as '" + language_obj.ln + "'.";
+        throw "IllegalStateException: when reading '" + language + ".ln', the content is marked as '" + language_obj.ln + "'.";
       }
       var questionnaire_key = self.getQuestionnaireKey(questionnaire);
       self.setTranslation(undefined, language, questionnaire_key, language_obj[questionnaire_key]);
