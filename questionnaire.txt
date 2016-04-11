@@ -1,5 +1,5 @@
 {
   "questionnaires": [
-    "default", "nerd", "oxford_exam_2008", "oxford_exam"
+    "default", "nerd", "oxford_exam_2008", "oxford_exam", "precht"
   ]
 }
