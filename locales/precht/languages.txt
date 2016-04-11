@@ -1,0 +1,7 @@
+{
+  "languages": [
+    "en", "de"
+  ],
+  "numberofquestions": 33,
+  "defaulttitle": "Who Am I and If So How Many? - Chapter heading"
+}
