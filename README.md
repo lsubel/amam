@@ -7,6 +7,8 @@ Try it on http://lsubel.github.io/amam.
 
 The `master` branch is used for the basic application and is runnable by itself in the browser. The `phonegap` branch contains phonegap specific fields. The `gh-pages` branch is used for the static hosting of the application (link above).
 
+There exist a [repository](https://github.com/lsubel/amam-cordova) with an enhanced version of the application used to build Android apks that can be downloaded via [F-Droid](https://f-droid.org/).
+
 ## Credits and acknowledgement
 * [CSS Modal](https://drublic.github.io/css-modal/) by Hans Christian Reinl
 * [Skeleton](https://github.com/dhg/Skeleton) by Dave Gamache
