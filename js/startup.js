@@ -1,9 +1,17 @@
-window.requestAnimationFrame(function () {
-  version = "1.3.3";
+devlog = function(str){
+  if(development)
+    console.log(str);
+};
+
+var startup = function() {
+  version = "1.3.4";
   development = false;
-  devlog = function(str){
-    if(development)
-      console.log(str);
-  };
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
-});
+};
+
+if(window.requestAnimationFrame){
+    window.requestAnimationFrame(startup);
+}
+else{
+  window.setTimeout(0, startup);
+}
