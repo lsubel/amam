@@ -264,7 +264,7 @@ html {
   .modal--fade .modal-close, .modal--show .modal-close {
     text-indent: -100px; }
     .modal--fade .modal-close:before, .modal--show .modal-close:before {
-      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAEUlEQVQoz2NgeEYAjioYSQoAzOTmAXhPhyoAAAAASUVORK5CYII="); }
+      background: url(../img/bg.png); }
     .modal--fade .modal-close:after, .modal--show .modal-close:after {
       content: '\00d7';
       border-radius: 2px;
