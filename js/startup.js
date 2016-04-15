@@ -4,7 +4,7 @@ devlog = function(str){
 };
 
 var startup = function() {
-  version = "1.3.3";
+  version = "1.3.4";
   development = false;
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 };
