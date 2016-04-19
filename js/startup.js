@@ -3,15 +3,21 @@ devlog = function(str){
     console.log(str);
 };
 
+window.requestAnimFrame = (function(){
+    return  window.requestAnimationFrame   ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame    ||
+        window.oRequestAnimationFrame      ||
+        window.msRequestAnimationFrame     ||
+        function(/* function */ callback, /* DOMElement */ element){
+             window.setTimeout(callback, 0);
+        };
+})();
+
 var startup = function() {
   version = "1.3.4";
   development = false;
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 };
 
-if(window.requestAnimationFrame){
-    window.requestAnimationFrame(startup);
-}
-else{
-  window.setTimeout(0, startup);
-}
+window.requestAnimationFrame(startup);
