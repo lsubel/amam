@@ -118,7 +118,7 @@ ApplicationManager.prototype.extractBrowserLanguage = function(){
   // method two: parse the userAgent by RegEx
   else if(navigator && navigator.userAgent){
     var subln = navigator.userAgent.match(/[a-z]{2}-[a-z]{2}/);
-    var ln2 = subln.substr(-2, 2);
+    var ln2 = subln[0].substr(-2, 2);
     res.push(ln2);
   }
   this.browser_languages = res;
