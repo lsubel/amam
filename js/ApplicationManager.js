@@ -101,16 +101,25 @@ ApplicationManager.prototype.allQuestionnairesInitialized = function(){
  */
 
 ApplicationManager.prototype.extractBrowserLanguage = function(){
-  var languages = navigator.languages;
   var res = [];
-  for(var i=0;i<languages.length;i++){
-    var ln = languages[i];
-    if(ln.indexOf("-") >= 0){
-      ln = ln.substr(0, ln.indexOf("-"));
+  // method one: check whether navigator languages is available
+  if(navigator && navigator.languages){
+    var languages = navigator.languages;
+    for(var i=0;i<languages.length;i++){
+      var ln = languages[i];
+      if(ln.indexOf("-") >= 0){
+        ln = ln.substr(0, ln.indexOf("-"));
+      }
+      if(res.indexOf(ln) == -1){
+        res.push(ln);
+      }
     }
-    if(res.indexOf(ln) == -1){
-      res.push(ln);
-    }
+  }
+  // method two: parse the userAgent by RegEx
+  else if(navigator && navigator.userAgent){
+    var subln = navigator.userAgent.match(/[a-z]{2}-[a-z]{2}/);
+    var ln2 = subln[0].substr(-2, 2);
+    res.push(ln2);
   }
   this.browser_languages = res;
 };

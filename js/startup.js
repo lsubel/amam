@@ -4,14 +4,20 @@ devlog = function(str){
 };
 
 var startup = function() {
-  version = "1.3.4";
+  version = "1.3.5";
   development = false;
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 };
 
-if(window.requestAnimationFrame){
-    window.requestAnimationFrame(startup);
-}
-else{
-  window.setTimeout(0, startup);
-}
+window.requestAnimationFrame = (function(){
+    return  window.requestAnimationFrame   ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame    ||
+        window.oRequestAnimationFrame      ||
+        window.msRequestAnimationFrame     ||
+        function(/* function */ callback, /* DOMElement */ element){
+             window.setTimeout(callback, 0);
+        };
+})();
+
+window.requestAnimationFrame(startup);
