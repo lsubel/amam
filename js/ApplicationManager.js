@@ -1,4 +1,4 @@
-                                                                                                                                  function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager) {
+function ApplicationManager(InputManager, Actuator, StorageManager, TranslationManager) {
   // initialize components
   this.inputManager = new InputManager();
   this.actuator = new Actuator();
