@@ -9,7 +9,7 @@
     "menu.startbutton": "Start",
     "menu.description.label": "Beschreibung",
     "menu.option.label": "Optionen",
-    "menu.descriptionbutton": "Beschreibung & Optionen",
+    "menu.descriptionbutton": "Optionen",
     "menu.options.newcolor": "Neue Hintergrundfarbe",
     "menu.options.savecolor": "Läde zuletzt genutzte Hintergrundfarbe beim Start",
     "menu.lnselectionlabel": "Aktuell ausgewählte Sprache",
