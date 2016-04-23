@@ -1,7 +1,9 @@
 {
   "ln": "en",
-  "questionnaire-precht" : "Who Am I and If So How Many? - Chapter heading",
+  "questionnaire-precht" : "Who Am I and If So How Many?",
   "translations": {
+    "questionnaire-description"   : "These questions were borrowed from the chapter headings from 'Who Am I and If So How Many?' by Richard David Precht.",
+
     "pad.question-0": "What is truth?",
     "pad.question-1": "Where do we come from?",
     "pad.question-2": "How does my brain function?",

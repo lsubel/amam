@@ -2,6 +2,8 @@
   "ln": "de",
   "questionnaire-nerd" : "Nerd",
   "translations": {
+    "questionnaire-description"   : "Nerdige Streitfragen von Nerds für Nerds.", 
+
     "pad.question-0": "Welcher ist der beste 'Star Trek' Käptain?",
     "pad.question-1": "Welche Filmreihe hätte nie einen Sequel bekommen sollen?",
     "pad.question-2": "Welches ist die beste Graphical Novel (auch Comics und Mangas)?",

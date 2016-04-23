@@ -2,6 +2,8 @@
   "ln": "de",
   "questionnaire-oxford_exam": "Aufnahmefragen des All Souls College (nach 2008)",
   "translations": {
+    "questionnaire-description"   : "Aufnahmefragen des All Souls College der Universität Oxford. Diese Fragen stammen aus Tests nach 2008.", 
+
     "pad.question-0": "Haben die Linken oder Rechten das zwanzigste Jahrhundert gewonnen?",
     "pad.question-1": "Sollten Intellektuelle twittern?",
     "pad.question-2": "Sollten Staaten die Grenzen kontrollieren? ",
