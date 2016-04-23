@@ -21,18 +21,21 @@
 
     <div class="modal-inner">
       <div class="modal-content">
-        <div class="modal-content-row" id="modal-label">
-          <h2 ln-id="menu.description.label"></h2>
+        <div class="modal-content-row">
+          <h2 ln-id="menu.questionnaires"></h2>
         </div>
         <div class="modal-content-row">
-          <p ln-id="menu.description" class="description"></p>
+          <select class="questionnaires-selection u-full-width" id="questionnairesSelection"></select>
+        </div>
+        <div class="modal-content-row">
+          <p ln-id="questionnaire-description" class="description"></p>
         </div>
         <div class="modal-content-row">
           <h2 ln-id="menu.option.label"></h2>
         </div>
         <div class="modal-content-row">
-          <label ln-id="menu.questionnaires" class="questionnaires-selection-label" for="questionnairesSelection"></label>
-          <select class="questionnaires-selection u-full-width" id="questionnairesSelection"></select>
+          <label ln-id="menu.lnselectionlabel" class="ln-selection-label" for="languageSelection"></label>
+          <select class="ln-selection u-full-width" id="languageSelection"></select>
         </div>
         <div class="modal-content-row">
           <label ln-id="menu.label.color" for="btn-newColor"></label>
@@ -60,6 +63,10 @@
         <h1 ln-id="menu.title" class="title"></h1>
       </div>
       <div class="modal-content-row">
+        <p ln-id="menu.description" class="description"></p>
+      </div>
+
+      <div class="modal-content-row">
         <a ln-id="menu.descriptionbutton" class="button u-full-width button-description" href="#popup-description"></a>
       </div>
     </div>
@@ -81,8 +88,6 @@
     </div>
     <div class="container menu-container-footer">
       <div class="modal-content-row menu-button-container">
-        <label ln-id="menu.lnselectionlabel" class="ln-selection-label" for="languageSelection"></label>
-        <select class="ln-selection u-full-width" id="languageSelection"></select>
         <a ln-id="menu.startbutton" class="button u-full-width button-start"></a>
       </div>
     </div>
