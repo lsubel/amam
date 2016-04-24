@@ -1,3 +1,7 @@
+/*
+ * Input Manager for desktop and mobile browsers
+ */
+
 function KeyboardInputManager() {
   this.events = {};
   this.listen();
