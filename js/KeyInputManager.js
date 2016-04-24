@@ -5,6 +5,7 @@
 function KeyboardInputManager() {
   this.events = {};
   this.listen();
+  mainMenuVisible = true;
 }
 
 KeyboardInputManager.prototype.on = function (event, callback) {
@@ -39,11 +40,15 @@ KeyboardInputManager.prototype.listen = function(){
   colorSaveOption.addEventListener("change",        this.setOption.bind(this));
   questionnaireSelection.addEventListener("change", this.selectQuestionnaire.bind(this));
 
-  this.bindButtonPress(".button-random",    this.newQuestion);
-  this.bindButtonPress(".button-menu",      this.showMenu);
-  this.bindButtonPress(".button-start",     this.showQuestion);
+  this.bindButtonPress(".button-random",      this.newQuestion);
+  this.bindButtonPress(".button-menu",        this.showMenu);
+  this.bindButtonPress(".button-start",       this.showQuestion);
+  this.bindButtonPress(".button-description", this.showModal);
+  this.bindButtonPress(".modal-close",        this.closeModal);
+
   this.bindButtonPress(".button-newcolor",  this.newColor);
   this.bindButtonPress(".button-reset",     this.resetApplicationManager);
+
 };
 
 KeyboardInputManager.prototype.selectTranslation = function(event){
@@ -63,12 +68,22 @@ KeyboardInputManager.prototype.newQuestion = function(event){
 
 KeyboardInputManager.prototype.showMenu = function(event){
   event.preventDefault();
+  mainMenuVisible = true;
   this.emit("showMenu");
 };
 
 KeyboardInputManager.prototype.showQuestion = function(event){
   event.preventDefault();
+  mainMenuVisible = false;
   this.emit("showQuestion");
+};
+
+KeyboardInputManager.prototype.showModal = function(event){
+  mainMenuVisible = false;
+};
+
+KeyboardInputManager.prototype.closeModal = function(event){
+  mainMenuVisible = true;
 };
 
 KeyboardInputManager.prototype.newColor = function(event){
