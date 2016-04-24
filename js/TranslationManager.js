@@ -12,12 +12,14 @@ TranslationManager.prototype.loadLocalContent = function(filename, fn){
   request.onreadystatechange = function(){
     if (this.readyState == 4) {
       this.onreadystatechange = undefined;
+      devdebug("Local content file '" + filename + "' was found.");
       fn.apply(this, [this]);
     }
   };
   request.overrideMimeType('text/json');
   request.open("GET", filename, true);
   request.send();
+  devdebug("Loading local content file '" + filename + "'.");
 }
 
 /*
@@ -113,7 +115,7 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
   // load the language
   var self = this;
   this.loadLocalContent("locales" + "/" + questionnaire + "/" + language + ".ln", function(xhr){
-    devlog("Ready new language file: " + xhr.responseURL);
+    devlog("New language file was received: " + xhr.responseURL);
     // check whether data were loaded
     if(!xhr.responseText || xhr.responseText === ""){
       throw "Exception: could not read the content of '" + language + ".json'.";
