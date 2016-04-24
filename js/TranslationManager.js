@@ -36,13 +36,13 @@ TranslationManager.prototype.loadAvailableQuestionnaires = function(){
     for(var i=0; i < number_of_questionnaires; i++){
       self.initializeQuestionnaires(available_questionnaires[i]);
     }
-    self.inputManager.emit("allQuestionnairesInitialized");
+    self.inputManager.emit("startedAllQuestionnairesInitializion");
 	});
 };
 
 TranslationManager.prototype.initializeQuestionnaires = function(questionnaire){
   this.loadAvailableLanguages(questionnaire);
-  this.inputManager.emit("questionnaireInitialized", questionnaire);
+  this.inputManager.emit("startedQuestionnaireInitializion", questionnaire);
 };
 
 TranslationManager.prototype.getQuestionnaireKey = function(questionnaire){
@@ -62,7 +62,7 @@ TranslationManager.prototype.loadAvailableUILanguages = function(){
     var number_of_languages   = available_languages.length;
     self.addAvailableLanguageCounter(number_of_languages);
     // hand over question package related information to the ApplicationManager
-    self.inputManager.emit("setQuestionpackInfos");
+    self.inputManager.emit("setQuestionnaireInfos");
     // initialize the available languages
     for(var i=0; i < number_of_languages; i++){
       self.initializeLanguage("ui", available_languages[i]);
@@ -80,7 +80,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
     var default_title         = json_parsed.defaulttitle;
     self.addAvailableLanguageCounter(number_of_languages);
     // hand over question package related information to the ApplicationManager
-    self.inputManager.emit("setQuestionpackInfos", {
+    self.inputManager.emit("setQuestionnaireInfos", {
       "available_languages": available_languages,
       "number_of_questions": numberofquestions,
       "questionnaire": questionnaire,

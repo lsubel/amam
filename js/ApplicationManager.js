@@ -6,12 +6,12 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.translationManager = new TranslationManager(this.inputManager, this.storageManager);
 
   // register event handlers
-  this.inputManager.on("selectQuestionnaire",           this.selectQuestionnaire.bind(this));
-  this.inputManager.on("questionnaireInitialized",      this.addQuestionnaireToMenu.bind(this));
-  this.inputManager.on("allQuestionnairesInitialized",  this.allQuestionnairesInitialized.bind(this));
+  this.inputManager.on("selectQuestionnaire",                   this.selectQuestionnaire.bind(this));
+  this.inputManager.on("startedQuestionnaireInitializion",      this.addQuestionnaireToMenu.bind(this));
+  this.inputManager.on("startedAllQuestionnairesInitializion",  this.allQuestionnairesInitialized.bind(this));
   this.inputManager.on("languageInitialized",           this.addLanguageToMenu.bind(this));
   this.inputManager.on("allLanguageInitialized",        this.allLanguageInitialized.bind(this));
-  this.inputManager.on("setQuestionpackInfos",          this.setQuestionpackInfos.bind(this));
+  this.inputManager.on("setQuestionnaireInfos",         this.selectQuestionnaireInfos.bind(this));
   this.inputManager.on("translateUI",                   this.translateUI.bind(this));
   this.inputManager.on("newQuestion",                   this.generateNewQuestion.bind(this));
   this.inputManager.on("showMenu",                      this.showMenu.bind(this));
@@ -168,7 +168,7 @@ ApplicationManager.prototype.addLanguageToMenu = function(ln) {
     }
 };
 
-ApplicationManager.prototype.setQuestionpackInfos = function(data) {
+ApplicationManager.prototype.selectQuestionnaireInfos = function(data) {
   if(data){
     var available_languages = data.available_languages;
     var questionnaire       = data.questionnaire;
@@ -190,6 +190,7 @@ ApplicationManager.prototype.generateNewQuestion = function() {
   this.current_question_id = new_id;
   var new_id_class = "pad.question-" + new_id;
   // show new language in the UI
+  devlog("Showing question with id '" + new_id + "'")
   this.actuator.setNewQuestion(new_id_class);
   this.translateUI(this.currentTranslation);
 };
