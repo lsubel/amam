@@ -22,6 +22,7 @@ HTMLActuator.prototype.addLanguageToMenu = function (ln){
   var option = document.createElement("option");
   option.setAttribute("value", ln);
   option.setAttribute("ln-id", "language." + ln);
+  option.setAttribute("ui", "");
   this.languageSelection.appendChild(option);
 };
 
@@ -29,6 +30,7 @@ HTMLActuator.prototype.addQuestionnaireToMenu = function (questionnaire, label){
   var option = document.createElement("option");
   option.setAttribute("value", questionnaire);
   option.setAttribute("ln-id", label);
+  option.setAttribute("ui", "");
   this.questionnairesSelection.appendChild(option);
 };
 

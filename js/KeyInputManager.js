@@ -1,3 +1,7 @@
+/*
+ * Input Manager for desktop and mobile browsers
+ */
+
 function KeyboardInputManager() {
   this.events = {};
   this.listen();
@@ -11,7 +15,7 @@ KeyboardInputManager.prototype.on = function (event, callback) {
 };
 
 KeyboardInputManager.prototype.emit = function (event, data) {
-  devlog("Emit event '" + event + "': " + data);
+  devdebug("Emit event '" + event + (data ?  ("': " + JSON.stringify(data)) : ""));
   var callbacks = this.events[event];
   if (callbacks) {
     callbacks.forEach(function (callback) {

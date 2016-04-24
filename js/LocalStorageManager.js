@@ -1,3 +1,7 @@
+/*
+ * Fake storage in case the application is executing in an environment without local storage
+ */
+
 window.fakeStorage = {
   _data: {},
 
@@ -23,6 +27,8 @@ window.fakeStorage = {
 function LocalStorageManager(version) {
   var supported     = this.localStorageSupported();
   this.storage      = supported ? window.localStorage : window.fakeStorage;
+  // reset the storage either in development mode
+  // or the app received a version update
   if(development || this.getVersion() < version){
     this.clear();
     this.setVersion(version);
@@ -47,7 +53,10 @@ LocalStorageManager.prototype.clear = function(){
   devlog("Reset local storage");
 };
 
-// Best score getters/setters
+/*
+ * General and specific getter and setter
+ */
+
 LocalStorageManager.prototype.getItem = function (key) {
   return this.storage.getItem(key);
 };
