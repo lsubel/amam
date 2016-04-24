@@ -1,7 +1,9 @@
 {
   "ln": "de",
-  "questionnaire-precht" : "Wer bin ich und wenn ja, wie viele? - Kapitelüberschriften",
+  "questionnaire-precht" : "Wer bin ich und wenn ja, wie viele?",
   "translations": {
+    "questionnaire-description"   : "Diese Fragen sind den Kapitelüberschriften aus 'Wer bin ich und wenn ja, wie viele?' von Richard David Precht entliehen.",
+
     "pad.question-0": "Was ist Wahrheit?",
     "pad.question-1": "Woher kommen wir?",
     "pad.question-2": "Wie funktioniert mein Gehirn?",

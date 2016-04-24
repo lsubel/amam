@@ -2,6 +2,8 @@
   "ln": "en",
   "questionnaire-nerd" : "Nerd",
   "translations": {
+    "questionnaire-description"   : "Nerdy controversial question from nerds for nerds.",
+
     "pad.question-0": "Who is your most favorite 'Star Trek' captain and why?",
     "pad.question-1": "Which movie series should have never get a sequel?",
     "pad.question-2": "What is your most favorite graphical novel (including comics and mangas)?",

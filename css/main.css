@@ -79,9 +79,6 @@ a {
     align-content: space-between;
     justify-content: space-between; }
 
-  .ln-selection-label {
-    display: none; }
-
   .ln-selection {
     margin-right: 0.5rem; }
 
@@ -100,3 +97,5 @@ a {
 input[type=checkbox] {
   float: left;
   margin-right: 0.4em; }
+
+/*# sourceMappingURL=main.css.map */
