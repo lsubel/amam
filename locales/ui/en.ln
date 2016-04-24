@@ -5,7 +5,7 @@
     "pad.random-question"   : "Get new question",
     "pad.back-to-menu"      : "Go back to menu",
     "menu.title"            : "Ask me anything meaningful",
-    "menu.description"      : "Think you know your friend? Ask one of the following questions and learn something about their character.",
+    "menu.description"      : "Think you know your friends? Ask them one of the following non-trivial questions and learn something about their character.",
     "menu.startbutton"      : "Start",
     "menu.description.label": "Explanation",
     "menu.option.label"     : "Options",
