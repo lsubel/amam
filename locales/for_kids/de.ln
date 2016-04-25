@@ -1,18 +1,17 @@
 {
   "ln"                            : "de",
-  "questionnaire-for_kids"         : "Fragen für Kinder",
+  "questionnaire-for_kids"         : "Fragen für Kinder im Alter zwischen 7 und 14",
   "translations": {
-    "questionnaire-description"   : "Diese Fragensammlung soll helfen ein Gespräch mit kindern im Alter zwischen 7 und 14 anzufangen.",
+    "questionnaire-description"   : "Diese Fragensammlung soll helfen ein Gespräch mit Kindern im Alter zwischen 7 und 14 anzufangen.",
 
     "pad.question-0"        : "Wo fühlst du dich Zuhause?",
-    
     "pad.question-1"        : "Welchen Film soll man schauen, wenn es einem gerade schlecht geht?",
-    "pad.question-2"        : "Träumst du davon Berühmt zu sein?",
-    "pad.question-3"        : "Welche Angewonheit hasst du, die dir deinen Alltag erleichtert?",
+    "pad.question-2"        : "Träumst du davon berühmt zu sein?",
+    "pad.question-3"        : "Wer würdest du gerne eines Tages sein?",
     "pad.question-4"        : "Was ist das beste Spiel, dass du je gespielt hast?",
-    "pad.question-5"        : "Gibt es ein Lied,dass du hörst wenn du Traurig bist?",
+    "pad.question-5"        : "Hast du ein Lieblingslied?",
     "pad.question-6"        : "Was kam in dem letzten Traum vor an den du dich erinnern kannst?",
-    "pad.question-7"        : "Deine Lieblingsheldinnen/-helden in der Wirklichkeit?",
+    "pad.question-7"        : "Hast du einen Lieblingsheld oder eine Lieblingsheldin?",
     "pad.question-8"        : "Was ist dir in einer Freundschaft am wichtigsten?",
     "pad.question-9"        : "Was kannst du gut?",
 
@@ -21,6 +20,10 @@
     "pad.question-12"        : "Wann hörst du Musik?",
     "pad.question-13"        : "Wenn du etwas an deiner Erziehung ändern könntest: Was wäre das?",
     "pad.question-14"        : "Was ist das längste Buch was du gelesen hast? War es gut?",
-    "pad.question-15"        : "Hast du einen Film mehrmals gesehen?",
-    "pad.question-16"        : "Machst du einen Sport gerne?"}
+    "pad.question-15"        : "Hast du einen Film mehrmals gesehen und wenn ja, welchen?",
+    "pad.question-16"        : "Machst du einen Sport gerne?",
+    "pad.question-17"        : "Wie stellst du dir deine Zukunft vor?",
+    "pad.question-18"        : "Würdest du gerne deinen Namen ändern?",
+    "pad.question-19"        : "Wofür hast du dich schonmal sehr geschämt?"
+  }
 }

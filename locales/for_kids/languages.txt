@@ -2,6 +2,6 @@
   "languages": [
     "de"
   ],
-  "numberofquestions": 17,
-  "defaulttitle": "Fragen für Kinder"
+  "numberofquestions": 20,
+  "defaulttitle": "Fragen für Kinder im Alter zwischen 7 und 14"
 }
