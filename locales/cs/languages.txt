@@ -3,5 +3,11 @@
     "en", "de"
   ],
   "numberofquestions": 2,
-  "defaulttitle": "Computer Science"
+  "defaulttitle": "Computer Science",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

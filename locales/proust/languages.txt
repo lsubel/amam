@@ -3,5 +3,11 @@
     "en", "de"
   ],
   "numberofquestions": 36,
-  "defaulttitle": "Proust questions"
+  "defaulttitle": "Proust questions",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

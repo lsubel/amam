@@ -3,5 +3,11 @@
     "de"
   ],
   "numberofquestions": 26,
-  "defaulttitle": "Kultur Konversationsstarter"
+  "defaulttitle": "Kultur Konversationsstarter",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

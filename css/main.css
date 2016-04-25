@@ -52,6 +52,9 @@ a {
 .description {
   margin-bottom: 0; }
 
+.contribution-description {
+  margin-bottom: 0; }
+
 .modal--fade, .modal--show {
   transition: opacity .4s; }
 

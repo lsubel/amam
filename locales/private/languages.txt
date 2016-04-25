@@ -3,5 +3,11 @@
     "de"
   ],
   "numberofquestions": 40,
-  "defaulttitle": "Konversationsstarter (private Fragen)"
+  "defaulttitle": "Konversationsstarter (private Fragen)",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

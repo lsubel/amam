@@ -3,5 +3,11 @@
     "de"
   ],
   "numberofquestions": 20,
-  "defaulttitle": "Fragen für Kinder im Alter zwischen 7 und 14"
+  "defaulttitle": "Fragen für Kinder im Alter zwischen 7 und 14",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

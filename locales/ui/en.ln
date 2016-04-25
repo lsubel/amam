@@ -15,6 +15,7 @@
     "menu.lnselectionlabel" : "Currently selected language",
     "menu.questionnaires"   : "Questionnaires",
     "menu.label.color"      : "Background color",
+    "menu.authorship.intro" : "Questions contributed by",
 
     "language.de"           : "German",
     "language.en"           : "English"
