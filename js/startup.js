@@ -1,6 +1,11 @@
 devlog = function(str){
-  if(development)
+  if(console && console.log)
     console.log(str);
+};
+
+devdebug = function(str){
+  if(console && console.debug)
+    console.debug(str);
 };
 
 var startup = function() {
