@@ -1,0 +1,7 @@
+{
+  "languages": [
+    "de"
+  ],
+  "numberofquestions": 36,
+  "defaulttitle": "Konversationsstarter (private Fagen)"
+}

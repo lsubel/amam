@@ -1,0 +1,7 @@
+{
+  "languages": [
+    "de"
+  ],
+  "numberofquestions": 17,
+  "defaulttitle": "Fragen für Kinder"
+}

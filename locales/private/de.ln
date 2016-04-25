@@ -1,6 +1,6 @@
 {
   "ln"                            : "de",
-  "questionnaire-default"         : "Konversationsstarter (private Fagen)",
+  "questionnaire-private"         : "Konversationsstarter (private Fagen)",
   "translations": {
     "questionnaire-description"   : "Diese Fragen sollen es ermöglichen ein Gspräch über private Themen anzufang",
 

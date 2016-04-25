@@ -1,11 +1,11 @@
 {
   "ln"                            : "de",
-  "questionnaire-default"         : "Fragen für Kinder",
+  "questionnaire-for_kids"         : "Fragen für Kinder",
   "translations": {
     "questionnaire-description"   : "Diese Fragensammlung soll helfen ein Gespräch mit kindern im Alter zwischen 7 und 14 anzufangen.",
 
     "pad.question-0"        : "Wo fühlst du dich Zuhause?",
-",
+    
     "pad.question-1"        : "Welchen Film soll man schauen, wenn es einem gerade schlecht geht?",
     "pad.question-2"        : "Träumst du davon Berühmt zu sein?",
     "pad.question-3"        : "Welche Angewonheit hasst du, die dir deinen Alltag erleichtert?",

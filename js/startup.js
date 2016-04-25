@@ -10,7 +10,7 @@ devdebug = function(str){
 
 var startup = function() {
   version = "1.3.5";
-  development = false;
+  development = true;
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 };
 

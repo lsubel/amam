@@ -1,11 +1,11 @@
 {
   "ln"                            : "de",
-  "questionnaire-default"         : "Kultur  Konversationsstarter",
+  "questionnaire-culture"         : "Kultur  Konversationsstarter",
   "translations": {
     "questionnaire-description"   : "Diese Fragensammlung soll helfen ein gespräch über Kultur anzufangen",
 
-    "pad.question-0"        : "Angenommen du könntest eine belibige Person zum gemeinsamen Essen einladen: Wer wäre das?
-",
+    "pad.question-0"        : "Angenommen du könntest eine belibige Person zum gemeinsamen Essen einladen: Wer wäre das?",
+
     "pad.question-1"        : "Welchen Film soll man schauen, wenn es einem gerade schlecht geht?",
     "pad.question-2"        : "Träumst du davon Berühmt zu sein?",
     "pad.question-3"        : "Wrlche Angewonheit hasst du, die dir deinen Alltag erleichtert?",
