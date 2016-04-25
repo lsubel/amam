@@ -75,7 +75,7 @@ KeyboardInputManager.prototype.showMenu = function(event){
 KeyboardInputManager.prototype.showQuestion = function(event){
   event.preventDefault();
   mainMenuVisible = false;
-  this.emit("showQuestion");
+  this.emit("showRandomQuestion");
 };
 
 KeyboardInputManager.prototype.showModal = function(event){

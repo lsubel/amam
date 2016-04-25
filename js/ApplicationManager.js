@@ -15,7 +15,7 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("translateUI",                   this.translateUI.bind(this));
   this.inputManager.on("newQuestion",                   this.generateNewQuestion.bind(this));
   this.inputManager.on("showMenu",                      this.showMenu.bind(this));
-  this.inputManager.on("showQuestion",                  this.showQuestion.bind(this));
+  this.inputManager.on("showRandomQuestion",            this.showRandomQuestion.bind(this));
   this.inputManager.on("newColor",                      this.newBackgroundColor.bind(this));
   this.inputManager.on("setOption",                     this.setOption.bind(this));
 
@@ -207,11 +207,11 @@ ApplicationManager.prototype.generateNewQuestion = function() {
 
 ApplicationManager.prototype.showMenu = function() {
   this.actuator.showMenu();
-  this.actuator.hideQuestion();
+  this.actuator.hideRandomQuestion();
 };
 
-ApplicationManager.prototype.showQuestion = function() {
-  this.actuator.showQuestion();
+ApplicationManager.prototype.showRandomQuestion = function() {
+  this.actuator.showRandomQuestion();
   this.actuator.hideMenu();
 };
 

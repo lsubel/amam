@@ -8,6 +8,8 @@ function HTMLActuator() {
   this.menuContainerFooter      = document.querySelector(".menu-container-footer");
   this.randomQuestionContainer        = document.querySelector(".random-question-container");
   this.randomQuestionContainerFooter  = document.querySelector(".random-question-container-footer");
+  this.listQuestionContainer          = document.querySelector(".list-question-container");
+  this.listQuestionContainerFooter    = document.querySelector(".list-question-container-footer");
   this.buttonStart        = document.querySelector(".button-start");
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
@@ -71,12 +73,12 @@ HTMLActuator.prototype.hideMenu = function(){
   this.menuContainerFooter.classList.remove("show-container");
 };
 
-HTMLActuator.prototype.showQuestion = function(){
+HTMLActuator.prototype.showRandomQuestion = function(){
   this.randomQuestionContainer.classList.add("show-container");
   this.randomQuestionContainerFooter.classList.add("show-container");
 };
 
-HTMLActuator.prototype.hideQuestion = function(){
+HTMLActuator.prototype.hideRandomQuestion = function(){
   this.randomQuestionContainer.classList.remove("show-container");
   this.randomQuestionContainerFooter.classList.remove("show-container");
 };
