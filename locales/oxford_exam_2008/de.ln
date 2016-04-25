@@ -2,7 +2,7 @@
   "ln"                    : "de",
   "questionnaire-oxford_exam_2008" : "All Souls College (vor 2008)",
   "translations": {
-      "questionnaire-description"   : "Aufnahmefragen des All Souls College der Universität Oxford. Diese Fragen stammen aus Tests vor 2008.", 
+      "questionnaire-description"   : "Aufnahmefragen vom All Souls College der Universität Oxford. Diese Fragen stammen aus Tests vor 2008.", 
 
       "pad.question-0": "Ist es unmoralisch, ein 13.000€ Handtasche zu kaufen?",
       "pad.question-1": "'Mir ist egal, ob jemand meine Bücher liest, ich schreibe für mich', sagte der Autor eines halben Dutzend veröffentlichter Romane. Gibt es etwas falsch mit dieser Aussage im Bezug auf die Theorie der Kunst? ",

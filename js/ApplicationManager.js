@@ -15,7 +15,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("translateUI",                   this.translateUI.bind(this));
   this.inputManager.on("newQuestion",                   this.generateNewQuestion.bind(this));
   this.inputManager.on("showMenu",                      this.showMenu.bind(this));
-  this.inputManager.on("showQuestion",                  this.showQuestion.bind(this));
+  this.inputManager.on("showRandomQuestion",            this.showRandomQuestion.bind(this));
+  this.inputManager.on("showListQuestion",              this.showListQuestion.bind(this));
   this.inputManager.on("newColor",                      this.newBackgroundColor.bind(this));
   this.inputManager.on("setOption",                     this.setOption.bind(this));
 
@@ -47,7 +48,7 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
   ];
 
   // bootstrap
-  this.first_available_questionnaire = "default";
+  this.first_available_questionnaire = "proust";
   this.translationManager.loadAvailableQuestionnaires();
   this.actuator.showVersion(version);
   this.extractBrowserLanguage();
@@ -75,6 +76,7 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
     this.addLanguageToMenu(ln);
   }
   if(questionnaire != last_used_questionnaire){
+    this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
     this.translateUI(lns[0]);
   }
   this.generateNewQuestion();
@@ -142,6 +144,7 @@ ApplicationManager.prototype.allLanguageInitialized = function(){
 };
 
 ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
+  this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
   this.translateUI(ln);
   this.generateNewQuestion();
   this.showMenu();
@@ -207,13 +210,22 @@ ApplicationManager.prototype.generateNewQuestion = function() {
 
 ApplicationManager.prototype.showMenu = function() {
   this.actuator.showMenu();
-  this.actuator.hideQuestion();
+  this.actuator.hideListQuestion();
+  this.actuator.hideRandomQuestion();
 };
 
-ApplicationManager.prototype.showQuestion = function() {
-  this.actuator.showQuestion();
+ApplicationManager.prototype.showRandomQuestion = function() {
+  this.actuator.showRandomQuestion();
+  this.actuator.hideListQuestion();
   this.actuator.hideMenu();
 };
+
+ApplicationManager.prototype.showListQuestion = function() {
+  this.actuator.hideRandomQuestion();
+  this.actuator.showListQuestion();
+  this.actuator.hideMenu();
+};
+
 
 ApplicationManager.prototype.newBackgroundColor = function(color) {
   var next_color = color || this.available_colors[Math.floor(Math.random() * this.available_colors.length)];

@@ -1,7 +1,0 @@
-{
-  "languages": [
-    "en", "de"
-  ],
-  "numberofquestions": 36,
-  "defaulttitle": "Proust questions"
-}
