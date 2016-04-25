@@ -47,7 +47,7 @@ ApplicationManager.prototype.initializeApplicationManager = function(){
   ];
 
   // bootstrap
-  this.first_available_questionnaire = "default";
+  this.first_available_questionnaire = "proust";
   this.translationManager.loadAvailableQuestionnaires();
   this.actuator.showVersion(version);
   this.extractBrowserLanguage();
