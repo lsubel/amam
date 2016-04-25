@@ -1,0 +1,37 @@
+{
+  "ln"                            : "de",
+  "questionnaire-culture"         : "Kultur Konversationsstarter",
+  "translations": {
+    "questionnaire-description"   : "Diese Fragensammlung soll helfen ein Gespräch über Kultur anzufangen.",
+
+    "pad.question-0"        : "Angenommen, Sie könnten eine beliebige Person zum gemeinsamen Essen einladen: Wer wäre das?",
+    "pad.question-1"        : "Welchen Film sollte man schauen, wenn es einem gerade schlecht geht?",
+    "pad.question-2"        : "Träumen Sie davon berühmt zu sein?",
+    "pad.question-3"        : "Was ist Ihr Lieblingstheaterstück?",
+    "pad.question-4"        : "Was ist das intensivste Spiel, dass Sie je gespielt hast?",
+    "pad.question-5"        : "Ihre liebsten Romanhelden?",
+    "pad.question-6"        : "Ihre Lieblingsgestalt in der Geschichte?",
+    "pad.question-7"        : "Ihre Lieblingsheldinnen/-helden in der Wirklichkeit?",
+    "pad.question-8"        : "Ihr Lieblingsmaler?",
+    "pad.question-9"        : "Ihr Lieblingsautor?",
+
+    "pad.question-10"        : "Ihr Lieblingskomponist?",
+    "pad.question-11"        : "Wann hören Sie Musik?",
+    "pad.question-12"        : "Welches religiöse Gebäude hat Sie in Ihrem Leben am meisten beeindruckt?",
+    "pad.question-13"        : "Was ist das umfangreichste Buch das Sie jemals gelesen hast? War es gut?",
+    "pad.question-14"        : "Haben Sie jemals einen Film mehrmals gesehen und wenn ja, welchen?",
+    "pad.question-15"        : "Was für Musik hören Sie, wenn Sie traurig bist?",
+    "pad.question-16"        : "Haben Sie jemals ein Gemälde gesehen, dass Sie emotional berührt hat? Wenn ja, welches Gemälde war es?",
+    "pad.question-17"        : "Welche Merkmale hat für Sie ein guter Film?",
+    "pad.question-18"        : "Was ist Ihre Lieblingsoper und warum ist sie es?",
+    "pad.question-19"        : "Sollten wir mehr Geld für Museen ausgeben?",
+
+    "pad.question-20"        : "Haben Museen im Zeitalter des Internets noch eine Daseinsberechtigung?",
+    "pad.question-21"        : "Gibt es eine künstlerische Gattung oder Richtung, die Sie nicht begreifen?",
+    "pad.question-22"        : "Was ist Ihr größtes künstlerisches Talent? Haben Sie sich schonmal versucht, in diesem Bereich auszutoben?",
+    "pad.question-23"        : "Was bedeutet für Sie Kunst?",
+    "pad.question-24"        : "Was ist für Sie 'schön' und was empfinden Sie als 'hässlich'?",
+    "pad.question-25"        : "Muss Kunst für Sie harmonisch sein?"
+
+  }
+}

@@ -1,6 +1,6 @@
 {
   "ln"                        : "en",
-  "questionnaire-default"     : "Proust Questionnaire",
+  "questionnaire-proust"     : "Proust Questionnaire",
   "translations": {
     "questionnaire-description"  : "In the 19th century answering these type of questions as part of a questionnaire were popular as society plays for the educated society. They should encourage conversation, help to learn about the interviewee and hear about their character.",
 

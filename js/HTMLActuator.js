@@ -4,13 +4,17 @@ function HTMLActuator() {
   this.questionnairesSelection  = document.querySelector(".questionnaires-selection");
   this.modal                    = document.querySelector(".modal-inner");
   this.question                 = document.querySelector(".question");
+  this.questionList             = document.querySelector(".question-list");
   this.menuContainer            = document.querySelector(".menu-container");
   this.menuContainerFooter      = document.querySelector(".menu-container-footer");
-  this.questionContainer        = document.querySelector(".question-container");
-  this.questionContainerFooter  = document.querySelector(".question-container-footer");
-  this.buttonStart        = document.querySelector(".button-start");
+  this.randomQuestionContainer        = document.querySelector(".random-question-container");
+  this.randomQuestionContainerFooter  = document.querySelector(".random-question-container-footer");
+  this.listQuestionContainer          = document.querySelector(".list-question-container");
+  this.listQuestionContainerFooter    = document.querySelector(".list-question-container-footer");
+  this.buttonStartRandom  = document.querySelector(".button-start-random");
+  this.buttonStartList    = document.querySelector(".button-start-list");
   this.buttonRandom       = document.querySelector(".button-random");
-  this.buttonMenu         = document.querySelector(".button-menu");
+  this.buttonMenu         = document.querySelector(".button-random-menu");
   this.buttonDescription  = document.querySelector(".button-description");
   this.buttonReset        = document.querySelector(".button-reset");
   this.modalContent = document.querySelector(".modal-content");
@@ -38,6 +42,18 @@ HTMLActuator.prototype.selectQuestionnaire = function(questionnaire){
   var entry_to_mark = document.querySelector("option[value=" + questionnaire + "]");
   this.questionnairesSelection.selectedIndex = entry_to_mark.index;
 };
+
+HTMLActuator.prototype.fillQuestionList = function(ln){
+  while (this.questionList.firstChild) {
+    this.questionList.removeChild(this.questionList.firstChild);
+  }
+  for(var i=0;i<ln;i++){
+    var new_node = document.createElement("h5");
+    new_node.setAttribute("ln-id", "pad.question-" + i);
+    new_node.setAttribute("class", "question");
+    this.questionList.appendChild(new_node);
+  }
+}
 
 HTMLActuator.prototype.resetSelects = function(){
   this.resetLanguages();
@@ -71,14 +87,24 @@ HTMLActuator.prototype.hideMenu = function(){
   this.menuContainerFooter.classList.remove("show-container");
 };
 
-HTMLActuator.prototype.showQuestion = function(){
-  this.questionContainer.classList.add("show-container");
-  this.questionContainerFooter.classList.add("show-container");
+HTMLActuator.prototype.showRandomQuestion = function(){
+  this.randomQuestionContainer.classList.add("show-container");
+  this.randomQuestionContainerFooter.classList.add("show-container");
 };
 
-HTMLActuator.prototype.hideQuestion = function(){
-  this.questionContainer.classList.remove("show-container");
-  this.questionContainerFooter.classList.remove("show-container");
+HTMLActuator.prototype.hideRandomQuestion = function(){
+  this.randomQuestionContainer.classList.remove("show-container");
+  this.randomQuestionContainerFooter.classList.remove("show-container");
+};
+
+HTMLActuator.prototype.showListQuestion = function(){
+  this.listQuestionContainer.classList.add("show-container");
+  this.listQuestionContainerFooter.classList.add("show-container");
+};
+
+HTMLActuator.prototype.hideListQuestion = function(){
+  this.listQuestionContainer.classList.remove("show-container");
+  this.listQuestionContainerFooter.classList.remove("show-container");
 };
 
 HTMLActuator.prototype.showVersion = function(version){
@@ -94,7 +120,8 @@ HTMLActuator.prototype.changeBackgroundColor = function(color){
     self.modal.style.backgroundColor  = lighten_color;
     self.languageSelection.style.backgroundColor        = lighten_color;
     self.questionnairesSelection.style.backgroundColor  = lighten_color;
-    self.buttonStart.style.backgroundColor              = lighten_color;
+    self.buttonStartRandom.style.backgroundColor        = lighten_color;
+    self.buttonStartList.style.backgroundColor        = lighten_color;
     self.buttonRandom.style.backgroundColor             = lighten_color;
     self.buttonMenu.style.backgroundColor               = lighten_color;
     self.buttonDescription.style.backgroundColor        = lighten_color;

@@ -3,5 +3,11 @@
     "en", "de"
   ],
   "numberofquestions": 29,
-  "defaulttitle" : "All Souls College Entrance Exam Questions (before 2008)"
+  "defaulttitle" : "All Souls College Entrance Exam Questions (before 2008)",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }

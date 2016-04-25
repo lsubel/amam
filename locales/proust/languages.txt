@@ -2,8 +2,8 @@
   "languages": [
     "en", "de"
   ],
-  "numberofquestions": 2,
-  "defaulttitle": "Computer Science",
+  "numberofquestions": 36,
+  "defaulttitle": "Proust questions",
   "authorship": [
     {
       "name": "Lukas Subel",

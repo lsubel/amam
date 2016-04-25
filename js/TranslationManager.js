@@ -78,6 +78,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
     var numberofquestions     = json_parsed.numberofquestions;
     var number_of_languages   = available_languages.length;
     var default_title         = json_parsed.defaulttitle;
+    var authorship            = json_parsed.authorship;
     self.addAvailableLanguageCounter(number_of_languages);
     // hand over question package related information to the ApplicationManager
     self.inputManager.emit("setQuestionnaireInfos", {
@@ -89,8 +90,29 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
     for(var i=0; i < number_of_languages; i++){
       self.initializeLanguage(questionnaire, available_languages[i]);
     }
+    // save the authorship information in all available languages
+
+    var authors = "";
+    if(authorship){
+      for(var j=0; j<authorship.length;j++){
+        var author = authorship[j];
+        if(j > 0 && j == (authorship.length - 1)){
+          authors += " & ";
+        } else if(j > 0){
+          authors += ", ";
+        }
+        authors += author.name;
+      }
+    }
+    else{
+      authors += "Anonymous"
+    }
+    for(var i=0; i<available_languages.length;i++){
+      var lang = available_languages[i];
+      self.setTranslation(questionnaire, lang, "authorship", authors);
+    }
     // save the default title
-    self.setTranslation(undefined, "ui", self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
+    self.setTranslation("default", null, self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
   });
 };
 
@@ -157,7 +179,11 @@ TranslationManager.prototype.setTranslation = function(questionnaire, language, 
 
 TranslationManager.prototype.getTranslation = function(questionnaire, language, id){
   if(questionnaire && language && id){
-    return this.storage.getItem(questionnaire + "_" + language + "_" + id);
+    var res = this.storage.getItem(questionnaire + "_" + language + "_" + id);
+    if(!res){
+      res = this.storage.getItem("default" + "_" + id);
+    }
+    return res;
   }
   else{
     return ("MISSING TRANSLATION: " + questionnaire + ", " + language + ", " + id);

@@ -1,6 +1,6 @@
 {
   "ln"                            : "de",
-  "questionnaire-default"         : "Proust Fragenbogen",
+  "questionnaire-proust"         : "Proust Fragenbogen",
   "translations": {
     "questionnaire-description"   : "Im 19. Jahrhundert war das Beantworten von solchartigen Fragebögen ein beliebtes Gesellschaftspielt bei der gebildeten Gesellschaft. Sie sollten die Konversation fördern, helfen den Antwortenden besser kennen zu lernen und was über dessen Charakter zu erfahren.",
 

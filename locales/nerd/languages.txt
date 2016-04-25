@@ -3,5 +3,11 @@
     "en", "de"
   ],
   "numberofquestions": 18,
-  "defaulttitle": "Nerd"
+  "defaulttitle": "Nerd",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
 }
