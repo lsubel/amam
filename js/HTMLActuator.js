@@ -6,8 +6,8 @@ function HTMLActuator() {
   this.question                 = document.querySelector(".question");
   this.menuContainer            = document.querySelector(".menu-container");
   this.menuContainerFooter      = document.querySelector(".menu-container-footer");
-  this.questionContainer        = document.querySelector(".question-container");
-  this.questionContainerFooter  = document.querySelector(".question-container-footer");
+  this.randomQuestionContainer        = document.querySelector(".random-question-container");
+  this.randomQuestionContainerFooter  = document.querySelector(".random-question-container-footer");
   this.buttonStart        = document.querySelector(".button-start");
   this.buttonRandom       = document.querySelector(".button-random");
   this.buttonMenu         = document.querySelector(".button-menu");
@@ -72,13 +72,13 @@ HTMLActuator.prototype.hideMenu = function(){
 };
 
 HTMLActuator.prototype.showQuestion = function(){
-  this.questionContainer.classList.add("show-container");
-  this.questionContainerFooter.classList.add("show-container");
+  this.randomQuestionContainer.classList.add("show-container");
+  this.randomQuestionContainerFooter.classList.add("show-container");
 };
 
 HTMLActuator.prototype.hideQuestion = function(){
-  this.questionContainer.classList.remove("show-container");
-  this.questionContainerFooter.classList.remove("show-container");
+  this.randomQuestionContainer.classList.remove("show-container");
+  this.randomQuestionContainerFooter.classList.remove("show-container");
 };
 
 HTMLActuator.prototype.showVersion = function(version){
