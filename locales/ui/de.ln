@@ -7,6 +7,7 @@
     "menu.title"              : "Frag mich etwas bedeutsames",
     "menu.description"        : "Wie gut kennst du deinen Freunde? Stelle ihnen eine der folgenden Fragen und lerne etwas über ihren Charakter.",
     "menu.startbutton.random" : "Start Zufällig",
+    "menu.startbutton.list"   : "Start Liste",
     "menu.description.label"  : "Beschreibung",
     "menu.option.label"       : "Optionen",
     "menu.descriptionbutton"  : "Fragebögen & Optionen",

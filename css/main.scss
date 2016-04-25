@@ -7,6 +7,13 @@ $footer_height: 100px;
   }
 }
 
+.list-question-container {
+  display: none;
+  &.show-container {
+    display: block;
+  }
+}
+
 .menu-container {
   display: none;
   &.show-container {
@@ -20,6 +27,14 @@ $footer_height: 100px;
     display: block;
   }
 }
+
+.list-question-container-footer {
+  display: none;
+  &.show-container {
+    display: block;
+  }
+}
+
 
 .menu-container-footer {
   display: none;

@@ -3,6 +3,11 @@
   .random-question-container.show-container {
     display: block; }
 
+.list-question-container {
+  display: none; }
+  .list-question-container.show-container {
+    display: block; }
+
 .menu-container {
   display: none; }
   .menu-container.show-container {
@@ -11,6 +16,11 @@
 .random-question-container-footer {
   display: none; }
   .random-question-container-footer.show-container {
+    display: block; }
+
+.list-question-container-footer {
+  display: none; }
+  .list-question-container-footer.show-container {
     display: block; }
 
 .menu-container-footer {
