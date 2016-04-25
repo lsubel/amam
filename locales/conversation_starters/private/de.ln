@@ -1,0 +1,39 @@
+{
+  "ln"                            : "de",
+  "questionnaire-default"         : "Konversationsstarter (private Fagen)",
+  "translations": {
+    "questionnaire-description"   : "Diese Fragen sollen es ermöglichen ein Gspräch über private Themen anzufang",
+
+    "pad.question-0"        : "Ihr Motto?",
+    "pad.question-1"        : "Wo möchten Sie leben?",
+    "pad.question-2"        : "Was ist für Sie das vollkommene irdische Glück?",
+    "pad.question-3"        : "Welche Fehler entschuldigen Sie am ehesten?",
+    "pad.question-4"        : "Was ist für Sie das größte Unglück?",
+    "pad.question-5"        : "Wenn du die Wahl hättest: Hättest du im hohen Alter lieber einen fitten Körper oder einen gesunden Geist?",
+    "pad.question-6"        : "Hast du eine geheime Vorahnung, wie du vermutlich sterben wirst?",
+    "pad.question-7"        : "Was ist dir in einer Freundschaft am wichtigsten?",
+    "pad.question-8"        : "Was ist deine schönste Erinnerung?",
+    "pad.question-9"        : "Wofür bist du Dankbar?",
+
+    "pad.question-10"        : "Was kannst du gut?",
+    "pad.question-11"        : "Wovor hast du Angst?",
+    "pad.question-13"        : "Deine Lieblingstugend?",
+    "pad.question-14"        : "Ihre Lieblingsbeschäftigung?",
+    "pad.question-15"        : "Wer oder was hätten Sie gern sein mögen?",
+    "pad.question-16"        : "Ihr Hauptcharakterzug?",
+    "pad.question-17"        : "Was schätzen Sie bei Ihren Freunden am meisten?",
+    "pad.question-18"        : "Ihr größter Fehler?",
+    "pad.question-19"        : "Ihr Traum vom Glück?",
+
+    "pad.question-20"        : "Was wäre für Sie das größte Unglück?",
+    "pad.question-21"        : "Was möchten Sie sein?",
+    "pad.question-22"        : "Ihre Lieblingsfarbe?",
+    "pad.question-23"        : "Ihre Lieblingsblume?",
+    "pad.question-29"        : "Ihre Lieblingsnamen?",
+
+    "pad.question-30"        : "Was verabscheuen Sie am meisten?",
+    "pad.question-33"        : "Welche natürliche Gabe möchten Sie besitzen?",
+    "pad.question-34"        : "Wie möchten Sie gern sterben?",
+    "pad.question-35"        : "Ihre gegenwärtige Geistesverfassung?"
+  }
+}
