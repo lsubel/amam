@@ -18,9 +18,8 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("showQuestion",                  this.showQuestion.bind(this));
   this.inputManager.on("newColor",                      this.newBackgroundColor.bind(this));
   this.inputManager.on("setOption",                     this.setOption.bind(this));
-  if(development){
-    this.inputManager.on("resetApplicationManager",       this.resetApplicationManager.bind(this));
-  }
+
+  this.inputManager.on("resetApplicationManager",       this.resetApplicationManager.bind(this));
 
   this.initializeApplicationManager();
 }
