@@ -90,7 +90,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
       self.initializeLanguage(questionnaire, available_languages[i]);
     }
     // save the default title
-    self.setTranslation(undefined, "ui", self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
+    self.setTranslation("default", null, self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
   });
 };
 
@@ -157,7 +157,11 @@ TranslationManager.prototype.setTranslation = function(questionnaire, language, 
 
 TranslationManager.prototype.getTranslation = function(questionnaire, language, id){
   if(questionnaire && language && id){
-    return this.storage.getItem(questionnaire + "_" + language + "_" + id);
+    var res = this.storage.getItem(questionnaire + "_" + language + "_" + id);
+    if(!res){
+      res = this.storage.getItem("default" + "_" + id);
+    }
+    return res;
   }
   else{
     return ("MISSING TRANSLATION: " + questionnaire + ", " + language + ", " + id);
