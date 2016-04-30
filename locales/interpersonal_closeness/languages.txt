@@ -1,0 +1,13 @@
+{
+  "languages": [
+    "en", "de"
+  ],
+  "numberofquestions": 35,
+  "defaulttitle": "Questions from Closeness-Generation procedure",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
+}
