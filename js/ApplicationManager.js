@@ -69,16 +69,21 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   var last_used_questionnaire = this.storageManager.getLastUsedQuestionnaire();
   this.storageManager.setLastUsedQuestionnaire(questionnaire);
   this.actuator.resetLanguages();
+  // add languages available for the selected questionnaire
   var lns = this.available_languages[questionnaire];
   this.addedLanguages = [];
   for(var i=0;i<lns.length;i++){
     var ln = lns[i];
     this.addLanguageToMenu(ln);
   }
+  // in case the questionnaire changed, update the authorship, list and UI
   if(questionnaire != last_used_questionnaire){
+    var authors = JSON.parse(this.storageManager.getAuthorshipInformation(questionnaire));
+    this.actuator.updateAuthorship(authors);
     this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
     this.translateUI(lns[0]);
   }
+  // select a new question
   this.generateNewQuestion();
 };
 
@@ -145,6 +150,8 @@ ApplicationManager.prototype.allLanguageInitialized = function(){
 
 ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
   this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
+  var authors = JSON.parse(this.storageManager.getAuthorshipInformation(questionnaire));
+  this.actuator.updateAuthorship(authors);
   this.translateUI(ln);
   this.generateNewQuestion();
   this.showMenu();
