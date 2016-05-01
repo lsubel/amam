@@ -81,6 +81,7 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
     var ln = lns.indexOf(this.currentTranslation) >= 0 ? this.currentTranslation : lns[0];
     this.actuator.updateAuthorship(authors);
     this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
+    this.actuator.selectLanguage(ln);
     this.translateUI(ln);
   }
   // select a new question
