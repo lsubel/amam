@@ -13,10 +13,11 @@
     "menu.descriptionbutton"  : "Fragebögen & Optionen",
     "menu.options.newcolor"   : "Neue Hintergrundfarbe",
     "menu.options.savecolor"  : "Läde zuletzt genutzte Hintergrundfarbe beim Start",
-    "menu.lnselectionlabel"   : "Aktuell ausgewählte Sprache",
-    "menu.questionnaires"     : "Fragebögen",
-    "menu.label.color"        : "Hintergrundfarbe",
-    "menu.authorship.intro"   : "Die Fragen wurden beigesteuert von",
+    "menu.lnselectionlabel"             : "Aktuell ausgewählte Sprache",
+    "menu.questionnaires"               : "Fragebögen",
+    "menu.questionnaireselectionlabel"  : "Aktuell ausgewählter Fragebogen",
+    "menu.label.color"                  : "Hintergrundfarbe",
+    "menu.authorship.intro"             : "Die Fragen wurden beigesteuert von",
 
     "language.de": "Deutsch",
     "language.en": "Englisch"

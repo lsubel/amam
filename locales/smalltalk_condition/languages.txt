@@ -1,0 +1,17 @@
+{
+  "languages": [
+    "en", "de"
+  ],
+  "numberofquestions": 36,
+  "defaulttitle": "Questions for small-talk condition",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    },
+    {
+      "name": "Arndt Adler",
+      "github": "aberlin"
+    }
+  ]
+}

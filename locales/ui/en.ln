@@ -13,10 +13,11 @@
     "menu.descriptionbutton"    : "Questionnaires & Options",
     "menu.options.newcolor"     : "Get new background color",
     "menu.options.savecolor"    : "Load last used background color on startup",
-    "menu.lnselectionlabel"     : "Currently selected language",
-    "menu.questionnaires"       : "Questionnaires",
-    "menu.label.color"          : "Background color",
-    "menu.authorship.intro"     : "Questions contributed by",
+    "menu.lnselectionlabel"             : "Currently selected language",
+    "menu.questionnaires"               : "Questionnaires",
+    "menu.questionnaireselectionlabel"  : "Currently selected questionnaire",
+    "menu.label.color"                  : "Background color",
+    "menu.authorship.intro"             : "Questions contributed by",
 
     "language.de"           : "German",
     "language.en"           : "English"
