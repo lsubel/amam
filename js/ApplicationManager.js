@@ -78,9 +78,11 @@ ApplicationManager.prototype.selectQuestionnaire = function(questionnaire){
   // in case the questionnaire changed, update the authorship, list and UI
   if(questionnaire != last_used_questionnaire){
     var authors = JSON.parse(this.storageManager.getAuthorshipInformation(questionnaire));
+    var ln = lns.indexOf(this.currentTranslation) >= 0 ? this.currentTranslation : lns[0];
     this.actuator.updateAuthorship(authors);
     this.actuator.fillQuestionList(this.total_number_of_questions[questionnaire]);
-    this.translateUI(lns[0]);
+    this.actuator.selectLanguage(ln);
+    this.translateUI(ln);
   }
   // select a new question
   this.generateNewQuestion();
