@@ -1,0 +1,47 @@
+{
+  "ln": "en",
+  "questionnaire-smalltalk_condition": "Questions for small-talk condition",
+  "translations": {
+    "questionnaire-description": "These questions are used for the small-talk condition in the research paper 'The Experimental Generation of Interpersonal Closeness: A Procedure and Some Preliminary Findings' from 1997 by Arthur Aron, Edward Melinat, Elaine N. Aron, Robert Darrin Vallone and Renee J. Bator. It is recommended by the authors that each participant should answer the questions and share it with each others.",
+
+    "pad.question-0": "When was the last time you walked for more than an hour? Describe where you went and what you saw.",
+    "pad.question-1": "What was the best gift you ever received and why?",
+    "pad.question-2": "If you had to move from your current city where would you go, and what would you miss the most about it?",
+    "pad.question-3": "How did you celebrate last Halloween?",
+    "pad.question-4": "Do you read a newspaper often and which do you prefer? Why?",
+    "pad.question-5": "What is a good number of people to have in a student household and why?",
+    "pad.question-6": "If you could invent a new flavor of ice cream, what would it be?",
+    "pad.question-7": "What is the best restaurant you've been to in the last month that you partner hasn't been to? Tell your partner about it.",
+    "pad.question-8": "Describe the last pet you owned.",
+    "pad.question-9": "What is your favorite holiday? Why?",
+
+    "pad.question-10": "Tell your partner the funniest thing that ever happened to you when you were with a small child.",
+    "pad.question-11": "What gifts did you receive on your last birthday?",
+    "pad.question-12": "Describe the last time you went to the zoo.",
+    "pad.question-13": "Tell the names and ages of your family members, including grandparents, aunts and uncles, and where they were born (to the extent you know this information).",
+    "pad.question-14": "One of you say a word, the next say a word that starts with the last letter of the word just said. Do this until you have said 50 words. Any words will do - you aren't making a sentence.",
+    "pad.question-15": "Do you like to get up early or stay up late? Is there anything funny that has resulted from this?",
+    "pad.question-16": "Where are you from? Name all of the places you've lived.",
+    "pad.question-17": "What is your favorite class at any school so far? Why?",
+    "pad.question-18": "What did you do this summer?",
+    "pad.question-19": "What gifts did you receive last Christmas/Hanukkah?",
+
+    "pad.question-20": "Who is your favorite actor of your own gender? Describe a favorite scene in which this person has acted.",
+    "pad.question-21": "What was your impression of at any school the first time you ever visited?",
+    "pad.question-22": "What is the best TV show you've seen in the last month that your partner hasn't seen? Tell your partner about it.",
+    "pad.question-23": "What is your favorite holiday? Why?",
+    "pad.question-24": "Where did you go to high school? What was your high school like?",
+    "pad.question-25": "What is the best book you've read in the last three month that you partner hasn't read? Tell your partner about it.",
+    "pad.question-26": "What foreign country would you most like to visit? What attracts you to this place?",
+    "pad.question-27": "Do you prefer digital watches and clocks or the kind with hands? Why?",
+    "pad.question-28": "Describe your mother's best friend.",
+    "pad.question-29": "What are the advantages and disadvantages of artificial Christmas trees?",
+
+    "pad.question-30": "How often do you get your hair cut? Where do you go? Have you ever had a really bad haircut experience?",
+    "pad.question-31": "Did you have a class pet when you were in elementary school? Do you remember the pet's name?",
+    "pad.question-32": "Do you think left-handed people are more creative than right-handed people?",
+    "pad.question-33": "What is the last concert you saw? How many of that band's albums do you own? Had you seen them before? Where?",
+    "pad.question-34": "Do you subscribe to any magazines? Which ones? What have you subscribed to in the past?",
+    "pad.question-35": "Were you ever in a school play? What was your role? What was the plot of the play? Did anything funny ever happen when you were on stage?"
+  }
+}

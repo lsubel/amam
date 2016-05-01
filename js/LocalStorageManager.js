@@ -104,3 +104,11 @@ LocalStorageManager.prototype.setLastUsedQuestionnaire = function(value) {
 LocalStorageManager.prototype.getLastUsedQuestionnaire = function() {
   return this.storage.getItem("lastUsedQuestionnaire");
 };
+
+LocalStorageManager.prototype.setAuthorshipInformation = function(questionnaire, authorship) {
+  this.setItem("authorship_" + questionnaire, authorship);
+};
+
+LocalStorageManager.prototype.getAuthorshipInformation = function(questionnaire) {
+  return this.storage.getItem("authorship_" + questionnaire);
+};

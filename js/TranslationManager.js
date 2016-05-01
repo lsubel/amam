@@ -91,26 +91,7 @@ TranslationManager.prototype.loadAvailableLanguages = function(questionnaire){
       self.initializeLanguage(questionnaire, available_languages[i]);
     }
     // save the authorship information in all available languages
-
-    var authors = "";
-    if(authorship){
-      for(var j=0; j<authorship.length;j++){
-        var author = authorship[j];
-        if(j > 0 && j == (authorship.length - 1)){
-          authors += " & ";
-        } else if(j > 0){
-          authors += ", ";
-        }
-        authors += author.name;
-      }
-    }
-    else{
-      authors += "Anonymous"
-    }
-    for(var i=0; i<available_languages.length;i++){
-      var lang = available_languages[i];
-      self.setTranslation(questionnaire, lang, "authorship", authors);
-    }
+    self.storage.setAuthorshipInformation(questionnaire, JSON.stringify(authorship));
     // save the default title
     self.setTranslation("default", null, self.getQuestionnaireKey(questionnaire), "(No translation) " + default_title);
   });

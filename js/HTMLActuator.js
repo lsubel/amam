@@ -20,6 +20,7 @@ function HTMLActuator() {
   this.modalContent = document.querySelector(".modal-content");
   this.modalRows    = document.querySelectorAll(".modal-content-row");
   this.versionLabel = document.querySelector(".label-version");
+  this.authorship   = document.querySelector(".authorship");
 }
 
 HTMLActuator.prototype.addLanguageToMenu = function (ln){
@@ -110,6 +111,51 @@ HTMLActuator.prototype.hideListQuestion = function(){
 HTMLActuator.prototype.showVersion = function(version){
   this.versionLabel.textContent = "Version " + version;
 };
+
+HTMLActuator.prototype.updateAuthorship = function(authors){
+  while (this.authorship.firstChild) {
+    this.authorship.removeChild(this.authorship.firstChild);
+  }
+
+  if(authors){
+    for(var j=0; j<authors.length;j++){
+      if(j > 0 && j == (authors.length - 1)){
+        var char = document.createElement("span");
+        char.innerHTML = " & ";
+        this.authorship.appendChild(char);
+      } else if(j > 0){
+        var char = document.createElement("span");
+        char.innerHTML = ", ";
+        this.authorship.appendChild(char);
+      }
+      var author = authors[j];
+      var authorlink = document.createElement("a");
+      if(author.name){
+        authorlink.innerHTML  = author.name;
+      }
+      else{
+        authorlink.innerHTML  = "Anonymous";
+      }
+      if(author.github){
+        authorlink.href       = "https://github.com/" + author.github;
+      }
+      this.authorship.appendChild(authorlink);
+    }
+  }
+  else{
+    var anon = document.createElement("span");
+    char.innerHTML = "Anonymous";
+    this.authorship.appendChild(char);
+  }
+
+
+  for(var i=0; i<authors.length;i++){
+    var author = authors[i];
+
+    this.authorship.appendChild
+  }
+};
+
 
 HTMLActuator.prototype.changeBackgroundColor = function(color){
   var lighten_color = LightenDarkenColor(color, 10);
