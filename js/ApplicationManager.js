@@ -14,15 +14,14 @@ function ApplicationManager(InputManager, Actuator, StorageManager, TranslationM
   this.inputManager.on("setQuestionnaireInfos",         this.selectQuestionnaireInfos.bind(this));
   this.inputManager.on("translateUI",                   this.translateUI.bind(this));
   this.inputManager.on("newQuestion",                   this.generateNewQuestion.bind(this));
-  this.inputManager.on("showMenu",                      this.showMenu.bind(this));
-  this.inputManager.on("showRandomQuestion",            this.showRandomQuestion.bind(this));
-  this.inputManager.on("showListQuestion",              this.showListQuestion.bind(this));
   this.inputManager.on("newColor",                      this.newBackgroundColor.bind(this));
   this.inputManager.on("setOption",                     this.setOption.bind(this));
 
   this.inputManager.on("resetApplicationManager",       this.resetApplicationManager.bind(this));
 
   this.initializeApplicationManager();
+
+  window.addEventListener("hashchange", this.listen.bind(this));
 }
 
 /*
@@ -154,7 +153,7 @@ ApplicationManager.prototype.bootstrapUI = function(questionnaire, ln){
   this.actuator.updateAuthorship(authors);
   this.translateUI(ln);
   this.generateNewQuestion();
-  this.showMenu();
+  this.listen();
   this.actuator.selectQuestionnaire(questionnaire);
   this.actuator.selectLanguage(ln);
   var storedColor;
@@ -207,6 +206,25 @@ ApplicationManager.prototype.generateNewQuestion = function() {
 /*
  * UI related event handlers
  */
+
+ ApplicationManager.prototype.listen = function() {
+    switch(location.hash){
+    case "#random":
+      this.showRandomQuestion();
+      break;
+    case "#list":
+      this.showListQuestion();
+      break;
+    case "#!":
+    case "":
+      this.showMenu();
+      break;
+    case "#popup-description":
+      break;
+    default:
+      console.log("UnknownHashException: " + location.hash);
+    }
+  };
 
  ApplicationManager.prototype.translateUI = function(ln) {
    var questionnaire = this.currentQuestionnaire;
