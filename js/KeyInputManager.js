@@ -5,7 +5,6 @@
 function KeyboardInputManager() {
   this.events = {};
   this.listen();
-  mainMenuVisible = true;
 }
 
 KeyboardInputManager.prototype.on = function (event, callback) {
@@ -70,28 +69,28 @@ KeyboardInputManager.prototype.newQuestion = function(event){
 
 KeyboardInputManager.prototype.showMenu = function(event){
   event.preventDefault();
-  mainMenuVisible = true;
+  window.history.back();
   this.emit("showMenu");
 };
 
 KeyboardInputManager.prototype.showRandomQuestion = function(event){
   event.preventDefault();
-  mainMenuVisible = false;
+  window.location.hash = "random";
   this.emit("showRandomQuestion");
 };
 
 KeyboardInputManager.prototype.showListQuestion = function(event){
   event.preventDefault();
-  mainMenuVisible = false;
+    window.location.hash = "list";
   this.emit("showListQuestion");
 };
 
 KeyboardInputManager.prototype.showModal = function(event){
-  mainMenuVisible = false;
 };
 
 KeyboardInputManager.prototype.closeModal = function(event){
-  mainMenuVisible = true;
+  event.preventDefault();
+  window.history.back();
 };
 
 KeyboardInputManager.prototype.newColor = function(event){
