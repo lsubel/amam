@@ -8,6 +8,10 @@
     {
       "name": "Lukas Subel",
       "github": "lsubel"
+    },
+    {
+      "name": "Arndt Adler",
+      "github": "aberlin"
     }
   ]
 }
