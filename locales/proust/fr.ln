@@ -24,20 +24,24 @@
     "pad.question-16": "Quel est votre trait de caractère principal ?",
     "pad.question-17": "Qu'appréciez-vous le plus chez vos amis ?",
     "pad.question-18": "Votre plus grosse erreur ?",
+    "pad.question-19": "Your dream of happiness?",
 
-    "pad.question-19": "Quel serait votre plus grand malheur ?",
-    "pad.question-20": "Votre couleur préférée ?",
-    "pad.question-21": "Votre fleur préférée ?",
-    "pad.question-22": "Votre oiseau préférée ",
-    "pad.question-23": "Votre poète préféré ?",
-    "pad.question-24": "Vos héroïnes préférées dans l'Histoire ?",
-    "pad.question-25": "Votre nom préféré ?",
+    "pad.question-20": "Quel serait votre plus grand malheur ?",
+    "pad.question-21": "What do you want to be?",
+    "pad.question-22": "Votre couleur préférée ?",
+    "pad.question-23": "Votre fleur préférée ?",
+    "pad.question-24": "Votre oiseau préférée ",
+    "pad.question-25": "Your favorite author?",    
+    "pad.question-26": "Votre poète préféré ?",
+    "pad.question-27": "Your heroes in real?",
+    "pad.question-28": "Vos héroïnes préférées dans l'Histoire ?",
+    "pad.question-29": "Votre nom préféré ?",
 
-    "pad.question-26": "Que détestez-vous le plus ?",
-    "pad.question-27": "Quelle personnages historiques détestez-vous le plus ?",
-    "pad.question-28": "Quelle réforme admirez-vous le plus ?",
-    "pad.question-29": "Quelle don naturel souhaiteriez-vous avoir ?",
-    "pad.question-30": "Comment souhaiteriez-vous mourir ?",
-    "pad.question-31": "Quel est votre état d'esprit actuel ?"
+    "pad.question-30": "Que détestez-vous le plus ?",
+    "pad.question-31": "Quelle personnages historiques détestez-vous le plus ?",
+    "pad.question-32": "Quelle réforme admirez-vous le plus ?",
+    "pad.question-33": "Quelle don naturel souhaiteriez-vous avoir ?",
+    "pad.question-34": "Comment souhaiteriez-vous mourir ?",
+    "pad.question-35": "Quel est votre état d'esprit actuel ?"
   }
 }
