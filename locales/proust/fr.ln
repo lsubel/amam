@@ -1,0 +1,42 @@
+﻿{
+  "ln"                        : "fr",
+  "questionnaire-proust"     : "Questionnaire de Proust",
+  "translations": {
+  "questionnaire-description"  : "Au XIXème siècle, répondre à ce type de questionnaire était un jeu de société populaire au sein de la haute société. Il devrait encourager la conversation, aider à mieux connaître les interviewés et en savoir plus sur leur caractère.",
+
+    "pad.question-0": "Votre devise dans la vie ?",
+    "pad.question-1": "Où voulez-vous vivre ?",
+    "pad.question-2": "Votre idée du bonheur ?",
+    "pad.question-3": "Votre principal défaut ?",
+    "pad.question-4": "Quel est votre plus grand malheur ?",
+    "pad.question-5": "Votre héros de fiction préféré ?",
+    "pad.question-6": "Votre personnalité historique préféré ?",
+    "pad.question-7": "Votre héros préféré dans la vie réelle ?",
+    "pad.question-8": "Votre peintre préféré ?",
+    "pad.question-9": "Votre auteur préféré ?",
+
+    "pad.question-10": "Votre compositeur préféré ?",
+    "pad.question-11": "Quelles qualités préférez-vous chez une femme ?",
+    "pad.question-12": "Quelles qualités préférez-vous chez une homme ?",
+    "pad.question-13": "Votre vertu préférée ?",
+    "pad.question-14": "Votre activité préférée ?",
+    "pad.question-15": "Qui ou quoi voudriez-vous devenir ?",
+    "pad.question-16": "Quel est votre trait de caractère principal ?",
+    "pad.question-17": "Qu'appréciez-vous le plus chez vos amis ?",
+    "pad.question-18": "Votre plus grosse erreur ?",
+    "pad.question-19": "Votre couleur préférée ?",
+
+    "pad.question-20": "Votre fleur préférée ?",
+    "pad.question-21": "Votre oiseau préférée ",
+    "pad.question-22": "Votre poète préféré ?",
+    "pad.question-23": "Vos héroïnes préférées dans l'Histoire ?",
+    "pad.question-24": "Votre nom préféré ?",
+    "pad.question-25": "Que détestez-vous le plus ?",
+    "pad.question-26": "Quelle personnages historiques détestez-vous le plus ?",
+    "pad.question-27": "Quelle réforme admirez-vous le plus ?",
+    "pad.question-28": "Quelle don naturel souhaiteriez-vous avoir ?",
+    "pad.question-29": "Comment souhaiteriez-vous mourir ?",
+    
+    "pad.question-30": "Quel est votre état d'esprit actuel ?"
+  }
+}

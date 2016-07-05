@@ -1,0 +1,26 @@
+{
+  "ln": "fr",
+  "translations": {
+    "pad.question"              : "Ici, vous trouverez les questions sélectionnées",
+    "pad.random-question"       : "Obtenir une nouvelle question",
+    "pad.back-to-menu"          : "Retourner au menu",
+    "menu.title"                : "Faisons vraiment connaissance",
+    "menu.description"          : "Pensez-vous connaître vos amis ? Posez-leur les questions suivantes et apprenez en plus sur eux.",
+    "menu.startbutton.random"   : "Commencer par des questions aléatoires",
+    "menu.startbutton.list"     : "Commencer par une liste de questions",
+    "menu.description.label"    : "Explications",
+    "menu.option.label"         : "Options",
+    "menu.descriptionbutton"    : "Questionnaires & Options",
+    "menu.options.newcolor"     : "Changer la couleur du fond",
+    "menu.options.savecolor"    : "Charger le dernier fond au démarrage",
+    "menu.lnselectionlabel"             : "Langage sélectionné",
+    "menu.questionnaires"               : "Questionnaires",
+    "menu.questionnaireselectionlabel"  : "Questionnaire sélectionné",
+    "menu.label.color"                  : "Couleur du fond",
+    "menu.authorship.intro"             : "Questions soumises par",
+
+    "language.de"           : "Allemand",
+    "language.en"           : "Anglais",
+    "language.fr"           : "Français"
+  }
+}
