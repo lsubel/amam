@@ -22,26 +22,21 @@
     "pad.question-14": "Your favorite activity?",
     "pad.question-15": "Who or what would you like to be?",
     "pad.question-16": "Your main character trait?",
-    "pad.question-17": "What do your friends at the most?",
+    "pad.question-17": "What do you appreciate the most in your friends?",
     "pad.question-18": "Your biggest mistake?",
-    "pad.question-19": "Your dream of happiness?",
+    "pad.question-19": "Your favorite color?",
 
-    "pad.question-20": "What would be the greatest misfortune for you?",
-    "pad.question-21": "What do you want to be?",
-    "pad.question-22": "Your favorite color?",
-    "pad.question-23": "Your favorite flower?",
-    "pad.question-24": "Your favorite bird?",
-    "pad.question-25": "Your favorite author?",
-    "pad.question-26": "My favorite poet?",
-    "pad.question-27": "Your heroes in real?",
-    "pad.question-28": "Your heroines in history?",
-    "pad.question-29": "Your favorite name?",
-
-    "pad.question-30": "What do you most dislike?",
-    "pad.question-31": "What historical figures do you despise the most?",
-    "pad.question-32": "What reform do you most admire?",
-    "pad.question-33": "What natural gift would you like to have?",
-    "pad.question-34": "How would you like to die?",
-    "pad.question-35": "Your current state of mind?"
+    "pad.question-20": "Your favorite flower?",
+    "pad.question-21": "Your favorite bird?",
+    "pad.question-22": "My favorite poet?",
+    "pad.question-23": "Your heroines in history?",
+    "pad.question-24": "Your favorite name?",
+    "pad.question-25": "What do you most dislike?",
+    "pad.question-26": "What historical figures do you despise the most?",
+    "pad.question-27": "What reform do you most admire?",
+    "pad.question-28": "What natural gift would you like to have?",
+    "pad.question-29": "How would you like to die?",
+    
+    "pad.question-30": "Your current state of mind?"
   }
 }
