@@ -1,8 +1,8 @@
 {
-  "ln": "en",
+  "ln": "fr",
   "questionnaire-nerd" : "Nerd",
   "translations": {
-    "questionnaire-description"   : "Nerdy controversial question from nerds for nerds.",
+    "questionnaire-description"   : "Nerdy question controversée de ballots pour nerds.",
 
     "pad.question-0": "Quel est ton capitaine préféré dans 'Star Trek' et pourquoi ?",
     "pad.question-1": "Quel film n'aurait jamais dû avoir une suite ?",
