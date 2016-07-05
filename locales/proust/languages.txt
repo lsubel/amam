@@ -2,7 +2,7 @@
   "languages": [
     "en", "de", "fr"
   ],
-  "numberofquestions": 36,
+  "numberofquestions": 31,
   "defaulttitle": "Proust questions",
   "authorship": [
     {

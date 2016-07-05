@@ -24,24 +24,19 @@
     "pad.question-16"        : "Ihr Hauptcharakterzug?",
     "pad.question-17"        : "Was schätzen Sie bei Ihren Freunden am meisten?",
     "pad.question-18"        : "Ihr größter Fehler?",
-    "pad.question-19"        : "Ihr Traum vom Glück?",
+    "pad.question-19"        : "Ihre Lieblingsfarbe?",
 
-    "pad.question-20"        : "Was wäre für Sie das größte Unglück?",
-    "pad.question-21"        : "Was möchten Sie sein?",
-    "pad.question-22"        : "Ihre Lieblingsfarbe?",
-    "pad.question-23"        : "Ihre Lieblingsblume?",
-    "pad.question-24"        : "Ihr Lieblingsvogel?",
-    "pad.question-25"        : "Ihr Lieblingsschriftsteller?",
-    "pad.question-26"        : "Ihr Lieblingslyriker?",
-    "pad.question-27"        : "Ihre Helden der Wirklichkeit?",
-    "pad.question-28"        : "Ihre Heldinnen in der Geschichte?",
-    "pad.question-29"        : "Ihre Lieblingsnamen?",
+    "pad.question-20"        : "Ihre Lieblingsblume?",
+    "pad.question-21"        : "Ihr Lieblingsvogel?",
+    "pad.question-22"        : "Ihr Lieblingslyriker?",
+    "pad.question-23"        : "Ihre Heldinnen in der Geschichte?",
+    "pad.question-24"        : "Ihre Lieblingsnamen?",
+    "pad.question-25"        : "Was verabscheuen Sie am meisten?",
+    "pad.question-26"        : "Welche geschichtlichen Gestalten verabscheuen Sie am meisten?",
+    "pad.question-27"        : "Welche Reform bewundern Sie am meisten?",
+    "pad.question-28"        : "Welche natürliche Gabe möchten Sie besitzen?",
+    "pad.question-29"        : "Wie möchten Sie gern sterben?",
 
-    "pad.question-30"        : "Was verabscheuen Sie am meisten?",
-    "pad.question-31"        : "Welche geschichtlichen Gestalten verabscheuen Sie am meisten?",
-    "pad.question-32"        : "Welche Reform bewundern Sie am meisten?",
-    "pad.question-33"        : "Welche natürliche Gabe möchten Sie besitzen?",
-    "pad.question-34"        : "Wie möchten Sie gern sterben?",
-    "pad.question-35"        : "Ihre gegenwärtige Geistesverfassung?"
+    "pad.question-30"        : "Ihre gegenwärtige Geistesverfassung?"
   }
 }
