@@ -1,8 +1,8 @@
 {
-  "ln": "en",
+  "ln": "fr",
   "questionnaire-nerd" : "Nerd",
   "translations": {
-    "questionnaire-description"   : "Nerdy controversial question from nerds for nerds.",
+    "questionnaire-description"   : "Questions nerd sujettes à la controverse, par des nerds, pour des nerds.",
 
     "pad.question-0": "Quel est ton capitaine préféré dans 'Star Trek' et pourquoi ?",
     "pad.question-1": "Quel film n'aurait jamais dû avoir une suite ?",
@@ -22,6 +22,6 @@
     "pad.question-15": "Qu'est ce qui est supérieur au système stylo-papier ?",
     "pad.question-16": "Quel jeu vidéo a eu le plus d'impact sur toi sur ces dix dernières années ?",
     "pad.question-17": "Imaginons que tu possèdes la machine à remonter le temps de Dr. Brown's. Où irais-tu ?",
-    "pad.question-18": "Quel personnage de DragonBall est le plus sacrifié ?"
+    "pad.question-18": "Quel personnage de DragonBall est le plus dispensable ?"
   }
 }
