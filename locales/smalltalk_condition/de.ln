@@ -11,7 +11,7 @@
     "pad.question-4": "Lesen Sie eine Tageszeitung und welche bevorzugen Sie? Warum?",
     "pad.question-5": "Was ist eine gut Anzahl an Leuten für einen Studentenhaushalt und warum?",
     "pad.question-6": "Wenn Sie eine Geschmackssorte für Eiscreme erfinden könnten, welche wäre es?",
-    "pad.question-7": "Was ist das beste Restaurant, dass Sie im letzten Monat besucht haben, in dem Ihr Gesprächspartner nicht war? Erzählen Sie Ihrem Gesprächspartner davon.",
+    "pad.question-7": "Was ist das beste Restaurant, das Sie im letzten Monat besucht haben, in dem Ihr Gesprächspartner nicht war? Erzählen Sie Ihrem Gesprächspartner davon.",
     "pad.question-8": "Beschreiben Sie Ihr letztes Haustier.",
     "pad.question-9": "Was ist Ihr Lieblingsurlaubsort? Warum?",
 
@@ -19,19 +19,19 @@
     "pad.question-11": "Welche Geschenke haben Sie zu Ihrem letzten Geburtstag erhalten?",
     "pad.question-12": "Beschreiben Sie das letzte Mal, als Sie in den Zoo besucht haben.",
     "pad.question-13": "Sagen Sie die Namen und das Alter Ihrer Familienmitglieder inklusive Großeltern, Tanten und Onkels, und wo Sie geboren sind (soweit Sie diese Informationen kennen).",
-    "pad.question-14": "Einer von Ihnen sagt ein Wort, der nächste sagt ein Wort dass mit dem letzten Buchstaben des letzten Wortes beginnt. Wiederholen Sie dies bis Sie 50 Worte haben. Jeder Wort ist okay - es müssen keine Sätze gebildet werden.",
-    "pad.question-15": "Mögen Sie es früh aufzustehen oder bleiben Sie bis tief in die Nacht wach? Ist Ihnen daraus schonmal etwas lustiges passiert?",
-    "pad.question-16": "Wo kommen Sie her? Nennen Sie alle Orte an dem Sie schon einmal gelebt haben.",
+    "pad.question-14": "Einer von Ihnen sagt ein Wort, der nächste sagt ein Wort das mit dem letzten Buchstaben des letzten Wortes beginnt. Wiederholen Sie dies bis Sie 50 Worte haben. Jedes Wort ist okay - es müssen keine Sätze gebildet werden.",
+    "pad.question-15": "Mögen Sie es früh aufzustehen oder bleiben Sie bis tief in die Nacht wach? Ist Ihnen dadurch schonmal etwas lustiges passiert?",
+    "pad.question-16": "Wo kommen Sie her? Nennen Sie alle Orte an denen Sie schon einmal gelebt haben.",
     "pad.question-17": "Was ist Ihre Lieblingsklasse bisher an einer Bildungseinrichtung? Warum?",
     "pad.question-18": "Was unternehmen Sie im Sommer?",
-    "pad.question-19": "Welche Geschenke haben Sie letzten Weihnachten/Hanukkah bekommen?",
+    "pad.question-19": "Welche Geschenke haben Sie zum letzten Weihnachten/Hanukkah bekommen?",
 
     "pad.question-20": "Wer ist Ihr Lieblingsschauspieler Ihres eigenen Geschlechtes? Beschreiben Sie eine Lieblingsszene in der diese Person mitgespielt hat.",
     "pad.question-21": "Wie war der erster Eindruck von einer Bildungseinrichtung, die Sie mal besucht haben?",
     "pad.question-22": "Was ist die beste TV Sendung, die Sie im letzten Monat gesehen haben, die Ihr Gesprächspartner nicht gesehen hat? Erzählen Sie Ihrem Partner davon.",
     "pad.question-23": "Was ist Ihr Lieblingsfeiertag? Warum?",
-    "pad.question-24": "Wo haben Sie die weiterführenden Schule besucht? Wie war diesen?",
-    "pad.question-25": "Was ist das beste Buch dass Sie in den letzten drei Monaten gelesen haben, das Ihr Gesprächspartner nicht gelesen hat? Erzählen Sie Ihrem Partner davon.",
+    "pad.question-24": "Wo haben Sie die weiterführenden Schule besucht? Wie war diese?",
+    "pad.question-25": "Was ist das beste Buch das Sie in den letzten drei Monaten gelesen haben, das Ihr Gesprächspartner nicht gelesen hat? Erzählen Sie Ihrem Partner davon.",
     "pad.question-26": "Welches Land würden Sie am liebsten einmal besuchen? Was finden Sie an dem Ort so attraktiv?",
     "pad.question-27": "Bevorzugen Sie digitale Wand- und Armbanduhren oder die Aufziehbaren? Warum?",
     "pad.question-28": "Beschreiben Sie die Mutter Ihres besten Freundes.",
@@ -41,7 +41,7 @@
     "pad.question-31": "Hatten Sie ein Klassenhaustier in der Grundschule? Erinnern Sie sich an den Namen?",
     "pad.question-32": "Denken Sie, dass linkshändige Menschen kreativer sind als rechtshändige Menschen?",
     "pad.question-33": "Welches Konzert haben Sie zuletzt besucht? Wieviele Alben dieser Band besitzen Sie? Haben Sie die Band zuvor schon einmal gesehen? Wo?",
-    "pad.question-34": "Haben Sie ein Magazin abonniert? Welches? Welche haben Sie in der Vergangenheit abonniert?",
-    "pad.question-35": "Haben Sie einmal in einer Schulaufführung mitgespielt? Was war Ihre Rolle? Was war die Handlung des Stücks? Ist jemals etwas lustiges passiert als Sie auf der Bühne waren  ?"
+    "pad.question-34": "Haben Sie ein Magazin abonniert? Welches? Welche hatten Sie in der Vergangenheit abonniert?",
+    "pad.question-35": "Haben Sie einmal in einer Schulaufführung mitgespielt? Was war Ihre Rolle? Was war die Handlung des Stücks? Ist jemals etwas lustiges passiert als Sie auf der Bühne waren?"
   }
 }
