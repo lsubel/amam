@@ -1,6 +1,6 @@
 {
   "languages": [
-    "de"
+    "de", "nl"
   ],
   "numberofquestions": 40,
   "defaulttitle": "Konversationsstarter (private Fragen)",
