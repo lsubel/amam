@@ -1,0 +1,27 @@
+{
+  "ln": "nl",
+  "questionnaire-nerd" : "Nerd",
+  "translations": {
+    "questionnaire-description"   : "Controversiële, nerd-achtige vragen - door nerds voor nerds.",
+
+    "pad.question-0": "Wie je favoriete gezagvoerder in 'Star Trek' en waarom?",
+    "pad.question-1": "Welke filmreeks had nooit een vervolg mogen krijgen?",
+    "pad.question-2": "Wat is je favoriete grafische boek (inclusief stripboeken en manga)?",
+    "pad.question-3": "Wie heeft de huidige game-console-oorlog gewonnen?",
+    "pad.question-4": "Wat is je meest geliefde spelpersonage?",
+    "pad.question-5": "Stel dat je een filmpersonage kon ontmoeten en er één dag mee zou mogen optrekken: wie zou dat dan zijn?",
+    "pad.question-6": "Welke website bezoek je stiekem het vaakst?",
+    "pad.question-7": "Welke TV-serie heeft de meeste indruk op je gemaakt tijdens je jeugd?",
+    "pad.question-8": "Mocht George Lucas de inhoud van de 'Star Wars'-films veranderen na het uitbrengen?",
+    "pad.question-9": "Marvel Comics of DC Comics?",
+    "pad.question-10": "Welke meme vond je het leukst?",
+    "pad.question-11": "Wie is je favoriete videospelmaker?",
+    "pad.question-12": "Ben je er trots op een nerd te zijn en zou je de titel verdedigen?",
+    "pad.question-13": "Welke activiteit of hobby zou je niet zes maanden lang kunnen neerleggen?",
+    "pad.question-14": "Wie is je favoriete personage in 'Sailor Moon'?",
+    "pad.question-15": "Wat is het allerbeste pen-en-papiersysteem?",
+    "pad.question-16": "Welk videospel heeft de afgelopen 10 jaar de meeste impact gehad?",
+    "pad.question-17": "Stel dat je Dr. Brown's tijdmachine zou bezitten: waar zou je dan heen gaan?",
+    "pad.question-18": "Welk personage uit het DragonBall-universum offerde zichzelf het vaakst op?"
+  }
+}
