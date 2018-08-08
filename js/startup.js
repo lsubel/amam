@@ -9,7 +9,7 @@ devdebug = function(str){
 };
 
 var startup = function() {
-  version = "1.4.5";
+  version = "1.5.0";
   development = false;
   new ApplicationManager(KeyboardInputManager, HTMLActuator, LocalStorageManager, TranslationManager, version);
 };
