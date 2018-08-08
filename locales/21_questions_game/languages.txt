@@ -1,0 +1,13 @@
+{
+  "languages": [
+    "en", "de", "fr", "nl"
+  ],
+  "numberofquestions": 21,
+  "defaulttitle": "21 questions game",
+  "authorship": [
+    {
+      "name": "Lukas Subel",
+      "github": "lsubel"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
   "questionnaires": [
-    "proust", "nerd", "oxford_exam_2008", "oxford_exam", "precht", "interpersonal_closeness", "smalltalk_condition", "private", "for_kids", "culture"
+    "proust", "nerd", "oxford_exam_2008", "oxford_exam", "precht", "interpersonal_closeness", "smalltalk_condition", "private", "for_kids", "culture", "21_questions_game"
   ]
 }
