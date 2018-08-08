@@ -124,9 +124,16 @@ TranslationManager.prototype.initializeLanguage = function(questionnaire, langua
       throw "Exception: could not read the content of '" + language + ".json'.";
     }
     // check whether the language matches the requested one
-    var language_obj   = JSON.parse(xhr.responseText);
+    var language_obj;
+    try {
+      language_obj   = JSON.parse(xhr.responseText);
+    } catch (err){
+        devlog("Could not parse '" + xhr.responseURL + "': " + "\n" + err);
+        throw err;
+    }
+
     if(language !== language_obj.ln){
-      throw "IllegalStateException: when reading '" + xhr.responseURL + "', the content is marked as '" + language_obj.ln + "'.";
+      throw "IllegalStateException: when reading '" + xhr.responseURL + "', the content is marked to have language '" + language_obj.ln + "'.";
     }
     var questionnaire_key = self.getQuestionnaireKey(questionnaire);
     self.setTranslation("ui", language, questionnaire_key, language_obj[questionnaire_key]);

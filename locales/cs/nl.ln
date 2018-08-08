@@ -1,0 +1,11 @@
+{
+  "ln": "nl",
+  "questionnaire-cs" : "Informatica",
+  "translations": {
+    "pad.question-0": "Wat is je favoriete programmeertaal?",
+    "pad.question-1": "Omschrijf jezelf in een wiskundige berekening.",
+    "pad.question-2": "Wat is voor jou het belangrijkste onderwerp in de informatica?",
+    "pad.question-3": "Welke research heeft de grootste impact op je gehad?",
+    "pad.question-4": "Welke research heeft je het meest geïnspireerd?"
+  }
+}

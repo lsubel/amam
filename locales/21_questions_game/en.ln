@@ -1,0 +1,30 @@
+{
+  "ln"                                  : "en",
+  "questionnaire-21_questions_game"     : "21 questions game",
+  "translations": {
+    "questionnaire-description"         : "The 21 Questions Game is basically a way of getting to know someone better. At its core the the game is just asking and answering questions. So if you want to simply ask and answer the questions below, that works. But you can also use these questions for a gamified conversation.",
+
+    "pad.question-0": "What do most people think about you that is absolutely not true?",
+    "pad.question-1": "What is the TLDR version of your life?",
+    "pad.question-2": "Do you think the convenience of technology is worth the loss of privacy that comes with it?",
+    "pad.question-3": "Is it okay to sacrifice one life to save ten? If you said yes, would you change answer if the one life was a friend’s life and the ten were strangers? If no, why not?",
+    "pad.question-4": "What are the consequences of everyone having instant distraction at their fingertips?",
+    "pad.question-5": "What should they teach in high school but don’t?",
+    "pad.question-6": "Which movie or book do you think is ridiculously overrated?",
+    "pad.question-7": "Who would you most like to sit next to on a 10 hour flight and why?",
+    "pad.question-8": "What are two things you know you should how to do but don’t?",
+    "pad.question-9": "You have $100 to burn, all your friends are busy and you have the whole day to yourself, what do you do?",
+
+    "pad.question-10": "What makes you say “What was I thinking?” when you look back on your life?",
+    "pad.question-11": "How useful would you be in a zombie apocalypse? What skills do you have that would help you and others survive?",
+    "pad.question-12": "What is something you’ve done that you wish you could undo?",
+    "pad.question-13": "What inscription do you want on your gravestone?",
+    "pad.question-14": "What is something that can’t be taught and can only be learned with age?",
+    "pad.question-15": "If you could be born again and choose what nationality, gender, and race to be, what would you choose? Why?",
+    "pad.question-16": "If you could live your life again knowing what you do now, what would you change?",
+    "pad.question-17": "How much do you change when you know no one is around?",
+    "pad.question-18": "How much do you know about the world outside your country?",
+    "pad.question-19": "What is a cause that is worth dedicating your life to?",
+    "pad.question-20": "What should parents stop teaching their children?"
+  }
+}

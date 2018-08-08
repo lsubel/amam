@@ -1,0 +1,47 @@
+{
+  "ln": "fr",
+  "questionnaire-smalltalk_condition": "Questions sur les petits problèmes de langage",
+  "translations": {
+    "questionnaire-description": "Ces questions sont utilisées pour la condition du petit discours dans le document de recherche "The Experimental Generation of Interpersonal Closeness: A Procedure and Some Preliminary Findings' de 1997 par Arthur Aron, Edward Melinat, Elaine N. Aron, Robert Darrin Vallone et Renee J. Bator. Les auteurs recommandent à chaque participant de répondre aux questions et de les partager entre eux.",
+
+    "pad.question-0": "Quand avez-vous marché plus d'une heure pour la dernière fois ? Décrivez où vous êtes allé et ce que vous avez vu.",
+    "pad.question-1": "Quel a été le meilleur cadeau que vous ayez jamais reçu et pourquoi ?",
+    "pad.question-2": "Si vous deviez quitter votre ville actuelle, où iriez-vous et qu'est-ce qui vous manquerait le plus ?",
+    "pad.question-3": "Comment avez-vous célébré l'Halloween dernier ?",
+    "pad.question-4": "Lisez-vous souvent un journal et lequel préférez-vous ? Pourquoi ?",
+    "pad.question-5": "Qu'est-ce qu'un bon nombre de personnes dans un ménage étudiant et pourquoi ?",
+    "pad.question-6": "Si vous pouviez inventer une nouvelle saveur de crème glacée, quelle serait-elle ?",
+    "pad.question-7": "Quel est le meilleur restaurant où vous avez été au cours du dernier mois que votre partenaire n'a pas visité ? Parlez-en à votre partenaire.",
+    "pad.question-8": "Décrivez le dernier animal de compagnie que vous avez possédé.",
+    "pad.question-9": "Quelles sont vos vacances préférées ? Pourquoi ?",
+
+    "pad.question-10": "Racontez à votre partenaire la chose la plus drôle qui vous soit arrivée lorsque vous étiez avec un petit enfant.",
+    "pad.question-11": "Quels cadeaux avez-vous reçus lors de votre dernier anniversaire ?",
+    "pad.question-12": "Décrivez la dernière fois que vous êtes allé au zoo.",
+    "pad.question-13": "Indiquez les noms et l'âge des membres de votre famille, y compris les grands-parents, les tantes et les oncles, et l'endroit où ils sont nés (dans la mesure où vous connaissez cette information).",
+    "pad.question-14": "L'un d'entre vous dit un mot, l'autre dit un mot qui commence par la dernière lettre du mot qui vient d'être dit. Faites ceci jusqu'à ce que vous ayez dit 50 mots. N'importe quel mot fera l'affaire - vous ne faites pas de phrase.",
+    "pad.question-15": "Aimez-vous vous lever tôt ou rester debout tard ? Y a-t-il quelque chose de drôle qui en a résulté ?",
+    "pad.question-16": "D'où venez-vous ? Nommez tous les endroits où vous avez vécu.",
+    "pad.question-17": "Quelle est votre classe préférée dans n'importe quelle école jusqu'à présent ? Pourquoi ?",
+    "pad.question-18": "Qu'avez-vous fait cet été ?",
+    "pad.question-19": "Quels cadeaux avez-vous reçus à Noël/Hanukkah ?",
+
+    "pad.question-20": "Qui est votre acteur préféré de votre propre sexe ? Décrivez une scène préférée dans laquelle cette personne a joué.",
+    "pad.question-21": "Quelle a été votre impression de n'importe quelle école la première fois que vous avez visité ?",
+    "pad.question-22": "Quelle est la meilleure émission de télévision que votre partenaire n'a pas vue au cours du dernier mois ? Parlez-en à votre partenaire.",
+    "pad.question-23": "Quelles sont vos vacances préférées ? Pourquoi ?",
+    "pad.question-24": "Où êtes-vous allé au lycée ? Comment était votre lycée ?",
+    "pad.question-25": "Quel est le meilleur livre que vous avez lu au cours des trois derniers mois et que votre partenaire n'a pas lu ? Parlez-en à votre partenaire.",
+    "pad.question-26": "Quel pays étranger aimeriez-vous le plus visiter ? Qu'est-ce qui vous attire ici ?",
+    "pad.question-27": "Vous préférez les montres et horloges numériques ou les montres à aiguilles ? Pourquoi ?",
+    "pad.question-28": "Décrivez le meilleur ami de votre mère.",
+    "pad.question-29": "Quels sont les avantages et les inconvénients des arbres de Noël artificiels ?",
+
+    "pad.question-30": "À quelle fréquence vous faites-vous couper les cheveux ? Où est-ce que tu vas ? Avez-vous déjà eu une mauvaise expérience de coupe de cheveux ?",
+    "pad.question-31": "Aviez-vous un animal de classe lorsque vous étiez à l'école primaire ? Vous souvenez-vous du nom de l'animal de compagnie ?",
+    "pad.question-32": "Pensez-vous que les gauchers sont plus créatifs que les droitiers ?",
+    "pad.question-33": "Quel est le dernier concert que vous avez vu ? Combien d'albums de ce groupe possédez-vous ? Vous les aviez déjà vus ? Où ça ?",
+    "pad.question-34": "Vous vous abonnez-vous à des magazines ? Lesquels ? A quoi avez-vous déjà souscrit dans le passé ?",
+    "pad.question-35": "Avez-vous déjà joué dans une pièce de théâtre à l'école ? Quel était votre rôle ? Quelle était l'intrigue de la pièce ? Il s'est passé quelque chose de drôle quand tu étais sur scène ?"
+  }
+}

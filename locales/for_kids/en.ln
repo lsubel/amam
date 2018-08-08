@@ -1,0 +1,29 @@
+{
+  "ln": "en",
+  "questionnaire-for_kids": "Questions for children between the ages of 7 and 14",
+  "translations": {
+    "questionnaire-description": "This questionnaire helps to start a conversation with children between the ages of 7 and 14.",
+
+    "pad.question-0": "Where do you feel at home?",
+    "pad.question-1": "What movie to watch when you're in a bad mood?",
+    "pad.question-2": "Do you dream of being famous?",
+    "pad.question-3": "Who would you like to be someday?",
+    "pad.question-4": "What's the best game you've ever played?",
+    "pad.question-5": "Do you have a favorite song?",
+    "pad.question-6": "What happened in the last dream you remember?",
+    "pad.question-7": "Do you have a favorite hero or a favorite heroine?",
+    "pad.question-8": "What is most important to you in a friendship?",
+    "pad.question-9": "What are you good at?",
+
+    "pad.question-10": "What would you like to invent?",
+    "pad.question-11": "What are you afraid of?",
+    "pad.question-12": "When do you listen to music?",
+    "pad.question-13": "If you could change your upbringing: What would that be?",
+    "pad.question-14": "What's the longest book you've read? Was it good?",
+    "pad.question-15": "Have you seen a movie several times and if so, which one?",
+    "pad.question-16": "Do you like sports?",
+    "pad.question-17": "How do you see your future?",
+    "pad.question-18": "Would you like to change your name?",
+    "pad.question-19": "What have you ever been very ashamed of?"
+  }
+}

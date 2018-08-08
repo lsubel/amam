@@ -1,0 +1,48 @@
+{
+  "ln": "nl",
+  "questionnaire-smalltalk_condition": "Koetjes-en-kalfjes-vragen",
+  "translations": {
+    "questionnaire-description": "Deze vragen worden gebruikt voor koetjes-en-kalfjes-gesprekken, en dan met name die zoals beschreven in de research 'The Experimental Generation of Interpersonal Closeness: A Procedure and Some Preliminary Findings' uit 1997 door Arthur Aron, Edward Melinat, Elaine N. Aron, Robert Darrin Vallone en Renee J. Bator. De auteurs raden aan dat alle vragen beantwoordt en gedeeld worden met anderen.",
+
+    "pad.question-0": "Wanneer was de laatste keer dat je langer dan een uur gewandeld hebt? Beschrijf waar je heen bent gegaan en wat je allemaal gezien hebt.",
+    "pad.question-1": "Wat is het beste cadeau dat je ooit gekregen hebt en waarom?",
+    "pad.question-2": "Als je mocht verhuizen, wat zou je dan missen aan je huidige stad/dorp en waar zou je naartoe verhuizen?",
+    "pad.question-3": "Hoe heb je de laatste keer Halloween gevierd?",
+    "pad.question-4": "Lees je vaak een krant? Zo ja, welke en waarom?",
+    "pad.question-5": "Hoeveel studenten moeten er idealiter in dezelfde kamer wonen en waarom?",
+    "pad.question-6": "Als je een nieuwe ijssmaak kon creëren, welke smaak zou dat dan zijn?",
+    "pad.question-7": "Wat is het beste restaurant dat je de afgelopen maand bezocht hebt, waar je partner nog niet geweest is? Vertel erover aan je partner.",
+    "pad.question-8": "Omschrijf het laatste huisdier dat je gehad hebt.",
+    "pad.question-9": "Wat is je favoriete feestdag en waarom?",
+
+    "pad.question-10": "Vertel aan je partner wat het leukste moment is dat je ooit hebt meegemaakt in het bijzijn van een klein kind.",
+    "pad.question-11": "Welke cadeautjes heb je gekregen op je vorige verjaardag?",
+    "pad.question-12": "Beschrijf de laatste keer dat je naar de dierentuin bent geweest.",
+    "pad.question-13": "Noem de namen en leeftijden van je familieleden, inclusief grootouders, tantes en ooms en waar ze geboren zijn (voor zover je weet).",
+    "pad.question-14": "Noem om beurten een woord en laat de ander dan een woord maken dat begint met de laatste letter van het vorige. Ga zo door totdat je 50 woorden hebt gehad. Het maakt niet uit welke woorden je kiest; het doel is niet om een zin te maken.",
+    "pad.question-15": "Houd je van laat opblijven of vroeg opstaan? En is er ooit iets grappigs gebeurd omdat je laat opbleef of vroeg opstond?",
+    "pad.question-16": "Waar kom je vandaan? Benoem alle plaatsen waar je gewoond hebt.",
+    "pad.question-17": "Wat is je favoriete schoolvak en waarom?",
+    "pad.question-18": "Wat heb je deze zomer gedaan?",
+    "pad.question-19": "Welke cadeautjes heb je gekren tijdens de vorige kerst- of chanoekaviering?",
+
+    "pad.question-20": "Wie is je favoriete acteur van je eigen geslacht? Beschrijf je favoriete scène waarin deze acteur gespeeld heeft.",
+    "pad.question-21": "Wat waren de indrukken van alle scholen die je ooit voor het eerst bezocht hebt?",
+    "pad.question-22": "Wat is de beste TV-show of -serie die je de afgelopen maand hebt bekeken, die je partner niet heeft bekeken? Vertel erover aan je partner.",
+
+    "pad.question-23": "Wat is je favoriete vakantieperiode en waarom?",
+    "pad.question-24": "Naar welke middelbare school ging je en hoe was het daar?",
+    "pad.question-25": "Wat is beste boek dat je in de afgelopen drie maanden hebt gelezen? Vertel erover aan je partner.",
+    "pad.question-26": "Welk land zou je graag eens willen bezoeken en waarom?",
+    "pad.question-27": "Heb je een voorkeur voor digitale horloges en klokken of analoge? En waarom?",
+    "pad.question-28": "Omschrijf de moeder van je beste vriend(in).",
+    "pad.question-29": "Wat zijn de voor- en nadelen van kunstkerstbomen?",
+
+    "pad.question-30": "Hoe vaak ga je naar de kapper en waar? En heb je ooit een vervelende knipbeurt gehad?",
+    "pad.question-31": "Hadden jullie een dierenvriendje op de basisschool? Zo ja, weet je nog hoe hij/zij heette?",
+    "pad.question-32": "Denk je dat linkshandigen creatiever zijn dan rechtshandigen?",
+    "pad.question-33": "Welk concert heb je het laatst bezocht? Hoeveel albums van de artiest/band bezit je? En heb je ze eerder gezien (en zo ja, waar)?",
+    "pad.question-34": "Heb je een abonnement op één of meerdere tijdschriften? Zo ja, welke? En op welke heb je vroeger een abonnement gehad?",
+    "pad.question-35": "Heb je ooit meegedaan aan een schooltoneelstuk? Zo ja, welke rol had je en waar ging het stuk over? En heb je iets grappigs meegemaakt terwijl je op het podium stond?"
+  }
+}

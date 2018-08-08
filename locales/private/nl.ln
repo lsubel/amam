@@ -1,0 +1,51 @@
+{
+  "ln"                            : "nl",
+  "questionnaire-private"         : "Een gesprek beginnen (privévragen)",
+  "translations": {
+    "questionnaire-description"   : "Deze vragen zullen je helpen een gesprek over privé-onderwerpen te beginnen.",
+
+    "pad.question-0"        : "Wat is je levensmotto?",
+    "pad.question-1"        : "Waar wil je wonen?",
+    "pad.question-2"        : "Wat is voor jou het ultieme geluk?",
+    "pad.question-3"        : "Voor welke fouten verexcuseer je je het meest?",
+    "pad.question-4"        : "Wat is voor jou het ultieme ongeluk?",
+    "pad.question-5"        : "Als je mocht kiezen tussen oud worden met een gezond lichaam of een heldere geest, wat zou je dan kiezen?",
+    "pad.question-6"        : "Heb je een voorgevoel over hoe je komt te overlijden?",
+    "pad.question-7"        : "Wat is voor jou het belangrijkste in een vriendschap?",
+    "pad.question-8"        : "Wat is je mooiste herinnering?",
+    "pad.question-9"        : "Waar ben je dankbaar voor?",
+
+    "pad.question-10"        : "Waar ben je goed in?",
+    "pad.question-11"        : "Waar ben je bang voor?",
+    "pad.question-12"        : "Wat doe je als je jezelf wilt opbeuren?",
+    "pad.question-13"        : "Wat is je favoriete deugd?",
+    "pad.question-14"        : "Wat is je favoriete bezigheid?",
+    "pad.question-15"        : "Wie of wat zou je willen zijn?",
+    "pad.question-16"        : "Wat is je belangrijkste karaktertrek??",
+    "pad.question-17"        : "Wat waardeer je het meeste aan je vrienden?",
+    "pad.question-18"        : "Wat is de grootste fout je die je ooit hebt begaan?",
+    "pad.question-19"        : "Wat is je gelukkigste droom?",
+
+    "pad.question-20"        : "Wat is het ergste dat je ooit hebt meegemaakt?",
+    "pad.question-21"        : "Wat wil je graag worden?",
+    "pad.question-22"        : "Wat is je lievelingskleur?",
+    "pad.question-23"        : "Wat zijn je lievelingsbloemen?",
+    "pad.question-24"        : "Wat is je lievelingseten en -drinken?",
+    "pad.question-25"        : "Welk item, dat je bij je draagt, zou je gemakkelijk zonder kunnen?",
+    "pad.question-26"        : "Welke sport beoefen je en welke heb je altijd al willen proberen?",
+    "pad.question-27"        : "Hoe ziet voor jou een gemoedelijke avond met vrienden er uit?",
+    "pad.question-28"        : "Ben je strijdlustig of meer harmonieus?",
+    "pad.question-29"        : "Wat is je lievelingsnaam?",
+
+    "pad.question-30"        : "Wat verafschuw je het meeste?",
+    "pad.question-31"        : "Stel dat je één miljoen euro wint in de loterij: wat zou je daar dan mee doen?",
+    "pad.question-32"        : "Heb je onlangs geld uitgegeven en zo ja, waaraan?",
+    "pad.question-33"        : "Over welke gaven beschik je?",
+    "pad.question-34"        : "Hoe zou je willen overlijden?",
+    "pad.question-35"        : "Wat is je huidige gemoedstoestand?",
+    "pad.question-36"        : "Welke gewoonten heb je die het dagelijks leven vergemakkelijken?",
+    "pad.question-37"        : "Ben je ooit trots geweest op iets wat je helemaal zelf gemaakt hebt?",
+    "pad.question-38"        : "Heb je huisdieren? Heb je vroeger huisdieren gehad? Wil je in de toekomst weer huisdieren?",
+    "pad.question-39"        : "Waar wilde je altijd al eens op vakantie gaan?"
+  }
+}
