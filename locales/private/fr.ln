@@ -1,0 +1,51 @@
+{
+  "ln"                            : "fr",
+  "questionnaire-private"           : "Entameurs de conversation (questions privées)",
+  "translations": {
+    "questionnaire-description"   : "Ces questions doivent permettre d'engager une conversation sur des sujets privés",
+
+    "pad.question-0" : "Quelle est la devise de votre vie ?",
+    "pad.question-1" : "Où voulez-vous vivre ?",
+    "pad.question-2" : "Quel est le bonheur terrestre parfait pour toi ?",
+    "pad.question-3" : "Quelles sont les erreurs que vous excusez le plus probablement ?",
+    "pad.question-4" : "Quel est votre plus grand malheur ?",
+    "pad.question-5" : "Si vous aviez le choix, préféreriez-vous avoir un corps en forme ou un esprit sain dans la vieillesse ?",
+    "pad.question-6" : "Avez-vous une prémonition secrète sur la façon dont vous allez probablement mourir ?",
+    "pad.question-7" : "Qu'est-ce qui est le plus important pour vous dans une amitié ?",
+    "pad.question-8" : "Quel est votre plus beau souvenir ?",
+    "pad.question-9" : "De quoi êtes-vous reconnaissant ?",
+
+    "pad.question-10" : "Qu'est-ce que tu sais faire ?",
+    "pad.question-11" : "De quoi avez-vous peur ?",
+    "pad.question-12" : "Que faites-vous quand vous voulez faire quelque chose de bien pour vous-même ?",
+    "pad.question-13" : "Ta vertu préférée ?",
+    "pad.question-14" : "Ta chose préférée ?",
+    "pad.question-15" : "Qui ou quoi aimeriez-vous être ?",
+    "pad.question-16" : "Votre trait de caractère principal ?",
+    "pad.question-17" : "Qu'est-ce que vous appréciez le plus chez vos amis ?",
+    "pad.question-18" : "Votre plus grosse erreur ?",
+    "pad.question-19" : "Ton rêve de bonheur ?",
+
+    "pad.question-20" : "Quel serait votre plus grand malheur ?",
+    "pad.question-21" : "Que voulez-vous être ?",
+    "pad.question-22" : "Votre couleur préférée ?",
+    "pad.question-23" : "Votre fleur préférée ?",
+    "pad.question-24" : "Quelle est votre nourriture et boisson préférée ?",
+    "pad.question-25" : "Quel objet avez-vous avec vous ?",
+    "pad.question-26" : "Quel genre de sport faites-vous ? Quel sport avez-vous toujours voulu essayer ?",
+    "pad.question-27" : "A quoi ressemble une soirée entre amis ?",
+    "pad.question-28" : "Aimez-vous discuter ou avez-vous plus besoin d'harmonie ?",
+    "pad.question-29" : "Vos noms préférés ?",
+
+    "pad.question-30" : "Qu'est-ce que tu détestes le plus ?",
+    "pad.question-31" : "Supposons que vous gagnez soudainement un million d'euros à la loterie. Qu'est-ce que tu en ferais ?",
+    "pad.question-32" : "Avez-vous déjà donné de l'argent et si oui, pour quoi ?",
+    "pad.question-33" : "Quel don naturel aimeriez-vous posséder ?",
+    "pad.question-34" : "Comment aimeriez-vous mourir ?",
+    "pad.question-35" : "Votre état d'esprit actuel ?",
+    "pad.question-36" : "Quelle est votre habitude de vous faciliter la vie ?",
+    "pad.question-37" : "Avez-vous déjà été fier de quelque chose que vous avez créé de vos propres mains ?",
+    "pad.question-38" : "Avez-vous des animaux domestiques ? Avez-vous déjà eu des animaux domestiques ? Tu ne veux plus jamais avoir d'animaux domestiques ?",
+    "pad.question-39" : "Où avez-vous toujours voulu aller en vacances ?"
+  }
+}

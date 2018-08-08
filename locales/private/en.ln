@@ -1,0 +1,51 @@
+{
+  "ln"                            : "en",
+  "questionnaire-private"         : "Conversation Starters (personal questions)",
+  "translations": {
+    "questionnaire-description"   : "These questions should make it possible to start a conversation about personal topics",
+
+    "pad.question-0": "What's your life motto?",
+    "pad.question-1": "Where do you want to live?",
+    "pad.question-2": "What is perfect earthly happiness to you?",
+    "pad.question-3": "What mistakes do you most likely excuse?",
+    "pad.question-4": "What's your biggest misfortune?",
+    "pad.question-5": "If you had the choice, would you rather have a fit body or a healthy mind in old age?",
+    "pad.question-6": "Do you have a secret premonition about how you're probably going to die?",
+    "pad.question-7": "What is most important to you in a friendship?",
+    "pad.question-8": "What is your most beautiful memory?",
+    "pad.question-9": "What are you grateful for?",
+
+    "pad.question-10": "What are you good at?",
+    "pad.question-11": "What are you afraid of?",
+    "pad.question-12": "What do you do when you want to do something good for yourself?",
+    "pad.question-13": "Your favourite virtue?",
+    "pad.question-14": "Your favorite thing?",
+    "pad.question-15": "Who or what would you like to be?",
+    "pad.question-16": "Your main character trait?",
+    "pad.question-17": "What do you value most about your friends?",
+    "pad.question-18": "Your biggest mistake?",
+    "pad.question-19": "Your dream of happiness?",
+
+    "pad.question-20": "What would be your biggest misfortune?",
+    "pad.question-21": "What do you want to be?",
+    "pad.question-22": "Your favorite color?",
+    "pad.question-23": "Your favorite flower?",
+    "pad.question-24": "What's your favorite food and drink?",
+    "pad.question-25": "Which item do you have with you?",
+    "pad.question-26": "What kind of sport do you do? Which sport have you always wanted to try?",
+    "pad.question-27": "How does a cosy evening with friends look like?",
+    "pad.question-28": "Do you like to argue or are you more in need of harmony?",
+    "pad.question-29": "Your favorite names?",
+
+    "pad.question-30": "What do you loathe most?",
+    "pad.question-31": "Suppose you suddenly win a million euros in the lottery. What would you do with it?",
+    "pad.question-32": "Did you ever donate money and if so, for what?",
+    "pad.question-33": "What natural gift would you like to possess?",
+    "pad.question-34": "How would you like to die?",
+    "pad.question-35": "Your current state of mind?",
+    "pad.question-36": "What's your habit of making your life easier?",
+    "pad.question-37": "Were you ever proud of something you created with your own hands?",
+    "pad.question-38": "Do you have pets? Did you ever have pets? Do you ever want to have pets again?",
+    "pad.question-39": "Where have you always wanted to go on holiday?"
+  }
+}

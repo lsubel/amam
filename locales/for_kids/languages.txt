@@ -1,6 +1,8 @@
 {
   "languages": [
     "de",
+    "en",
+    "fr",
     "nl"
   ],
   "numberofquestions": 20,

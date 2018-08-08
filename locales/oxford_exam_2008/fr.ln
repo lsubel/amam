@@ -1,0 +1,39 @@
+{
+  "ln" : "fr",
+  "questionnaire-oxford_exam_2008" : "Questions de l'examen d'admission 'All Souls College' (avant 2008)",
+  "translations" : {
+    "questionnaire-description" : "Questions de l'examen d'entrée du 'All Souls College' de l'Université d'Oxford. Ces questions proviennent de tests antérieurs à 2008",
+
+    "pad.question-0" : "Est-ce immoral d'acheter un sac à main de 10 000 £ ?",
+    "pad.question-1" : "'Je m'en fiche si quelqu'un lit mes livres ; j'écris pour moi-même', dit l'auteur d'une demi-douzaine de romans publiés. Y a-t-il quelque chose qui ne va pas avec cette affirmation en tant que théorie de l'art ?",
+    "pad.question-2" : "'Chaque acte que vous avez accompli depuis le jour de votre naissance l'a été parce que vous vouliez quelque chose '[Andrew Carnegie]. Vous êtes d'accord ?",
+    "pad.question-3" : "L'aversion pour les politiciens est-elle une position par défaut raisonnable ?",
+    "pad.question-4" : "Pourquoi une veste en cuir est plus acceptable qu'un manteau de fourrure ?",
+    "pad.question-5" : "Peut-on faire confiance aux institutions publiques et politiques pour se réformer ?",
+    "pad.question-6" : "Est-ce une condition extrêmement anormale pour un homme et une femme de vivre ensemble en permanence ?",
+    "pad.question-7" : "La mobilité des étudiants en Europe n'est-elle qu'une forme de tourisme subventionné ?",
+    "pad.question-8" : "Les jeux d'enfants avec des bandeaux révèlent-ils une cruauté essentielle dans la nature humaine ?",
+    "pad.question-9" : "Pourquoi l'ONU tolère-t-elle tant de mauvais régimes ?",
+
+    "pad.question-10" : "Y a-t-il un effondrement des valeurs familiales dans l'Ouest, et si c'est le cas, l'État devrait-il tenter d'y remédier ?",
+    "pad.question-11" : "Les gouvernements devraient-ils soutenir la recherche scientifique alors qu'il n'y a peut-être pas d'avantage technologique ?",
+    "pad.question-12" : "Le caractère moral d'une orgie change-t-il lorsque les participants portent des uniformes nazis ?",
+    "pad.question-13" : "Qu'est-ce que l'Occident devrait apprendre de la Chine ?",
+    "pad.question-14" : "La célébrité entraîne-t-elle une perte de dignité ?",
+    "pad.question-15" : "Le désir de gloire posthume est-il irrationnel ?",
+    "pad.question-16" : "Pourquoi l'Afrique s'est-elle si mal débrouillée économiquement ?",
+    "pad.question-17" : "Le monde peut-il se permettre de ne pas cultiver des plantes génétiquement modifiées ?",
+    "pad.question-18" : "Les architectes et les urbanistes peuvent-ils concevoir la criminalité et l'effondrement social ?",
+    "pad.question-19" : "Est-ce que des salaires très élevés pour les professionnels du sport altèrent le caractère des jeux joués ?",
+
+    "pad.question-20" : "Il a été dit que l'architecture est de la'musique gelée'. Est-ce que cela a un sens ?",
+    "pad.question-21" : "La théorie des cordes, c'est de la science ?",
+    "pad.question-22" : "Un tableau peut-il changer le monde ?",
+    "pad.question-23" : "L'Europe peut (et devrait) maintenir son niveau de vie relativement élevé par rapport aux économies émergentes ?",
+    "pad.question-24" : "Peut-on aimer quelqu'un si on ne le respecte pas ?",
+    "pad.question-25" : "Faut-il faire la distinction entre les personnes, les êtres humains et leurs corps ?",
+    "pad.question-26" : "Les ordinateurs peuvent-ils penser ?",
+    "pad.question-27" : "Est-ce qu'un philosophe ancien a quelque chose à enseigner aux philosophes moraux aujourd'hui ?",
+    "pad.question-28" : "La beauté se trouve-t-elle dans l'œil du spectateur ?"
+  }
+}

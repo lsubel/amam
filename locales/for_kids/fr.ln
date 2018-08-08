@@ -1,0 +1,29 @@
+{
+  "ln": "fr",
+  "questionnaire-for_kids" : "Questions pour les enfants âgés de 7 à 14 ans",
+  "translations" : {
+    "questionnaire-description" : "Ce questionnaire-description permet d'entamer une conversation avec des enfants âgés de 7 à 14 ans",
+
+    "pad.question-0" : "Où vous sentez-vous chez vous ?",
+    "pad.question-1" : "Quel film regarder quand on est de mauvaise humeur ?",
+    "pad.question-2" : "Rêvez-vous d'être célèbre ?",
+    "pad.question-3" : "Qui aimeriez-vous être un jour ?",
+    "pad.question-4" : "Quel est le meilleur jeu auquel vous avez joué ?",
+    "pad.question-5" : "Avez-vous une chanson préférée ?",
+    "pad.question-6" : "Que s'est-il passé dans le dernier rêve dont vous vous souvenez ?",
+    "pad.question-7" : "Avez-vous un héros préféré ou une héroïne préférée ?",
+    "pad.question-8" : "Qu'est-ce qui est le plus important pour toi dans une amitié ?",
+    "pad.question-9" : "Qu'est-ce que tu sais faire ?",
+
+    "pad.question-10" : "Qu'aimeriez-vous inventer ?",
+    "pad.question-11" : "De quoi avez-vous peur ?",
+    "pad.question-12" : "Quand écoutez-vous de la musique ?",
+    "pad.question-13" : "Si tu pouvais changer ton éducation : Qu'est-ce que c'est ?",
+    "pad.question-14" : "Quel est le livre le plus long que vous ayez lu ? C'était bien ?",
+    "pad.question-15" : "Avez-vous vu un film plusieurs fois et si oui, lequel ?",
+    "pad.question-16" : "Aimez-vous le sport ?",
+    "pad.question-17" : "Comment voyez-vous votre avenir ?",
+    "pad.question-18" : "Voudriez-vous changer de nom ?",
+    "pad.question-19" : "De quoi avez-vous déjà eu honte ?"
+  }
+}
