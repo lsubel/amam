@@ -1,0 +1,37 @@
+{
+  "ln" : "fr",
+  "questionnaire-culture" : "Déclencheur de conversation culturelle",
+  "translations" : {
+    "questionnaire-description" : "Ce recueil de questions devrait aider à entamer une conversation sur la culture.",
+
+    "pad.question-0" : "Supposons que vous puissiez inviter n'importe qui à dîner avec vous : Qui ça serait ?",
+    "pad.question-1" : "Quel film regarder quand on est de mauvaise humeur ?",
+    "pad.question-2" : "Rêvez-vous d'être célèbre ?",
+    "pad.question-3" : "Quelle est ta pièce préférée ?",
+    "pad.question-4" : "Quel est le jeu le plus intense auquel vous avez joué ?",
+    "pad.question-5" : "Vos héros de roman préférés ?",
+    "pad.question-6" : "Votre personnage préféré dans l'histoire ?",
+    "pad.question-7" : "Vos héros préférés dans la réalité ?",
+    "pad.question-8" : "Votre peintre préféré ?",
+    "pad.question-9" : "Votre auteur préféré ?",
+
+    "pad.question-10" : "Votre compositeur préféré ?",
+    "pad.question-11" : "Quand écoutez-vous de la musique ?",
+    "pad.question-12" : "Quel édifice religieux vous a le plus impressionné dans votre vie ?",
+    "pad.question-13" : "Quel est le livre le plus complet que vous ayez jamais lu ? C'était bien ?",
+    "pad.question-14" : "Avez-vous déjà vu un film plusieurs fois et si oui, lequel ?",
+    "pad.question-15" : "Quel genre de musique écoutez-vous quand vous êtes triste ?",
+    "pad.question-16" : "Avez-vous déjà vu un tableau qui vous a touché émotionnellement ? Si oui, de quel tableau s'agissait-il ?",
+    "pad.question-17" : "Quelles sont les caractéristiques d'un bon film ?",
+    "pad.question-18" : "Quel est votre opéra préféré et pourquoi ?",
+    "pad.question-19" : "Devrions-nous dépenser plus d'argent pour les musées ?",
+
+    "pad.question-20" : "Les musées ont-ils encore le droit d'exister à l'ère d'Internet ?",
+    "pad.question-21" : "Y a-t-il un genre ou une direction artistique que vous ne comprenez pas ?",
+    "pad.question-22" : "Quel est votre plus grand talent artistique ? Avez-vous déjà essayé de vous défouler dans cette zone ?",
+    "pad.question-23" : "Que signifie l'art pour vous ?",
+    "pad.question-24" : "Qu'est-ce qui est'beau' pour vous et qu'est-ce que vous trouvez'laid' ?",
+    "pad.question-25" : "L'art doit-il être harmonieux pour vous ?"
+
+  }
+}

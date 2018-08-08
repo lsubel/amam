@@ -1,6 +1,6 @@
 {
   "languages": [
-    "en", "de", "fr"
+    "en", "de", "fr", "nl"
   ],
   "numberofquestions": 18,
   "defaulttitle": "Nerd",

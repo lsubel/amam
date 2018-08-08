@@ -1,0 +1,37 @@
+{
+  "ln": "en",
+  "questionnaire-culture" : "Culture conversation starters",
+  "translations": {
+    "questionnaire-description": "This collection of questions should help to start a conversation about culture.",
+
+    "pad.question-0": "Suppose you could invite anyone to dinner with you: Who would that be?",
+    "pad.question-1": "What movie to watch when you're in a bad mood?",
+    "pad.question-2": "Do you dream of being famous?",
+    "pad.question-3": "What's your favorite play?",
+    "pad.question-4": "What's the most intense game you've ever played?",
+    "pad.question-5": "Your favorite novel heroes?",
+    "pad.question-6": "Your favorite character in history?",
+    "pad.question-7": "Your favourite heroes in reality?",
+    "pad.question-8": "Your favorite painter?",
+    "pad.question-9": "Your favorite author?",
+
+    "pad.question-10": "Your favorite composer?",
+    "pad.question-11": "When do you listen to music?",
+    "pad.question-12": "What religious building has impressed you most in your life?",
+    "pad.question-13": "What is the most comprehensive book you have ever read? Was it good?",
+    "pad.question-14": "Have you ever seen a movie several times and if so, which one?",
+    "pad.question-15": "What kind of music do you listen to when you're sad?",
+    "pad.question-16": "Have you ever seen a painting that touched you emotionally? If so, which painting was it?",
+    "pad.question-17": "What are the characteristics of a good movie?",
+    "pad.question-18": "What is your favorite opera and why is it?",
+    "pad.question-19": "Should we spend more money on museums?",
+
+    "pad.question-20" : "Do museums still have a right to exist in the age of the Internet?",
+    "pad.question-21" : "Is there an artistic genre or direction you don't understand?",
+    "pad.question-22": "What is your greatest artistic talent? Have you ever tried to let off steam in this area?",
+    "pad.question-23": "What does art mean to you?",
+    "pad.question-24" : "What is'beautiful' to you and what do you find'ugly'?",
+    "pad.question-25": "Does art have to be harmonious for you?"
+
+  }
+}

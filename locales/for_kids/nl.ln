@@ -1,0 +1,29 @@
+{
+  "ln"                            : "nl",
+  "questionnaire-for_kids"         : "Vragen voor kinderen tussen de 7 en 14 jaar oud",
+  "translations": {
+    "questionnaire-description"   : "Deze vragenlijst helpt om een gesprek met kinderen tussen de 7 en 14 jaar oud op gang te brengen.",
+
+    "pad.question-0"        : "Waar voel je je thuis?",
+    "pad.question-1"        : "Welke film moet je kijken als je je eenzaam of verdrietig voelt?",
+    "pad.question-2"        : "Wil je beroemd worden?",
+    "pad.question-3"        : "Wat wil je later worden?",
+    "pad.question-4"        : "Wat is het leukste spel dat je ooit gespeeld hebt?",
+    "pad.question-5"        : "Wat is je lievelingsnummer?",
+    "pad.question-6"        : "Wat gebeurde er in de laatste droom die je je kan herinneren?",
+    "pad.question-7"        : "Wie is je favoriete held of heldin?",
+    "pad.question-8"        : "Wat vind je het belangrijkste van een vriendschap?",
+    "pad.question-9"        : "Waar ben je goed in?",
+
+    "pad.question-10"        : "Wat zou je graag willen uitvinden?",
+    "pad.question-11"        : "Waar ben je bang voor?",
+    "pad.question-12"        : "Wanneer luister je naar muziek?",
+    "pad.question-13"        : "Als je iets zou kunnen veranderen aan je opvoeding, wat zou dat dan zijn",
+    "pad.question-14"        : "Wat is het langste boek dat je ooit gelezen hebt? En was het een goed boek?",
+    "pad.question-15"        : "Is er een film die je al vaak hebt gezien en zo ja, welke?",
+    "pad.question-16"        : "Beoefen je een sport?",
+    "pad.question-17"        : "Hoe zie je je toekomst voor je?",
+    "pad.question-18"        : "Zou je je naam willen veranderen?",
+    "pad.question-19"        : "Waar schaam je je voor?"
+  }
+}

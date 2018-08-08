@@ -21,6 +21,7 @@
 
     "language.de"           : "German",
     "language.en"           : "English",
-    "language.fr"           : "French"
+    "language.fr"           : "French",
+    "language.nl"           : "Dutch"
   }
 }

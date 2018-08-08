@@ -1,0 +1,42 @@
+{
+  "ln"                        : "nl",
+  "questionnaire-proust"     : "Proust-vragenlijst",
+  "translations": {
+    "questionnaire-description"  : "In de 19e eeuw was het beantwoorden van deze vragen populair onder de goedgeschoolde bevolking. Ze moedigen aan gesprekken te voeren, de geïnterviewde te leren kennen en te horen hoe ze qua karakter in elkaar zitten.",
+
+    "pad.question-0": "Wat is je motto?",
+    "pad.question-1": "Waar zou willen je wonen?",
+    "pad.question-2": "Wat is voor jou het ideale geluk?",
+    "pad.question-3": "Welke fouten bega je het meest?",
+    "pad.question-4": "Wat is de ergste pech die je ooit hebt meegemaakt?",
+    "pad.question-5": "Wie is je favoriete, fictieve, superheld?",
+    "pad.question-6": "Wie is je favoriete persoon uit de geschiedenis van de mensheid?",
+    "pad.question-7": "Wie is, in werkelijkheid, je held?",
+    "pad.question-8": "Wat je lievelingsschilder?",
+    "pad.question-9": "Wat is je lievelingsauteur?",
+
+    "pad.question-10": "Wat is je favoriete componist?",
+    "pad.question-11": "Welke kwaliteiten spreken je het meest aan in een vrouw?",
+    "pad.question-12": "Welke kwaliteiten spreken je het meest aan in een man?",
+    "pad.question-13": "Wat is je lievelingsdeugd?",
+    "pad.question-14": "Wat is je lievelingsactiviteit?",
+    "pad.question-15": "Wie of wat zou je graag willen zijn?",
+    "pad.question-16": "Wat is je hoofdkaraktertrekje?",
+    "pad.question-17": "Wat vindt je het fijnst aan je vrienden?",
+    "pad.question-18": "Wat is de grootste fout die je ooit begaan hebt?",
+    "pad.question-19": "Wat is je favoriete kleur?",
+
+    "pad.question-20": "Wat is je favoriete bloem?",
+    "pad.question-21": "Wat is je favoriete vogel?",
+    "pad.question-22": "Wat is je favoriete poeet?",
+    "pad.question-23": "Wie zijn je lievelingsheldinnen uit de geschiedenis?",
+    "pad.question-24": "Wat is je lievelingsnaam?",
+    "pad.question-25": "Waar heb je de meeste hekel aan?",
+    "pad.question-26": "Aan welke historische figuren heb je de meeste hekel?",
+    "pad.question-27": "Welke hervorming bewonder je het meest?",
+    "pad.question-28": "Welke natuurlijke gave zou je het liefst willen hebben?",
+    "pad.question-29": "Hoe wil je het liefste sterven?",
+
+    "pad.question-30": "Wat is je huidige gemoedstoestand?"
+  }
+}

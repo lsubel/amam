@@ -1,0 +1,39 @@
+{
+  "ln": "nl",
+  "questionnaire-oxford_exam_2008" : "All Souls College-introductie-examenvragen (van vóór 2008)",
+  "translations": {
+    "questionnaire-description"   : "Introductie-examenvragen van het All Souls College van de Universiteit van Oxford. Deze vragen komen uit toetsen van vóór 2008.", 
+
+    "pad.question-0": "Is het immoreel om een handtas van €10,000 te kopen?",
+    "pad.question-1": "'Het kan me niet schelen of iemand mijn boeken leest; ik schrijf ze voor mijzelf', is wat een auteur van diverse gepubliceerde romans heeft gezegd. Is er iets mis met dit statement binnen de theorie van de kunst?",
+    "pad.question-2": "'Alles wat je gedaan hebt sinds je geboren bent, deed je omdat je iets graag wilde' [Andrew Carnegie]. Ben je het daarmee eens?",
+    "pad.question-3": "Is afkeur hebben van politici een goede houding?",
+    "pad.question-4": "Waarom wordt een leren jas beter geaccepteerd dan een bontjas?",
+    "pad.question-5": "Kan je openbare en federale instituten vertrouwen bij hervormingen?",
+    "pad.question-6": "Is het zeer onnatuurlijk voor een man en een vrouw om continue samen te wonen?",
+    "pad.question-7": "Is studentenvervoer in Europa niks minder dan een vorm van gesubsidieerd toerisme?",
+    "pad.question-8": "Vertolken kinderspellen met blinddoeken een essentieel kwaad vanuit de mensheid?",
+    "pad.question-9": "Waarom tolereert de VN zoveel slechte regimes?",
+
+    "pad.question-10": "Worden gezinstradities langzaamaan afgebroken in het westen en zo ja, moeten overheden daar iets aan doen?",
+    "pad.question-11": "Moeten overheden wetenschappelijk onderzoek ondersteunen, zelfs als er geen technologische winst te behalen valt?",
+    "pad.question-12": "Verandert het morele karakter van een orgie wanneer de deelnemers nazi-uniformen dragen?",
+    "pad.question-13": "Wat kan het westen leren van China?",
+    "pad.question-14": "Is het woord 'beroemdheid' synoniem aan het verliezen van je waardigheid?",
+    "pad.question-15": "Is het verlangen naar postuum roem irrationeel?",
+    "pad.question-16": "Waarom gaat het met Afrika economisch zo slecht?",
+    "pad.question-17": "Kan de wereld het zich veroorloven om geen genetisch gemodificeerde groente en fruit te kweken?",
+    "pad.question-18": "Kunnen architecten en stedenbouwkundigen in hun ontwerpen criminaliteit en sociale verloedering verdrijven?",
+    "pad.question-19": "Veranderen hoge salarissen voor atheleten het imago van de gespeelde toernooien?",
+
+    "pad.question-20": "Er wordt wel eens gezegd dat architectuur 'bevroren muziek' is. Slaat dat ergens op?",
+    "pad.question-21": "Valt de snaartheorie onder de wetenschap?",
+    "pad.question-22": "Kan een schilderij de wereld veranderen?",
+    "pad.question-23": "Kan Europa zich zijn relatief hoge levensstandaard blijven veroorloven vergeleken met landen met opkomende economieën en moet Europa dat ook wel doen? ",
+    "pad.question-24": "Kun je van iemand houden als je hem of haar niet respecteert?",
+    "pad.question-25": "Moeten we onderscheid maken tussen personen, mensen en hun lichamen?",
+    "pad.question-26": "Kunnen computers nadenken?",
+    "pad.question-27": "Heeft om het even welke oude filosoof iets om morele filosofen vandaag te onderwijzen?",
+    "pad.question-28": "Ligt schoonheid in het oog van de toeschouwer?"
+  }
+}

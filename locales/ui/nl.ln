@@ -1,0 +1,27 @@
+{
+  "ln": "nl",
+  "translations": {
+    "pad.question"              : "Hier vind je de momenteel geselecteerde vraag",
+    "pad.random-question"       : "Nieuwe vraag",
+    "pad.back-to-menu"          : "Ga terug naar het menu",
+    "menu.title"                : "Vraag me iets zinvols",
+    "menu.description"          : "Denk je dat je alles al weet van je vrienden? Stel dan eens één van de volgende onbelangrijke vragen en de kans is groot dat je iets nieuws over ze te weten komt.",
+    "menu.startbutton.random"   : "Willekeurige vragen",
+    "menu.startbutton.list"     : "Vragenlijst",
+    "menu.description.label"    : "Uitleg",
+    "menu.option.label"         : "Opties",
+    "menu.descriptionbutton"    : "Vragenlijsten en opties",
+    "menu.options.newcolor"     : "Achtergrondkleur wijzigen",
+    "menu.options.savecolor"    : "Laatst gebruikte achtergrondkleur laden bij opstarten",
+    "menu.lnselectionlabel"             : "Huidige taal",
+    "menu.questionnaires"               : "Vragenlijsten",
+    "menu.questionnaireselectionlabel"  : "Huidige vragenlijst",
+    "menu.label.color"                  : "Achtergrondkleur",
+    "menu.authorship.intro"             : "De vragen zijn ingestuurd door",
+
+    "language.de"           : "Duits",
+    "language.en"           : "Engels",
+    "language.fr"           : "Frans",
+    "language.nl"           : "Nederlands"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ln"                              : "de",
+  "questionnaire-21_questions_game" : "21 Fragen Spiel",
+  "translations": {
+    "questionnaire-description"       : "Das 21-Fragen-Spiel ist grundsätzlich eine Möglichkeit, jemanden besser kennenzulernen. Im Kern des Spiels geht es nur darum, Fragen zu stellen und zu beantworten. Wenn Sie also einfach die folgenden Fragen stellen und beantworten wollen, funktioniert das. Aber du kannst diese Fragen auch für ein spielerisches Gespräch nutzen.",
+
+    "pad.question-0": "Was denken die meisten Leute über dich, was absolut nicht wahr ist?",
+    "pad.question-1": "Was ist die TLDR-Version deines Lebens?",
+    "pad.question-2": "Glauben Sie, dass die Bequemlichkeit der Technologie den Verlust der Privatsphäre wert ist?",
+    "pad.question-3": "Ist es in Ordnung, ein Leben zu opfern, um zehn zu retten? Wenn du ja sagst, würdest du die Antwort ändern, wenn das eine Leben das Leben eines Freundes wäre und die zehn Fremden? Wenn nein, warum nicht?",
+    "pad.question-4": "Was sind die Folgen einer sofortigen Ablenkung?",
+    "pad.question-5": "Was sollen sie in der High School unterrichten, aber nicht?",
+    "pad.question-6": "Welcher Film oder welches Buch wird Ihrer Meinung nach lächerlich überbewertet?",
+    "pad.question-7": "Neben wem würdest du am liebsten auf einem zehnstündigen Flug sitzen und warum?",
+    "pad.question-8": "Was sind zwei Dinge, von denen Sie wissen, dass Sie sie tun sollten, aber nicht tun?",
+    "pad.question-9": "Du hast 100 Dollar zu verbrennen, alle deine Freunde sind beschäftigt und du hast den ganzen Tag Zeit für dich, was machst du?",
+
+    "pad.question-10": "Warum sagst du: 'Was habe ich mir dabei gedacht?', wenn du auf dein Leben zurückblickst?",
+    "pad.question-11": "Wie nützlich wären Sie in einer Zombie-Apokalypse? Welche Fähigkeiten hast du, die dir und anderen helfen würden, zu überleben?",
+    "pad.question-12": "Was hast du getan, was du dir wünschst, dass du es rückgängig machen könntest?",
+    "pad.question-13": "Welche Inschrift willst du auf deinem Grabstein?",
+    "pad.question-14": "Was ist etwas, das nicht gelehrt werden kann und nur im Alter gelernt werden kann?",
+    "pad.question-15": "Wenn du wiedergeboren werden und wählen könntest, welche Nationalität, welches Geschlecht und welche Rasse du sein willst, was würdest du wählen? Warum?",
+    "pad.question-16": "Wenn du dein Leben wieder leben könntest und wüsstest, was du jetzt tust, was würdest du ändern?",
+    "pad.question-17": "Wie viel verändert man, wenn man weiß, dass niemand da ist?",
+    "pad.question-18": "Wie viel wissen Sie über die Welt außerhalb Ihres Landes?",
+    "pad.question-19": "Was ist eine Sache, der es sich lohnt, sein Leben zu widmen?",
+    "pad.question-20": "Was sollen Eltern aufhören, ihre Kinder zu unterrichten?"
+  }
+}

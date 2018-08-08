@@ -1,0 +1,30 @@
+{
+  "ln"                                : "fr",
+  "questionnaire-21_questions_game"   : "Jeu de 21 questions",
+  "translations" : {
+    "questionnaire-description"       : "Le Jeu des 21 Questions est essentiellement un moyen d'apprendre à mieux connaître quelqu'un. Au cœur du jeu, il s'agit simplement de poser des questions et d'y répondre. Donc, si vous voulez simplement poser les questions ci-dessous et y répondre, cela fonctionne. Mais vous pouvez aussi utiliser ces questions pour une conversation ludique.",
+
+    "pad.question-0" : "Qu'est-ce que la plupart des gens pensent de vous qui n'est absolument pas vrai ?",
+    "pad.question-1" : "Quelle est la version TLDR de votre vie ?",
+    "pad.question-2" : "Pensez-vous que la commodité de la technologie vaut la perte de vie privée qui l'accompagne ?",
+    "pad.question-3" : "Peut-on sacrifier une vie pour en sauver dix ? Si vous disiez oui, changeriez-vous votre réponse si la vie d'un ami était la vie d'un ami et si les dix étaient des étrangers ? Si non, pourquoi pas ?",
+    "pad.question-4" : "Quelles sont les conséquences d'avoir une distraction instantanée au bout des doigts ?",
+    "pad.question-5" : "Qu'est-ce qu'ils devraient enseigner au lycée mais ne le font pas ?",
+    "pad.question-6" : "Quel film ou livre est ridiculement surfait ?",
+    "pad.question-7" : "Avec qui aimeriez-vous le plus vous asseoir à côté d'un vol de 10 heures et pourquoi ?",
+    "pad.question-8" : "Quelles sont les deux choses que tu sais que tu devrais faire mais que tu ne sais pas faire ?",
+    "pad.question-9" : "Vous avez 100 $ à brûler, tous vos amis sont occupés et vous avez toute la journée pour vous, que faites-vous ?",
+
+    "pad.question-10" : "Qu'est-ce qui te fait dire 'A quoi je pensais ?' quand tu regardes en arrière sur ta vie ?",
+    "pad.question-11" : "A quel point seriez-vous utile dans une apocalypse zombie ? Quelles compétences avez-vous qui vous aideraient, vous et les autres, à survivre ?",
+    "pad.question-12" : "Qu'est-ce que tu as fait que tu aimerais pouvoir défaire ?",
+    "pad.question-13" : "Quelle inscription voulez-vous sur votre pierre tombale ?",
+    "pad.question-14" : "Qu'est-ce qui ne peut pas être enseigné et ne peut être appris qu'avec l'âge ?",
+    "pad.question-15" : "Si vous pouviez renaître de nouveau et choisir votre nationalité, votre sexe et votre race, que choisiriez-vous ? Pourquoi ?",
+    "pad.question-16" : "Si tu pouvais revivre ta vie en sachant ce que tu fais maintenant, qu'est-ce que tu changerais ?",
+    "pad.question-17" : "Combien changez-vous quand vous savez qu'il n'y a personne ?",
+    "pad.question-18" : "Que savez-vous du monde à l'extérieur de votre pays ?",
+    "pad.question-19" : "Quelle est une cause qui vaut la peine de consacrer votre vie à ?",
+    "pad.question-20" : "Qu'est-ce que les parents devraient arrêter d'enseigner à leurs enfants ?"
+  }
+}
